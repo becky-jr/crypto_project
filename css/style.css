@@ -1,0 +1,266 @@
+@font-face {
+  font-family: "Uni Neue Bold";
+  src: url("../fonts/UniNeueBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Uni Neue Light";
+  src: url("../fonts/UniNeueLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Uni Neue Thin";
+  src: url("../fonts/UniNeueThin.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  max-height: 120px;
+  padding: 40px 50px 48px 74px;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.nav .logo .logo_icon {
+  position: absolute;
+  top: 43px;
+}
+.nav .logo .logo_text {
+  margin-left: 40px;
+  font-family: "Uni Neue Bold";
+  font-weight: 800;
+  font-size: 22px;
+}
+.nav .logo .logo_text_2 {
+  display: inline-block;
+  width: 80px;
+  font-family: "Uni Neue Light";
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 11px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+.nav .logo .line {
+  display: inline-block;
+  margin: 10px 13px 0 12px;
+  width: 1px;
+  height: 20px;
+  background-color: #999999;
+  position: absolute;
+  left: 300px;
+}
+.nav .nav_menu {
+  margin-left: 150px;
+  padding-top: 8px;
+}
+.nav .nav_menu ul {
+  display: flex;
+}
+.nav .nav_menu li {
+  list-style: none;
+  margin-right: 20px;
+}
+.nav .nav_menu .menu_link {
+  text-decoration: none;
+  color: #565758;
+  font-family: sans-serif Uni Neue;
+  font-weight: 400;
+  font-size: 14px;
+}
+.nav .contact {
+  margin-left: 100px;
+  margin-top: 8px;
+}
+.nav .contact .whatsapp-logo {
+  margin-left: 25px;
+}
+.nav .contact .telegram-logo {
+  margin-left: 20px;
+}
+.nav .contact .tel {
+  text-decoration: none;
+  color: #2EB873;
+  font-weight: 500;
+}
+
+.main_page .main_footer_text {
+  font-family: "Uni Neue Light";
+  font-size: 13px;
+  color: #999999;
+  margin: 0 0 40px 150px;
+}
+.main_page .left_screen {
+  margin: 100px 30px 0 150px;
+}
+.main_page .left_screen .main_text {
+  font-family: "Uni Neue Bold";
+  font-size: 44px;
+  font-weight: 700;
+  text-align: left;
+}
+.main_page .left_screen .main_text .main_gradient_text {
+  background-color: #38E08C;
+  background-image: linear-gradient(99.02deg, #33CC80 20.12%, #1BA7DC 40%, #33CC80 70.12%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.main_page .left_screen .mini_text {
+  margin-top: 25px;
+  font-family: "Uni Neue Light";
+  font-size: 18px;
+}
+.main_page .left_screen .main_btn {
+  margin-top: 25px;
+}
+.main_page .left_screen .main_btn :hover {
+  box-shadow: 5px 5px 5px #38E08C;
+}
+.main_page .left_screen .main_btn .main_menu_btn {
+  border: none;
+  border-radius: 3px;
+  background: #33CC80;
+  color: #FAFAFA;
+  padding: 16px 60px;
+}
+.main_page .left_screen .main_btn .main_menu_btn :hover,
+.main_page .left_screen .main_btn .main_menu_btn :active {
+  cursor: pointer;
+}
+.main_page .right {
+  padding: 0;
+}
+.main_page .right_screen {
+  margin-left: 10px;
+  padding: 0;
+}
+.main_page .right_screen .carousel-indicators .active {
+  background-color: #33CC80;
+}
+.main_page .right_screen .right_slider .slider-item {
+  max-width: 750px;
+  max-height: 700px;
+}
+.main_page .right_screen .right_slider .slider-item .slider-img {
+  height: 600px;
+}
+.main_page .main_page_bottom {
+  padding: 80px 100px 40px 150px;
+  border-top: 1px solid #F2F2F2;
+}
+.main_page .main_page_bottom .content {
+  display: flex;
+  justify-content: space-between;
+}
+.main_page .main_page_bottom .content .statistics {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  height: 90px;
+}
+.main_page .main_page_bottom .content .statistics .chart {
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+  margin-right: 20px;
+  background-color: #E9F5EF;
+}
+.main_page .main_page_bottom .content .statistics .chart .statistics_icon {
+  padding: 33px;
+}
+.main_page .main_page_bottom .content .statistics .statistics_text {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  color: #33CC80;
+}
+.main_page .main_page_bottom .content .statistics .statistics_mini_text {
+  font-family: "Uni Neue Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  color: #262626;
+  line-height: 0;
+}
+
+#about {
+  background-color: #F2F2F2;
+  width: 100%;
+}
+
+.second_page .experience {
+  padding: 60px 100px 121px 150px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Uni Neue Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #262626;
+}
+.second_page .experience .year, .second_page .experience .employee, .second_page .experience .investors, .second_page .experience .crisis, .second_page .experience .crypto {
+  width: 200px;
+}
+.second_page .experience .experience_num {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 110%;
+  color: #33CC80;
+}
+.second_page .left_menu {
+  width: 750px;
+  padding: 120px 0 0 150px;
+}
+.second_page .left_menu .second_page_main_text {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+}
+.second_page .left_menu .second_page_descr .descr {
+  font-family: "Uni Neue Light";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+.second_page .left_menu .second_page_descr .first_descr {
+  margin: 30px 0 28px 0;
+}
+.second_page .left_menu .second_page_descr .third_descr {
+  margin-bottom: 40px;
+}
+.second_page .left_menu .descr_info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.second_page .left_menu .descr_info .descr_info_line {
+  display: inline-block;
+  width: 10px;
+  height: 87px;
+  background: #33CC80;
+  margin-right: 15px;
+}
+.second_page .left_menu .descr_info .descr_info_text {
+  font-family: "Uni Neue Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: #262626;
+  display: inline-block;
+}
+.second_page .right_menu {
+  padding: 175px 0 0 150px;
+}
+
+/*# sourceMappingURL=style.css.map */

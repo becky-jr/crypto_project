@@ -1,0 +1,400 @@
+// Local Fonts
+@font-face {
+  font-family: "Uni Neue Bold";
+  src: url("../fonts/UniNeueBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Uni Neue Light";
+  src: url("../fonts/UniNeueLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Uni Neue Thin";
+  src: url("../fonts/UniNeueThin.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// green patterns
+$first_green: #33CC80;
+$second_green: #2EB873;
+$third_green: #38E08C;
+// blue pattern
+$blue: #38E08C;
+// creamy pattern
+$creamy: #FBEFC7;
+// text colors
+$black: #262626;
+$dark_grey: #565758;
+$grey: #999999;
+$light_grey: #D9D9D9;
+$white_grey: #F2F2F2;
+$white: #FAFAFA;
+$icons_background: #E9F5EF;
+
+// STYLESHEET
+
+header {
+  //justify-items: center;
+  max-height: 120px;
+  padding: 40px 50px 48px 74px;
+  border-bottom: 1px solid $white_grey;
+}
+//
+//.menu_burger {
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  width: 100%;
+//  z-index: 100;
+//  transition: all 0.3s;
+//  opacity: 0;
+//  visibility: hidden;
+//  background: #262626;
+//  backdrop-filter: blur(10px);
+//  font-size: 0;
+//}
+//.menu_burger.opened {
+//  opacity: 1;
+//  visibility: visible
+//}
+//
+//.burger {
+//  background: no-repeat url("/src/icons/hamburger-menu.png");
+//  flex: 0 0 24px;
+//  z-index: 71;
+//  width: 24px;
+//  height: 24px;
+//  box-sizing: border-box;
+//  cursor: pointer;
+//  display: none;
+//  position: absolute;
+//  top: 0;
+//  bottom: 0;
+//  right: 16px;
+//  margin: auto;
+//}
+//@media (max-width: 1000px) {
+//  .burger {
+//    display: block;
+//  }
+//}
+
+.nav {
+  .logo {
+    .logo_icon {
+      position: absolute;
+      top: 43px;
+    }
+
+    .logo_text {
+      margin-left: 40px;
+      font-family: "Uni Neue Bold";
+      font-weight: 800;
+      font-size: 22px;
+    }
+
+    .logo_text_2 {
+      display: inline-block;
+      width: 80px;
+      font-family: "Uni Neue Light";
+      font-size: 10px;
+      font-weight: normal;
+      line-height: 11px;
+      text-align: left;
+      margin-left: 50px;
+      margin-top: 8px;
+    }
+
+    .line {
+      display: inline-block;
+      margin: 10px 13px 0 12px;
+      width: 1px;
+      height: 20px;
+      background-color: $grey;
+      position: absolute;
+      left: 300px;
+    }
+  }
+
+  // Nav menu
+
+  .nav_menu {
+    margin-left: 150px;
+    //width: 600px;
+    padding-top: 8px;
+    ul {
+      display: flex;
+    }
+    li {
+      list-style: none;
+      margin-right: 20px;
+    }
+    .menu_link {
+      text-decoration: none;
+      color: $dark_grey;
+      font-family: sans-serif Uni Neue;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  // contact menu
+  .contact {
+    margin-left: 100px;
+    margin-top: 8px;
+    .whatsapp-logo {
+      margin-left: 25px;
+    }
+    .telegram-logo {
+      margin-left: 20px;
+    }
+    .tel {
+      text-decoration: none;
+      color: #2EB873;
+      font-weight: 500;
+    }
+
+  }
+}
+
+
+// todo Main Page
+
+
+
+.main_page {
+
+  .main_footer_text {
+    font-family: 'Uni Neue Light';
+    font-size: 13px;
+    color: $grey;
+    margin: 0 0 40px 150px;
+  }
+
+  // todo left part
+  .left_screen {
+    margin: 100px 30px 0 150px;
+
+    .main_text {
+      font-family: 'Uni Neue Bold';
+      font-size: 44px;
+      font-weight: 700;
+      text-align: left;
+      .main_gradient_text {
+        background-color: $blue;
+        background-image: linear-gradient(99.02deg, #33CC80 20.12%,  #1BA7DC 40%, #33CC80 70.12%);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        //-moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+    }
+
+    .mini_text {
+      margin-top: 25px;
+      font-family: 'Uni Neue Light';
+      font-size: 18px;
+    }
+
+    .main_btn {
+      margin-top: 25px;
+      :hover {
+        box-shadow: 5px 5px 5px $third_green;
+      }
+      .main_menu_btn {
+        border: none;
+        border-radius: 3px;
+        background: $first_green;
+        color: $white;
+        padding: 16px 60px;
+        :hover,
+        :active {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+
+  //todo Right part
+  .right {
+    padding: 0;
+  }
+  .right_screen {
+    margin-left: 10px;
+    padding: 0;
+    .carousel-indicators .active{
+      background-color: $first_green;
+    }
+
+    .right_slider {
+      .slider-item {
+        max-width: 750px;
+        max-height: 700px;
+        .slider-img {
+          height: 600px;
+        }
+      }
+    }
+  }
+
+
+  // todo Main Bottom
+  .main_page_bottom {
+    padding: 80px 100px 40px 150px;
+    border-top: 1px solid $white_grey;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+
+      .statistics {
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+        height: 90px;
+
+
+        .chart {
+          width: 90px;
+          height: 90px;
+          border-radius: 100px;
+          margin-right: 20px;
+          background-color: $icons_background;
+          .statistics_icon {
+            padding: 33px;
+          }
+
+        }
+        .statistics_text {
+          font-family: 'Uni Neue Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 34px;
+          color: #33CC80;
+        }
+        .statistics_mini_text {
+          font-family: 'Uni Neue Light';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 13px;
+          color: $black;
+          line-height: 0;
+        }
+      }
+
+    }
+
+
+  }
+
+
+
+
+
+}
+
+#about {
+  background-color: $white_grey;
+  width: 100%;
+}
+.second_page {
+
+  .experience {
+    padding: 60px 100px 121px 150px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Uni Neue Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: $black;
+
+      .year, .employee, .investors, .crisis, .crypto {
+        width: 200px;
+      }
+
+      .experience_num {
+        font-family: 'Uni Neue Bold';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 110%;
+        color: $first_green;
+      }
+
+  }
+  .left_menu {
+    width: 750px;
+
+
+
+    padding: 120px 0 0 150px;
+    .second_page_main_text {
+      font-family: 'Uni Neue Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      color: $black;
+    }
+    .second_page_descr {
+      .descr{
+        font-family: 'Uni Neue Light';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 28px;
+      }
+      .first_descr {
+        margin: 30px 0 28px 0;
+      }
+      .third_descr {
+        margin-bottom: 40px;
+      }
+    }
+    .descr_info {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      .descr_info_line {
+        display: inline-block;
+        width: 10px;
+        height: 87px;
+        background: $first_green;
+        margin-right: 15px;
+      }
+
+      .descr_info_text {
+
+        font-family: 'Uni Neue Bold';
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 160%;
+
+        letter-spacing: -0.01em;
+        color: $black;
+
+        display: inline-block;
+      }
+    }
+
+  }
+
+
+  // Right menu
+
+  .right_menu {
+    padding: 175px 0 0 150px;
+  }
+}
