@@ -170,6 +170,14 @@ header {
 
 .main_page {
 
+  .coin {
+    position: absolute;
+    top: 390px;
+    left: 645px;
+    z-index: 10;
+  }
+
+
   .main_footer_text {
     font-family: 'Uni Neue Light';
     font-size: 13px;
@@ -240,6 +248,7 @@ header {
         max-height: 700px;
         .slider-img {
           height: 600px;
+
         }
       }
     }
