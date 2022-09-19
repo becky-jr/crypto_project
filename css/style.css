@@ -16,90 +16,67 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Uni Neue Regular";
+  src: url("../fonts/UniNeueRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  overflow-x: hidden;
+}
+
 header {
-  max-height: 120px;
   padding: 40px 50px 48px 74px;
   border-bottom: 1px solid #F2F2F2;
 }
 
-.nav .logo .logo_icon {
-  position: absolute;
-  top: 43px;
+.header .header_body {
+  display: flex;
+  justify-content: space-between;
 }
-.nav .logo .logo_text {
-  margin-left: 40px;
-  font-family: "Uni Neue Bold";
-  font-weight: 800;
-  font-size: 22px;
-}
-.nav .logo .logo_text_2 {
-  display: inline-block;
-  width: 80px;
-  font-family: "Uni Neue Light";
-  font-size: 10px;
-  font-weight: normal;
-  line-height: 11px;
-  text-align: left;
-  margin-left: 50px;
-  margin-top: 8px;
-}
-.nav .logo .line {
-  display: inline-block;
-  margin: 10px 13px 0 12px;
-  width: 1px;
-  height: 20px;
-  background-color: #999999;
-  position: absolute;
-  left: 300px;
-}
-.nav .nav_menu {
-  margin-left: 150px;
+.header .nav_menu {
   padding-top: 8px;
 }
-.nav .nav_menu ul {
+.header .nav_menu ul {
   display: flex;
 }
-.nav .nav_menu li {
+.header .nav_menu li {
   list-style: none;
   margin-right: 20px;
 }
-.nav .nav_menu .menu_link {
+.header .nav_menu .menu_link {
   text-decoration: none;
   color: #565758;
   font-family: sans-serif Uni Neue;
   font-weight: 400;
   font-size: 14px;
 }
-.nav .contact {
-  margin-left: 100px;
+.header .contact {
   margin-top: 8px;
 }
-.nav .contact .whatsapp-logo {
+.header .contact .whatsapp-logo {
   margin-left: 25px;
 }
-.nav .contact .telegram-logo {
+.header .contact .telegram-logo {
   margin-left: 20px;
 }
-.nav .contact .tel {
+.header .contact .tel {
   text-decoration: none;
   color: #2EB873;
   font-weight: 500;
 }
 
-.main_page .coin {
-  position: absolute;
-  top: 390px;
-  left: 645px;
-  z-index: 10;
-}
 .main_page .main_footer_text {
   font-family: "Uni Neue Light";
   font-size: 13px;
   color: #999999;
-  margin: 0 0 40px 150px;
+  display: inline-block;
+  padding: 30px 0;
 }
 .main_page .left_screen {
-  margin: 100px 30px 0 150px;
+  padding: 100px 30px 0 0;
+  width: 550px;
 }
 .main_page .left_screen .main_text {
   font-family: "Uni Neue Bold";
@@ -117,7 +94,7 @@ header {
 }
 .main_page .left_screen .mini_text {
   margin-top: 25px;
-  font-family: "Uni Neue Light";
+  font-family: "Uni Neue Regular";
   font-size: 18px;
 }
 .main_page .left_screen .main_btn {
@@ -155,43 +132,41 @@ header {
   height: 600px;
 }
 .main_page .main_page_bottom {
-  padding: 80px 100px 40px 150px;
+  width: 1440px;
+  padding: 80px 0 0 100px;
+  margin: 0 auto;
   border-top: 1px solid #F2F2F2;
 }
 .main_page .main_page_bottom .content {
   display: flex;
-  justify-content: space-between;
 }
 .main_page .main_page_bottom .content .statistics {
+  width: 450px;
   display: flex;
-  justify-content: space-between;
-  width: 280px;
-  height: 90px;
 }
 .main_page .main_page_bottom .content .statistics .chart {
-  width: 90px;
-  height: 90px;
-  border-radius: 100px;
-  margin-right: 20px;
   background-color: #E9F5EF;
+  width: 150px;
+  height: 90px;
+  border-radius: 50px;
 }
 .main_page .main_page_bottom .content .statistics .chart .statistics_icon {
   padding: 33px;
 }
 .main_page .main_page_bottom .content .statistics .statistics_text {
   font-family: "Uni Neue Bold";
-  font-style: normal;
   font-weight: 700;
   font-size: 34px;
   color: #33CC80;
+  display: inline-block;
+}
+.main_page .main_page_bottom .content .statistics .statistics_text, .main_page .main_page_bottom .content .statistics .statistics_mini_text {
+  margin-left: 10px;
+  display: inline-block;
+  width: 200px;
 }
 .main_page .main_page_bottom .content .statistics .statistics_mini_text {
-  font-family: "Uni Neue Light";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  color: #262626;
-  line-height: 0;
+  font-size: 16px;
 }
 
 #about {
@@ -199,30 +174,9 @@ header {
   width: 100%;
 }
 
-.second_page .experience {
-  padding: 60px 100px 121px 150px;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Uni Neue Light";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  color: #262626;
-}
-.second_page .experience .year, .second_page .experience .employee, .second_page .experience .investors, .second_page .experience .crisis, .second_page .experience .crypto {
-  width: 200px;
-}
-.second_page .experience .experience_num {
-  font-family: "Uni Neue Bold";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 46px;
-  line-height: 110%;
-  color: #33CC80;
-}
 .second_page .left_menu {
-  width: 750px;
-  padding: 120px 0 0 150px;
+  width: 600px;
+  padding: 120px 0 0 0;
 }
 .second_page .left_menu .second_page_main_text {
   font-family: "Uni Neue Bold";
@@ -266,7 +220,1020 @@ header {
   display: inline-block;
 }
 .second_page .right_menu {
-  padding: 175px 0 0 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 175px;
+}
+.second_page .experience {
+  padding: 60px 100px 121px 150px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Uni Neue Light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #262626;
+}
+.second_page .experience .year, .second_page .experience .employee, .second_page .experience .investors, .second_page .experience .crisis, .second_page .experience .crypto {
+  width: 200px;
+}
+.second_page .experience .experience_num {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 110%;
+  color: #33CC80;
+}
+
+.first_block .first_left_menu {
+  padding: 158px 0 0 0;
+  max-width: 700px;
+}
+.first_block .first_right_menu {
+  padding: 120px 100px 0 0;
+}
+.first_block .first_right_menu .first_right_descr {
+  width: 600px;
+}
+.first_block .first_right_menu .first_right_descr .first_right_gradient {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* identical to box height, or 26px */
+  text-align: center;
+  /* gradient */
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.first_block .first_right_menu .first_right_descr .first_right_bold {
+  height: 90px;
+  margin: 5px 0 30px 0;
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #262626;
+}
+.first_block .first_right_menu .first_right_descr .first_right_thin {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #565758;
+}
+.first_block .first_right_menu .first_right_descr .first_right_thin .first {
+  display: inline-block;
+}
+.first_block .first_right_menu .first_right_descr .first_right_thin .second {
+  line-height: 2;
+  display: inline-block;
+  margin: 0 0 20px 20px;
+}
+.first_block .first_right_menu .first_right_descr .first_right_thin .third {
+  display: inline-block;
+  margin: 0 0 50px 0;
+}
+.first_block .law_block {
+  width: 1200px;
+  margin: 0 auto;
+  background: #CAEAF8;
+}
+.first_block .law_block .law_block_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px;
+}
+.first_block .law_block .law_block_content .bottom_icon {
+  width: 200px;
+}
+.first_block .law_block .law_block_content .law_text {
+  font-family: "Uni Neue Regular";
+  font-weight: 500;
+  font-size: 16px;
+  color: #262626;
+}
+.first_block .law_block .law_block_content .law_text .law_text_bold {
+  font-family: "Uni Neue Bold";
+}
+
+.second_block {
+  padding: 150px 0 0 0;
+}
+.second_block .second_left_menu {
+  width: 700px;
+  margin: 0 auto;
+}
+.second_block .second_left_menu .second_left_descr {
+  width: 600px;
+}
+.second_block .second_left_menu .second_left_descr .second_left_gradient {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* identical to box height, or 26px */
+  text-align: center;
+  /* gradient */
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.second_block .second_left_menu .second_left_descr .second_left_bold {
+  margin: 5px 0 30px 0;
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+}
+.second_block .second_left_menu .second_left_descr .second_left_thin {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #565758;
+  margin-bottom: 40px;
+}
+.second_block .second_left_menu .second_descr_info {
+  display: flex;
+  justify-content: space-between;
+}
+.second_block .second_left_menu .second_descr_info .second_descr_line {
+  display: inline-block;
+  width: 10px;
+  height: 58px;
+  background: #33CC80;
+  margin-right: 17px;
+}
+.second_block .second_left_menu .second_descr_info .second_descr_text {
+  font-family: "Uni Neue Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: -0.01em;
+  color: #262626;
+  display: inline-block;
+}
+.second_block .second_right_menu {
+  width: 700px;
+  margin: 0 auto 0 100px;
+  padding-top: 40px;
+}
+
+.third_block .third_left_menu {
+  padding: 158px 0 0 0;
+  width: 700px;
+  margin: 0 auto;
+}
+.third_block .third_right_menu {
+  width: 700px;
+  padding: 120px 100px 0 0;
+}
+.third_block .third_right_menu .third_right_descr .third_right_gradient {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* identical to box height, or 26px */
+  text-align: center;
+  /* gradient */
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.third_block .third_right_menu .third_right_descr .third_right_bold {
+  height: 90px;
+  margin: 5px 0 30px 0;
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #262626;
+}
+.third_block .third_right_menu .third_right_descr .third_right_thin {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #565758;
+}
+.third_block .third_right_menu .third_right_descr .third_right_thin .first {
+  display: inline-block;
+  line-height: 28px;
+}
+.third_block .third_right_menu .third_right_descr .third_right_thin .second {
+  line-height: 28px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.third_block .third_right_menu .third_descr_info {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.third_block .third_right_menu .third_descr_info .third_descr_line {
+  display: inline-block;
+  width: 8px;
+  height: 203px;
+  background: #33CC80;
+  margin-right: 17px;
+}
+.third_block .third_right_menu .third_descr_info .third_descr_text {
+  font-family: "Uni Neue Bold";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: #262626;
+  display: inline-block;
+}
+.third_block .third_right_menu .third_descr_info .third_descr_text .third_descr_list {
+  display: inline-block;
+  margin-top: 40px;
+}
+.third_block .info_block {
+  width: 1200px;
+  margin: 130px auto 190px;
+  background: #CAEAF8;
+}
+.third_block .info_block .info_block_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 60px;
+}
+.third_block .info_block .info_block_content .info_block_icon {
+  width: 200px;
+}
+.third_block .info_block .info_block_content .info_block_text {
+  margin-left: 16px;
+  font-family: "Uni Neue Regular";
+  font-weight: 500;
+  font-size: 16px;
+  color: #262626;
+}
+.third_block .info_block .info_block_content .info_block_text .info_text_bold {
+  font-family: "Uni Neue Bold";
+}
+
+.coop_page {
+  text-align: center;
+  margin-bottom: 120px;
+}
+.coop_page .coop_title {
+  margin-bottom: 70px;
+}
+.coop_page .coop_title .coop_suit {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.coop_page .coop_title .coop_bold {
+  margin: 5px 0 30px 0;
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+}
+.coop_page .coop_title .coop_thin {
+  font-family: "Uni Neue Light";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #565758;
+}
+.coop_page .coop_icon_content {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+.coop_page .coop_icon_content .coop_icon {
+  width: 120px;
+  display: inline-block;
+}
+.coop_page .coop_icon_content .icon_bold {
+  width: 199px;
+  text-align: center;
+  margin: 30px auto 20px;
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #262626;
+}
+.coop_page .coop_icon_content .icon_text {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #565758;
+}
+
+.join_content {
+  height: 720px;
+  background-color: #FAFAFA;
+  position: relative;
+}
+.join_content .left_block {
+  position: absolute;
+  top: 120px;
+  height: 480px;
+  width: 45%;
+  overflow-y: hidden;
+  background-color: #33CC80;
+}
+.join_content .left_block .title {
+  margin: 121px auto 0;
+  width: 380px;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #FAFAFA;
+}
+.join_content .left_block .button {
+  width: 308px;
+  margin: 39px auto 136px;
+}
+.join_content .left_block .button .join_button {
+  padding: 15px 60px;
+  background-color: #33CC80;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+.join_content .right_block .right_block_info {
+  margin: 120px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.join_content .right_block .right_block_info .ruble_block {
+  width: 250px;
+  margin: 0 70px 50px 0;
+}
+.join_content .right_block .right_block_info .ruble_block .ruble_block_icon {
+  background-color: #E9F5EF;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+}
+.join_content .right_block .right_block_info .ruble_block .ruble_block_icon .ruble_icon {
+  padding: 33px;
+}
+.join_content .right_block .right_block_info .ruble_block .ruble_block_text {
+  font-family: "Uni Neue Light";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #565758;
+}
+.join_content .right_block .right_block_info .ruble_block .ruble_block_text .bold_text {
+  margin: 20px 0 10px 0;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #262626;
+}
+
+.income_page {
+  padding: 120px 0 80px 0;
+}
+.income_page .income_left_block {
+  width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.income_page .income_left_block .income_gradient {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.income_page .income_left_block .income_bold {
+  width: 500px;
+  margin: 5px 0 30px;
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+}
+.income_page .income_left_block .income_thin {
+  font-family: "Uni Neue Light";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #565758;
+  margin-bottom: 40px;
+}
+.income_page .income_left_block .question .mini_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #262626;
+  margin-bottom: 20px;
+}
+.income_page .income_right_block {
+  width: 600px;
+  padding-left: 100px;
+  margin: 0 auto;
+}
+.income_page .income_data {
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.method_block {
+  margin: 40px 0 120px 0;
+}
+.method_block .method_title {
+  margin-left: 12%;
+}
+.method_block .method_title .title_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.method_block .method_title .title_thin {
+  width: 800px;
+  margin: 23px 0 50px 0;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #565758;
+}
+.method_block .method_card {
+  margin: 0 auto;
+  width: 1250px;
+}
+.method_block .method_card .card {
+  padding: 70px 0 70px 60px;
+  width: 400px;
+  border: 1px solid #EBEBEB;
+}
+.method_block .method_card .card .card_text {
+  margin-top: 25px;
+}
+.method_block .method_card .card .card_text .card_text_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #262626;
+}
+.method_block .method_card .card .card_text .card_text_thin {
+  margin-top: 20px;
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #565758;
+}
+
+.revenue_block .revenue_content {
+  margin: 0 auto;
+  width: 1400px;
+  height: 600px;
+  position: relative;
+  overflow-y: hidden;
+}
+.revenue_block .revenue_content .revenue_chart {
+  position: absolute;
+  top: -20px;
+}
+.revenue_block .revenue_content .revenue_title {
+  margin-left: 100px;
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #565758;
+}
+.revenue_block .revenue_content .revenue_title .revenue_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+.rights_block .rights_title {
+  padding: 150px 0 150px;
+  width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+.rights_block .rights_title .rights_gradient {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rights_block .rights_title .rights_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+}
+.rights_block .rights_title .rights_thin {
+  width: 880px;
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #565758;
+}
+.rights_block .rights_content_cards {
+  width: 1200px;
+  margin: 0 auto 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.rights_block .rights_content_cards .rights_card {
+  width: 270px;
+}
+.rights_block .rights_content_cards .rights_card .bold_text {
+  margin: 15px 0 20px;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #262626;
+}
+.rights_block .rights_content_cards .rights_card .thin_text {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #565758;
+}
+
+.application_block {
+  height: 600px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url("../img/family.svg") no-repeat;
+  overflow-y: hidden;
+}
+.application_block .application_content {
+  width: 562px;
+  margin: 150px 0 140px 150px;
+}
+.application_block .application_content .application_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.application_block .application_content .application_radios {
+  margin: 32px 0 18px 0;
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.application_block .application_content .application_radios input[type=radio]#now {
+  accent-color: #33CC80;
+}
+.application_block .application_content .application_radios input[type=radio]#later {
+  accent-color: #33CC80;
+}
+.application_block .application_content .application_radios .now {
+  margin-bottom: 10px;
+}
+.application_block .application_content .application_radios .now .radio_buttons {
+  margin-right: 10px;
+}
+.application_block .application_content .application_radios .now .radio_buttons :checked {
+  background-color: #33CC80;
+}
+.application_block .application_content .application_radios .later .radio_buttons {
+  margin-right: 10px;
+}
+.application_block .application_content .application_send .num_input {
+  padding: 15px 40px 15px 20px;
+  background-color: #E7E7E7;
+  color: #999999;
+  border: none;
+  border-radius: 5px;
+}
+.application_block .application_content .application_send .application_btn {
+  margin-left: 20px;
+  background-color: #33CC80;
+  color: #FFFFFF;
+  padding: 15px 60px;
+  border: none;
+  border-radius: 2px;
+}
+.application_block .application_content .application_send .approve {
+  margin-top: 12px;
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.answers_block {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 0 180px;
+}
+.answers_block .answers_title {
+  width: 700px;
+}
+.answers_block .answers_title .answers_gradient {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.answers_block .answers_title .answers_title {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+  margin-bottom: 70px;
+}
+.answers_block .answers_content .accordion .accordion-item {
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid #D9D9D9;
+}
+.answers_block .answers_content .accordion .accordion-item .accordion-button {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 280%;
+  color: #262626;
+}
+.answers_block ::after {
+  background-image: url("../icons/plus.svg");
+}
+.answers_block .accordion-button:not(.collapsed)::after {
+  background-image: url("../icons/plus.svg");
+  transform: rotate(135deg);
+}
+.answers_block .accordion-button:not(.collapsed) {
+  background-color: #FFFFFF;
+  box-shadow: none;
+}
+
+.advice_block {
+  background-color: #FFFFFF;
+  margin-bottom: 150px;
+}
+.advice_block .advice_left .advice_gradient {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.advice_block .advice_left .advice_bold {
+  width: 530px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+}
+.advice_block .advice_right {
+  margin: 50px 0 0 0;
+}
+.advice_block .advice_right .advice_inputs .name_input {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.advice_block .advice_right .advice_inputs .name_input input {
+  width: 60%;
+  padding: 10px 0 10px 20px;
+  border: 2px solid #EBEBEB;
+  border-radius: 2px;
+}
+.advice_block .advice_right .advice_inputs .radio_messenger {
+  display: flex;
+}
+.advice_block .advice_right .advice_inputs .radio_messenger .phone_radio, .advice_block .advice_right .advice_inputs .radio_messenger .telegram_radio, .advice_block .advice_right .advice_inputs .radio_messenger .whatsapp_radio {
+  margin-right: 25px;
+}
+.advice_block .advice_right .advice_inputs .contact_inputs {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #262626;
+  margin-top: 30px;
+}
+.advice_block .advice_right .advice_inputs .contact_inputs .phone_input {
+  width: 280px;
+}
+.advice_block .advice_right .advice_inputs .contact_inputs .phone_input input {
+  padding: 16px 64px 16px 20px;
+}
+.advice_block .advice_right .advice_inputs .contact_inputs .time_input {
+  width: 205px;
+}
+.advice_block .advice_right .advice_inputs .contact_inputs .time_input input {
+  padding: 14px 23px 13px 20px;
+}
+.advice_block .advice_right .advice_inputs .contact_inputs .time_input .time_input_text {
+  margin-bottom: 5px;
+}
+
+.contact_block {
+  background-color: #FAFAFA;
+  padding: 150px 0 400px 80px;
+}
+.contact_block .contacts_content .contacts_title {
+  width: 850px;
+}
+.contact_block .contacts_content .contacts_title .contacts_gradient {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* gradient */
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.contact_block .contacts_content .contacts_title .contacts_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 5px 0 30px;
+  color: #262626;
+}
+.contact_block .contacts_content .contacts_title .contacts_thin {
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #565758;
+}
+.contact_block .office_content {
+  margin: 35px 0 50px;
+  display: flex;
+}
+.contact_block .office_content .office_card {
+  width: 380px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  margin-right: 20px;
+}
+.contact_block .office_content .office_card .card_content {
+  padding: 50px 0 50px 50px;
+  width: 265px;
+}
+.contact_block .office_content .office_card .card_content .office_gradient {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #33CC80;
+}
+.contact_block .office_content .office_card .card_content .office_location {
+  margin: 10px 0 15px;
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #565758;
+}
+.contact_block .office_content .office_card .card_content .office_phone {
+  line-height: 160%;
+}
+.contact_block .message_content {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #262626;
+}
+.contact_block .message_content .message_buttons {
+  margin: 30px 0 50px;
+}
+.contact_block .message_content .message_buttons .message_whatsapp, .contact_block .message_content .message_buttons .message_telegram {
+  padding: 10px 35px;
+  margin-right: 30px;
+  background-color: #FAFAFA;
+  border: 1px solid #33CC80;
+  border-radius: 3px;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #33CC80;
+}
+
+#footer {
+  background-color: #262626;
+}
+#footer .top_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 40px;
+}
+#footer .top_footer .logo {
+  width: 275px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .top_footer .logo .footer_logo {
+  width: 50px;
+}
+#footer .top_footer .logo .logo_text {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.34368px;
+  color: #F2F2F2;
+}
+#footer .top_footer .logo .logo_text .logo_bold {
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 23.3592px;
+}
+#footer .top_footer .footer_info {
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #999999;
+}
+
+#bottom_footer {
+  background-color: #181818;
+}
+#bottom_footer .second_footer {
+  padding: 30px 0;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+}
+#bottom_footer .second_footer a {
+  text-decoration: none;
+  color: #999999;
+}
+#bottom_footer .second_footer .footer_list ul {
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+#bottom_footer .second_footer .footer_list li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.middle_slider {
+  padding: 120px 0 0;
+}
+.middle_slider .slider_inner {
+  position: relative;
+}
+.middle_slider .slider_inner .first_slider .slider_title {
+  text-align: center;
+}
+.middle_slider .slider_inner .first_slider .slider_title .title_gradient {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* gradient */
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+.middle_slider .slider_inner .first_slider .slider_title .title_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #262626;
+}
+.middle_slider .slider_inner .first_slider .slider_title .title_thin {
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #565758;
+}
+.middle_slider .slider_inner .first_slider .slider {
+  margin-top: 150px;
+}
+.middle_slider .slider_inner .first_slider .slider .slider_img {
+  max-width: 500px;
+  margin: 0 auto 0 150px;
+}
+.middle_slider .slider_inner .first_slider .slider .slider_img .img {
+  width: 400px;
+}
+.middle_slider .slider_inner .first_slider .slider .slider_text {
+  margin-top: 70px;
+}
+.middle_slider .slider_inner .first_slider .slider .slider_text .text_bold {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #262626;
+}
+.middle_slider .slider_inner .first_slider .slider .slider_text .text_info {
+  margin: 23px 0;
+}
+.middle_slider .slider_inner .first_slider .slider .slider_text .text_info, .middle_slider .slider_inner .first_slider .slider .slider_text .text_list {
+  font-family: "Uni Neue Thin";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #565758;
+}
+
+.slick-dots {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+.slick-dots li {
+  margin: 0 70px 0 0;
+}
+.slick-dots button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 100%;
+  border: 6px solid #D9D9D9;
+  text-indent: -9999px;
+}
+.slick-dots li.slick-active button {
+  border: 6px solid #33CC80;
 }
 
 /*# sourceMappingURL=style.css.map */

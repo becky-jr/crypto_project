@@ -5,79 +5,94 @@
     <title>Title</title>
     <!--  Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--  SLick Style  -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <!--  Style CSS  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-    <header>
-<!--        <nav class="menu_burger">-->
-<!--            <div class="menuClose"><span></span></div>-->
-<!--            <div class="menu_scroll">-->
-<!--                <div class="menu_top">-->
-<!--                    <ul>-->
-<!--                        <li><a href="#">о нас</a></li>-->
-<!--                        <li><a href="">Gh</a></li>-->
-<!--                        <li><a href="#maps">Зона покрытия</a></li>-->
-<!--                        <li><a href="#partners">партнеры</a></li>-->
-<!--                        <li><a href="">Контакты</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+    <header class="header" >
+
+<!--        <div class="nav">-->
+<!--            <div class="logo">-->
+<!--                <a href="#">-->
+<!--                    <img src="img/logo_toghether.svg" alt="">-->
+<!--                </a>-->
 <!--            </div>-->
-<!--        </nav>-->
+<!--            <div class="nav_menu">-->
+<!--                <ul>-->
+<!--                    <li class="list_item" ><a class="menu_link" href="#">О нас</a></li>-->
+<!--                    <li class="list_item" ><a class="menu_link" href="#">Про майнинг</a></li>-->
+<!--                    <li class="list_item" ><a class="menu_link" href="#">Доходность</a></li>-->
+<!--                    <li class="list_item" ><a class="menu_link" href="">Кооператив</a></li>-->
+<!--                    <li class="list_item" ><a class="menu_link" href="#">Контакты</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="contact">-->
+<!--                <span>-->
+<!--                    <a class="tel" href="tel:8-800-100-20-30">8-800-100-20-30</a>-->
+<!--                </span>-->
+<!--                <span class="whatsapp-logo">-->
+<!--                    <a href="#"><img src="icons/whatsapp.svg" alt=""></a>-->
+<!--                </span>-->
+<!--                <span class="telegram-logo">-->
+<!--                    <a href="#"><img src="icons/telegram.svg" alt=""></a>-->
+<!--                </span>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="container-fluid">
+            <div class="header_body">
+
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo_toghether.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="nav_menu">
+                    <ul>
+                        <li class="list_item" ><a class="menu_link" href="#">О нас</a></li>
+                        <li class="list_item" ><a class="menu_link" href="#">Про майнинг</a></li>
+                        <li class="list_item" ><a class="menu_link" href="#">Доходность</a></li>
+                        <li class="list_item" ><a class="menu_link" href="">Кооператив</a></li>
+                        <li class="list_item" ><a class="menu_link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="contact">
+                    <span>
+                        <a class="tel" href="tel:8-800-100-20-30">8-800-100-20-30</a>
+                    </span>
+                        <span class="whatsapp-logo">
+                        <a href="#"><img src="icons/whatsapp.svg" alt=""></a>
+                    </span>
+                        <span class="telegram-logo">
+                        <a href="#"><img src="icons/telegram.svg" alt=""></a>
+                    </span>
+                </div>
+
+            </div>
 
 
-        <div class="nav">
-            <div class="logo">
-                <span class="logo_icon">
-                    <img src="icons/main_cube.svg" alt="">
-                </span>
-                    <span class="logo_text">
-                    Цифровой Путь
-                </span>
-                    <span class="line"></span>
-                    <span class="logo_text_2">
-                    потребительский кооператив
-                </span>
-            </div>
-            <div class="nav_menu">
-                <ul>
-                    <li class="list_item" ><a class="menu_link" href="#">О нас</a></li>
-                    <li class="list_item" ><a class="menu_link" href="#">Про майнинг</a></li>
-                    <li class="list_item" ><a class="menu_link" href="#">Доходность</a></li>
-                    <li class="list_item" ><a class="menu_link" href="">Кооператив</a></li>
-                    <li class="list_item" ><a class="menu_link" href="#">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <span>
-                    <a class="tel" href="tel:8-800-100-20-30">8-800-100-20-30</a>
-                </span>
-                <span class="whatsapp-logo">
-                    <a href="#"><img src="icons/whatsapp.svg" alt=""></a>
-                </span>
-                <span class="telegram-logo">
-                    <a href="#"><img src="icons/telegram.svg" alt=""></a>
-                </span>
-            </div>
+
         </div>
 
 
-<!--        <div class="burger">-->
-<!--            <span></span>-->
-<!--        </div>-->
+
     </header>
 
     <section id="main">
         <div class="main_page">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                        <span class="coin">
-                            <img src="img/badge.svg" alt="badge">
-                        </span>
+<!--                        <div class="coin">-->
+<!--                            <img src="img/badge.svg" alt="badge">-->
+<!--                        </div>-->
 
                     
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="left_screen">
                                 <div class="main_text">
                                     Инвестируйте в майнинг
@@ -93,7 +108,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 right">
+                        <div class="col-lg-6 right">
                             <div class="right_screen">
                                 <div id="carouselExampleIndicators" class="carousel slide right_slider" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
@@ -112,14 +127,6 @@
                                             <img src="img/slider/slider3.svg" class="d-block w-100 slider-img" alt="...">
                                         </div>
                                     </div>
-<!--                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">-->
-<!--                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--                                        <span class="visually-hidden">Previous</span>-->
-<!--                                    </button>-->
-<!--                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">-->
-<!--                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--                                        <span class="visually-hidden">Next</span>-->
-<!--                                    </button>-->
                                 </div>
                             </div>
                         </div>
@@ -131,7 +138,7 @@
                                         <img class="statistics_icon" src="icons/chart-histogram.svg" alt="">
                                     </div>
                                     <span>
-                                        <span class="statistics_text">32%</span> <br>
+                                        <span class="statistics_text">32%</span>
                                         <span class="statistics_mini_text">
                                             Средняя годовая доходность майнинга *
                                         </span>
@@ -144,7 +151,7 @@
                                     <span>
                                         <span class="statistics_text">
                                             23т.р
-                                        </span> <br>
+                                        </span>
                                         <span class="statistics_mini_text">
                                             Средний паевой
                                             взнос в кооперативе
@@ -156,7 +163,7 @@
                                         <img class="statistics_icon" src="icons/calendar-lines.svg" alt="calendar">
                                     </div>
                                     <span>
-                                        <span class="statistics_text">845</span> <br>
+                                        <span class="statistics_text">845</span>
                                         <span class="statistics_mini_text">
                                             Дней без остановки майнинг криптовалюты
                                         </span>
@@ -169,7 +176,7 @@
                                     <span>
                                         <span class="statistics_text">
                                             0,021 BTC
-                                        </span> <br>
+                                        </span>
                                         <span class="statistics_mini_text">
                                             Средняя добыча биткоинов в сутки
                                         </span>
@@ -177,11 +184,11 @@
                                 </div>
                             </div>
 
-
-                        </div>
-                    <span class="main_footer_text">
+                            <span class="main_footer_text">
                         *  Согласно историческим данным средняя доходность майнинга с 01.01.2020 по 01.08.2022 составляла 32% годовых
                     </span>
+                        </div>
+
                 </div>
 
             </div>
@@ -192,12 +199,12 @@
     <!-- todo ABOUT MENU -->
     <section id="about">
         <div class="second_page">
-                <span class="ilma">
-                    <img src="img/ilma.svg" alt="">
-                </span>
+<!--                <span class="ilma">-->
+<!--                    <img src="img/ilma.svg" alt="">-->
+<!--                </span>-->
             
             
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="left_menu">
@@ -228,7 +235,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-5">
+                        <div class="col-md-6">
 
                             <div class="right_menu">
                                 <div class="right_img">
@@ -287,7 +294,1564 @@
         </div>
     </section>
 
+    <!--  todo Advantages  -->
+    <section id="advantages">
+
+        <div class="first_block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="first_left_menu">
+                            <img src="img/third_pg.svg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="first_right_menu">
+                            <div class="first_right_descr">
+                                <span class="first_right_gradient">Мир изменился...</span>
+                                <div class="first_right_bold">
+                                    Новые времена — новая стратегия <br> получения дохода
+                                </div>
+                                <div class="first_right_thin">
+                                    <span class="first">
+                                        В наше время финансовая реальность большинства россиян претерпела существенные изменения:
+                                    </span>
+                                    <span class="second">
+                                        <br>
+                                        • тысячи людей потеряли часть или все источники дохода;<br>
+                                        • бизнес под давлением и не обеспечивает прежней прибыли;<br>
+                                        • ограничено свободное перемещение валют в РФ и за ее пределами;<br>
+                                        • перестали работать в полноценном режиме фондовые биржи;<br>
+                                        • упали доходности ценных бумаг, задерживаются дивиденды;<br>
+                                        • многие инструменты инвестирования полностью недоступны.<br>
+                                    </span>
+                                    <span class="third">
+                                        Растущая инфляция вынуждает искать новые способы заработка, не связанные ограничениями
+                                        внутри и за пределами России. Все большее число людей рассматривают крипторынок как
+                                        альтернативу переставшим работать привычным методам получения и вложения средств.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="law_block">
+
+                        <div class="law_block_content">
+                            <div class="bottom_icon">
+                                <img src="icons/law.svg" alt="law svg">
+                            </div>
+
+                            <div class="law_text">
+                                Федеральный закон "О цифровых финансовых активах, цифровой валюте и о внесении изменений в отдельные законодательные акты Российской Федерации" от 31.07.2020 N 259-ФЗ <span class="law_text_bold">сделал владение и "добычу" (майнинг) криптовалют законным,</span> что делает деятельность кооператива легальной.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second_block">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="second_left_menu">
+
+                            <div class="second_left_descr">
+
+                                <span class="second_left_gradient">
+                                    Мы меняется тоже — открываем майнинг фермы
+                                </span>
+
+                                <div class="second_left_bold">
+                                    «Илма» делает шаг навстречу новому и запускает
+                                    майнинг-кооператив «Цифровой путь»
+                                </div>
+
+                                <div class="second_left_thin">
+                                    В связи с экономическими реалиями ассоциация ставит перед собой новую цель — предоставить
+                                    пайщикам доступ к альтернативному источнику дохода. Для этого создан потребительский
+                                    кооператив «Цифровой путь».
+
+                                    <br>
+                                    <br>
+                                    Он обеспечит валютную прибыль за счет промышленного майнинга
+                                    перспективных криптовалют на оборудовании, находящемся в коллективной собственности членов
+                                    ПК.
+
+                                </div>
+
+                            </div>
+
+                            <div class="second_descr_info">
+                                <span class="second_descr_line"></span>
+                                <span class="second_descr_text">
+                                    Присоединяйтесь к кооперативу и зарабатывайте на одном из самых высокодоходных инструментов XXI века без специальных знаний.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="second_right_menu">
+                            <img src="img/fourth_pg.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="third_block">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        
+                        <div class="third_left_menu">
+                            <img src="img/fourht_pg_second.svg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="third_right_menu">
+
+                            <div class="third_right_descr">
+
+                                <span class="third_right_gradient">
+                                    Что такое майнинг ферма и как все устроено
+                                </span>
+
+                                <div class="third_right_bold">
+                                    Как устроен майнинг: процесс, технологии, нюансы,
+                                    результат
+                                </div>
+
+                                <div class="third_right_thin">
+                                    <span class="first">
+
+                                        Майнинг — это обработка цифровых данных, которая сопровождается заработком монет (криптовалюты). Она производится на специальном оборудовании (майнинг-ферме), в составе которого обязательно есть процессор (ASIC) или видеокарта. С их помощью автоматически
+                                        производятся сложные вычисления, записываются транзакции и создается новая структура, чаще
+                                        — блок цепочки блокчейн.
+
+                                    </span>
+
+                                    <span class="second">
+                                        Эти записи (блокчейн) — одна из самых надежных систем хранения данных. Процесс их создания
+                                        сопряжен с большими энергозатратами. Поэтому за каждый созданный блок владельцу фермы начисляется вознаграждение в виде монет. Их можно продавать, менять на другие виды валют и
+                                        выводить в наличные средства.
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="third_descr_info">
+                                <span class="third_descr_line"></span>
+
+                                <span class="third_descr_text">
+                                        Промышленная добыча в составе кооператива упрощает организацию майнинга и делает его экономически более выгодным:
+                                        <br>
+                                    <span class="third_descr_list">
+                                        • Оборудование и электроэнергия стоят дешевле. <br>
+                                        • Техника дает большую суточную выработку и больший доход. <br>
+                                        • Конвертация, продажа и вывод средств происходят <br>автоматически
+                                    </span>
+                                </span>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info_block">
+
+                        <div class="info_block_content">
+
+                            <div class="info_block_icon">
+                                <img src="icons/info_icon.svg" alt="">
+                            </div>
+
+                            <div class="info_block_text">
+                                <span class="info_text_bold">Для того чтобы начать зарабатывать на майнинге, необязательно разбираться в технологии и инвестировать в целую ферму.</span> Достаточно вступить в кооператив и внести паевой взнос. Решением технических вопросов и прочих нюансов займутся инженеры под личным контролем
+                                правления и пайщиков кооператива.
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--todo cooperative-->
+
+    <section id="coop">
+
+        <div class="coop_page">
+            <div class="container">
+                <div class="coop_title">
+                    <span class="coop_suit">
+                        Для кого подходит
+                    </span>
+                    <div class="coop_bold">
+                        Майнинг в кооперативе — пассивный доход <br>
+                        под любую задачу
+                    </div>
+                    <span class="coop_thin">
+                        «Цифровой путь» — маршрут получения прибыли, который станет лучшим сразу для нескольких <br>
+                         категорий пайщиков.
+                    </span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="coop_icon_content">
+                            <span class="coop_icon">
+                                <img src="icons/coop1.svg" alt="">
+                            </span>
+
+                            <div class="icon_bold">
+                                Начинающие
+                                инвесторы
+                            </div>
+                            <div class="icon_text">
+                                Диверсифицируйте свой портфель. Размещайте свободные
+                                средства в майнинг с минимальным риском и без специальных знаний. Получайте пассивный доход.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="coop_icon_content">
+                            <span class="coop_icon">
+                                <img src="icons/coop2.svg" alt="">
+                            </span>
+
+                            <div class="icon_bold">
+                                Желающие выйти
+                                на крипторынок
+                            </div>
+                            <div class="icon_text">
+                                Получайте Биткоины и другие
+                                монеты для
+                                последующих сделок или операций, не погружаясь в работу
+                                с техникой и без риска
+                                столкнуться
+                                с мошенничеством.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="coop_icon_content">
+                            <span class="coop_icon">
+                                <img src="icons/coop3.svg" alt="">
+                            </span>
+
+                            <div class="icon_bold">
+                                Нуждающиеся
+                                в валюте
+                            </div>
+                            <div class="icon_text">
+                                Зарабатывайте монеты. Меняйте
+                                на нужную валюту. Тратьте на
+                                собственные нужды или переводите
+                                в любое государство мира без ограничений по сумме и
+                                назначению.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+<!--    todo join-->
+
+    <section id="join">
+
+        <div class="join_content">
+
+            <div class="container-fluid">
+                <div class="row">
+                        <div class="left_block">
+                            <div class="title">
+                                Используйте преимущества майнинга
+                                в кооперативе для получения дохода
+                            </div>
+
+                            <div class="button">
+                                <a href="#">
+                                    <button class="join_button">
+                                        Вступить в кооператив
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                    <div class="col-md-6 offset-md-6">
+                        <div class="right_block">
+                            <div class="right_block_info">
+
+                                <div class="ruble_block">
+                                    <div class="ruble_block_icon">
+                                        <img class="ruble_icon" src="icons/ruble-sign.svg" alt="ruble">
+                                    </div>
+                                    <div class="ruble_block_text">
+                                        <div class="bold_text">
+                                            Вход от 5000 руб.
+                                        </div>
+                                        Вход в мир криптовалют возможен с небольшим стартовым капиталом.
+                                    </div>
+                                </div>
+
+                                <div class="ruble_block">
+                                    <div class="ruble_block_icon">
+                                        <img class="ruble_icon" src="icons/ruble-sign.svg" alt="ruble">
+                                    </div>
+                                    <div class="ruble_block_text">
+                                        <div class="bold_text">
+                                            Быстрая окупаемость
+                                        </div>
+                                        Быстрый возврат первоначальных вложений
+                                    </div>
+                                </div>
+
+                                <div class="ruble_block">
+                                    <div class="ruble_block_icon">
+                                        <img class="ruble_icon" src="icons/ruble-sign.svg" alt="ruble">
+                                    </div>
+                                    <div class="ruble_block_text">
+                                        <div class="bold_text">
+                                            Высокая доходность
+                                        </div>
+                                        Доходность майнинга доходит до 40-50% годовых.
+                                    </div>
+                                </div>
+
+                                <div class="ruble_block">
+                                    <div class="ruble_block_icon">
+                                        <img class="ruble_icon" src="icons/ruble-sign.svg" alt="ruble">
+                                    </div>
+                                    <div class="ruble_block_text">
+                                        <div class="bold_text">
+                                            Абсолютно легально
+                                        </div>
+                                        Майнинг криптовалют стал законным в РФ с 2020 г.
+                                        N 259-ФЗ от 31.07.2020 г.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+<!--    todo income-->
+    <section id="income">
+
+        <div class="income_page">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="income_left_block">
+                            <span class="income_gradient">
+                                Сколько можно заработать
+                            </span>
+
+                            <div class="income_bold">
+                                Средняя доходность
+                                майнинга  криптовалют в кооперативе 32% годовых
+                            </div>
+
+                            <div class="income_thin">
+                                Эксперты «ИЛМА» сделали стартовую закупку оборудования, протестировали эффективность
+                                выбранной стратегии и провели ряд собственных расчетов. Согласно данным последних 2 лет,
+                                средняя доходность инвестиций в майнинг Биткоина составляет 32% годовых.
+                            </div>
+
+                            <div class="question">
+                                <div class="mini_bold">
+                                    Почему инвестирование в майнинг выгодно?
+                                </div>
+                                <div class="income_thin">
+                                    • Низкий порог входа в члены кооператива - от 10000 руб. <br>
+                                    • Доходность майнинга значительно превышает показатели доходности любых банковских вкладов, облигаций и многих других ценных бумаг.
+                                    <br>
+                                    • Исключен человеческий фактор - все процессы полностью автоматизированы
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="income_right_block">
+                            <div class="income_img">
+                                <img src="img/fifth.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="income_data">
+                        *  Согласно историческим данным доходность от майнинга превышала доходность среднего банковского вклада в течении 95% времени. С 01.01.2020 по 01.08.2022
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!--    todo method-->
+    <section id="method">
+        <div class="container">
+
+            <div class="method_block">
+
+                <div class="method_title">
+                    <div class="title_bold">
+                        Классические методы инвестирования уже не столь эффективны
+                    </div>
+                    <div class="title_thin">
+                        То, что раньше приносило доход, было доступным и надежным, оказалось заблокировано или
+                        сопряжено высоким риском.
+                    </div>
+                </div>
+
+                    <div class="method_card">
+
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="card">
+                                    <span class="card_icon">
+                                        <img src="icons/card1.svg" alt="">
+                                    </span>
+                                    <div class="card_text">
+                                        <span class="card_text_bold">
+                                            Банковские вклады
+                                        </span>
+                                        <div class="card_text_thin">
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Низкие доходности <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Зависимость % от суммы вклада <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Привязка к уровню инфляции <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Зависимость % от ставки ЦБ <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Заморозка средств на период вклада <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Потеря % при досрочном изъятии <br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="card">
+                                    <span class="card_icon">
+                                        <img src="icons/card2.svg" alt="">
+                                    </span>
+                                    <div class="card_text">
+                                        <span class="card_text_bold">
+                                            Фондовый рынок
+                                        </span>
+
+                                        <div class="card_text_thin">
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span>
+                                            Нет гарантии прибыли
+                                            <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span>
+                                            Высокие риски и издержки
+                                            <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span>
+                                            Вероятность блокировки доступа
+                                            <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span>
+                                            Вероятность задержки выплат %
+                                            <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span>
+                                            Нужны специальные знания
+                                            <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span>
+                                            Активная стратегия управления
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="card">
+                                    <span class="card_icon">
+                                        <img src="icons/card1.svg" alt="">
+                                    </span>
+                                    <div class="card_text">
+                                        <span class="card_text_bold">
+                                            Банковские вклады
+                                        </span>
+                                        <div class="card_text_thin">
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Низкие доходности <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Зависимость % от суммы вклада <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Привязка к уровню инфляции <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Зависимость % от ставки ЦБ <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Заморозка средств на период вклада <br>
+                                            <span class="card_line">
+                                                <img src="icons/card_line.svg" alt="">
+                                            </span> Потеря % при досрочном изъятии <br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<!--    todo revenue-->
+    <section id="revenue">
+
+        <div class="revenue_block">
+
+            <div class="container">
+
+                <div class="revenue_content">
+
+                    <div class="revenue_title">
+
+                        <div class="revenue_bold">
+                            Распределение рисков и ожидаемой доходности
+                        </div>
+                        На данный момент, наиболее эффективной инвестицией по соотношению риск/доходность является майнинг криптовалюты.
+
+                    </div>
+
+                    <div class="revenue_chart">
+
+                        <img src="icons/revenue_block.svg" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!--    todo rights-->
+    <section id="rights">
+
+        <div class="rights_block">
+
+            <div class="rights_title">
+
+                <span class="rights_gradient">
+                    Преимущества кооператива
+                </span>
+
+                <div class="rights_bold">
+                    Майнинг в ПК «Цифровой путь» — надежно, безопасно, без хлопот
+                </div>
+
+                <div class="rights_thin">
+
+                    Вступление в кооператив исключает все виды рисков, кроме рыночных. А рыночные снижены до
+                    минимума за счет профессионального управления кооператива и его активами.
+
+                </div>
+
+            </div>
+
+            <div class="rights_content_cards">
+
+                <div class="rights_card">
+
+                    <span class="rights_icon">
+                        <img src="img/rights_icon.svg" alt="">
+                    </span>
+
+                    <div class="bold_text">
+                        Ваши права защищены
+                    </div>
+
+                    <div class="thin_text">
+                        Деятельность ПК «Цифровой путь» регулируется федеральным законом «О потребительской
+                        кооперации в РФ».
+                    </div>
+
+                </div>
+
+                <div class="rights_card">
+
+                    <span class="rights_icon">
+                        <img src="img/rights_icon.svg" alt="">
+                    </span>
+
+                    <div class="bold_text">
+                        У вас легальный доход
+                    </div>
+
+                    <div class="thin_text">
+                        Промышленный майнинг находится в «белой зоне», легален, кооператив регулярно платит НДФЛ за каждого пайщика.
+                    </div>
+
+                </div>
+
+                <div class="rights_card">
+
+                    <span class="rights_icon">
+                        <img src="img/rights_icon.svg" alt="">
+                    </span>
+
+                    <div class="bold_text">
+                        Надежный партнер
+                    </div>
+
+                    <div class="thin_text">
+                        Ассоциация «Илма» имеет большой опыт работы в нише,
+                        безупречную репутацию и дорожит ею.
+                    </div>
+
+                </div>
+
+                <div class="rights_card">
+
+                    <span class="rights_icon">
+                        <img src="img/rights_icon.svg" alt="">
+                    </span>
+
+                    <div class="bold_text">
+                        Вы участвуете в процессе
+                    </div>
+
+                    <div class="thin_text">
+                        Все пайщики участвуют в принятии решений и получают
+                        регулярную отчетность о результатах работы ПК.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!--    todo application-->
+    <section id="application">
+
+        <div class="application_block">
+
+            <div class="application_content">
+
+                <div class="application_bold">
+                    Подайте заявку и получите первый доход уже через 30 дней после вступления в кооператив.
+                </div>
+
+                <div class="application_radios">
+                    <div class="now">
+                        <input type="radio" name=phone" id="now" class="radio_buttons">
+                        Перезвонить сейчас
+                    </div>
+
+                    <div class="later">
+                        <input type="radio" name="phone" id="later" class="radio_buttons">
+                        Выбрать удобное время
+                    </div>
+                </div>
+                
+                <div class="application_send">
+
+                    <input class="num_input" name="" placeholder="+7 (000) 000-00-00">
+
+                    <button class="application_btn">
+                        Оставить заявку
+                    </button>
+
+                    <div class="approve">
+                        <input type="checkbox" name="">
+                        Я даю согласие на обработку персональных данных
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!--    todo six-slider-->
+
+    <section id="six_slider">
+
+        <div class="middle_slider">
+
+            <div class="container">
+
+                <div class="slider_inner">
+
+                    <div class="first_slider">
+
+                        <div class="slider_title">
+
+                            <div class="title_gradient">
+                                Как устроен кооператив
+                            </div>
+
+                            <div class="title_bold">
+                                От запуска до распределения дохода
+                            </div>
+
+                            <div class="title_thin">
+                                Наши кооперативы работают с деньгами вкладчиков 14+ лет. У нас есть репутация, умения, ресурсы. Мы не стартап и не молодые выскочки. просто вместо выдачи займов мы покупаем оборудование и добываем криптовалюты.
+                            </div>
+
+                        </div>
+
+                        <div class="slider">
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    
+                                    <div class="slider_img">
+                                        <img src="img/middle_slider/frame.svg" alt="" class="img">
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="slider_text">
+                                        <div class="text_bold">
+                                            Общее собрание пайщиков
+                                        </div>
+                                        <div class="text_info">
+                                            На регулярно проводимых собраниях пайщиков  принимаются все важные решения:
+                                        </div>
+                                        <div class="text_list">
+                                            • Согласовывание сметы <br>
+                                            • Выбор председателя и администрации <br>
+                                            • Обсуждение и утверждение всех сделок <br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="first_slider">
+
+                        <div class="slider_title">
+
+                            <div class="title_gradient">
+                                Как устроен кооператив
+                            </div>
+
+                            <div class="title_bold">
+                                От запуска до распределения дохода
+                            </div>
+
+                            <div class="title_thin">
+                                Наши кооперативы работают с деньгами вкладчиков 14+ лет. У нас есть репутация, умения, ресурсы. Мы не стартап и не молодые выскочки. просто вместо выдачи займов мы покупаем оборудование и добываем криптовалюты.
+                            </div>
+
+                        </div>
+
+                        <div class="slider">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="slider_img">
+                                        <img src="img/middle_slider/frame.svg" alt="" class="img">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="slider_text">
+                                        <div class="text_bold">
+                                            Общее собрание пайщиков
+                                        </div>
+                                        <div class="text_info">
+                                            На регулярно проводимых собраниях пайщиков  принимаются все важные решения:
+                                        </div>
+                                        <div class="text_list">
+                                            • Согласовывание сметы <br>
+                                            • Выбор председателя и администрации <br>
+                                            • Обсуждение и утверждение всех сделок <br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="first_slider">
+
+                        <div class="slider_title">
+
+                            <div class="title_gradient">
+                                Как устроен кооператив
+                            </div>
+
+                            <div class="title_bold">
+                                От запуска до распределения дохода
+                            </div>
+
+                            <div class="title_thin">
+                                Наши кооперативы работают с деньгами вкладчиков 14+ лет. У нас есть репутация, умения, ресурсы. Мы не стартап и не молодые выскочки. просто вместо выдачи займов мы покупаем оборудование и добываем криптовалюты.
+                            </div>
+
+                        </div>
+
+                        <div class="slider">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="slider_img">
+                                        <img src="img/middle_slider/frame.svg" alt="" class="img">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="slider_text">
+                                        <div class="text_bold">
+                                            Общее собрание пайщиков
+                                        </div>
+                                        <div class="text_info">
+                                            На регулярно проводимых собраниях пайщиков  принимаются все важные решения:
+                                        </div>
+                                        <div class="text_list">
+                                            • Согласовывание сметы <br>
+                                            • Выбор председателя и администрации <br>
+                                            • Обсуждение и утверждение всех сделок <br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="first_slider">
+
+                        <div class="slider_title">
+
+                            <div class="title_gradient">
+                                Как устроен кооператив
+                            </div>
+
+                            <div class="title_bold">
+                                От запуска до распределения дохода
+                            </div>
+
+                            <div class="title_thin">
+                                Наши кооперативы работают с деньгами вкладчиков 14+ лет. У нас есть репутация, умения, ресурсы. Мы не стартап и не молодые выскочки. просто вместо выдачи займов мы покупаем оборудование и добываем криптовалюты.
+                            </div>
+
+                        </div>
+
+                        <div class="slider">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="slider_img">
+                                        <img src="img/middle_slider/frame.svg" alt="" class="img">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="slider_text">
+                                        <div class="text_bold">
+                                            Общее собрание пайщиков
+                                        </div>
+                                        <div class="text_info">
+                                            На регулярно проводимых собраниях пайщиков  принимаются все важные решения:
+                                        </div>
+                                        <div class="text_list">
+                                            • Согласовывание сметы <br>
+                                            • Выбор председателя и администрации <br>
+                                            • Обсуждение и утверждение всех сделок <br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="first_slider">
+
+                        <div class="slider_title">
+
+                            <div class="title_gradient">
+                                Как устроен кооператив
+                            </div>
+
+                            <div class="title_bold">
+                                От запуска до распределения дохода
+                            </div>
+
+                            <div class="title_thin">
+                                Наши кооперативы работают с деньгами вкладчиков 14+ лет. У нас есть репутация, умения, ресурсы. Мы не стартап и не молодые выскочки. просто вместо выдачи займов мы покупаем оборудование и добываем криптовалюты.
+                            </div>
+
+                        </div>
+
+                        <div class="slider">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="slider_img">
+                                        <img src="img/middle_slider/frame.svg" alt="" class="img">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="slider_text">
+                                        <div class="text_bold">
+                                            Общее собрание пайщиков
+                                        </div>
+                                        <div class="text_info">
+                                            На регулярно проводимых собраниях пайщиков  принимаются все важные решения:
+                                        </div>
+                                        <div class="text_list">
+                                            • Согласовывание сметы <br>
+                                            • Выбор председателя и администрации <br>
+                                            • Обсуждение и утверждение всех сделок <br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="first_slider">
+
+                        <div class="slider_title">
+
+                            <div class="title_gradient">
+                                Как устроен кооператив
+                            </div>
+
+                            <div class="title_bold">
+                                От запуска до распределения дохода
+                            </div>
+
+                            <div class="title_thin">
+                                Наши кооперативы работают с деньгами вкладчиков 14+ лет. У нас есть репутация, умения, ресурсы. Мы не стартап и не молодые выскочки. просто вместо выдачи займов мы покупаем оборудование и добываем криптовалюты.
+                            </div>
+
+                        </div>
+
+                        <div class="slider">
+
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="slider_img">
+                                        <img src="img/middle_slider/frame.svg" alt="" class="img">
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
+                                    <div class="slider_text">
+                                        <div class="text_bold">
+                                            Общее собрание пайщиков
+                                        </div>
+                                        <div class="text_info">
+                                            На регулярно проводимых собраниях пайщиков  принимаются все важные решения:
+                                        </div>
+                                        <div class="text_list">
+                                            • Согласовывание сметы <br>
+                                            • Выбор председателя и администрации <br>
+                                            • Обсуждение и утверждение всех сделок <br>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+        
+    </section>
+
+
+<!--    todo youtube should be done but not finished-->
+<!--    <section id="youtube">-->
+
+<!--        <div class="youtube_block">-->
+
+<!--            <div class="youtube_content">-->
+
+
+
+<!--            </div>-->
+
+<!--        </div>-->
+
+<!--    </section>-->
+
+    <section id="answers">
+
+        <div class="answers_block">
+
+            <div class="answers_title">
+
+                <div class="answers_gradient">
+                    Вопросы - ответы
+                </div>
+                <div class="answers_title">
+                    Ответы на частые вопросы о майнинге,
+                    криптовалютах и работе
+                    ПК
+                </div>
+
+            </div>
+
+            <div class="answers_content">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Когда я получу первый доход от майнинга?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="answer_dropdown_content">
+                                    Иногда курс падает, а расходы превышают доходы. Но согласно законам крипторынка, и тут есть
+                                    выгода. Непрофессиональные майнеры покидают рынок, становится проще добывать монеты.
+                                    Разгружаются электросети. Техника дешевеет, открывая возможности для расширения и большего
+                                    заработка в будущем. Кооператив в такие моменты реинвестирует и растет.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Что именно я получаю, перечисляя свой паевой взнос?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Что если криптовалюта подешевеет и прибыли не будет?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Что если криптовалюта подешевеет и прибыли не будет?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Что если криптовалюта подешевеет и прибыли не будет?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Что если криптовалюта подешевеет и прибыли не будет?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFive">
+                                Что если криптовалюта подешевеет и прибыли не будет?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Что если криптовалюта подешевеет и прибыли не будет?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseEight">
+                                Что если криптовалюта подешевеет и прибыли не будет?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="advice">
+
+        <div class="advice_block">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="advice_left">
+
+                            <div class="advice_title">
+                                <div class="advice_gradient">
+                                    Остались вопросы?
+                                </div>
+
+                                <div class="advice_bold">
+                                    Получите бесплатно ответы
+                                    у финансового консультанта
+                                </div>
+                            </div>
+
+                            <div class="advice_img">
+                                <img src="img/advice.svg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="advice_right">
+
+                            <div class="advice_inputs">
+
+                                Как Вас звать?
+                                <div class="name_input">
+                                    <input type="name" placeholder="Name">
+                                </div>
+
+                                Какой способ связи предпочитаете?
+                                <div class="radio_messenger">
+                                    <div class="phone_radio">
+                                        <input type="radio" name="phone" id="phone">
+                                        Phone
+                                    </div>
+                                    <div class="telegram_radio">
+                                        <input type="radio" name="telegram" id="telegram">
+                                        Telegram
+                                    </div>
+                                    <div class="whatsapp_radio">
+                                        <input type="radio" name="whatsapp" id="whatsapp">
+                                        Whatsapp
+                                    </div>
+                                </div>
+
+                                <div class="contact_inputs">
+
+                                    <div class="phone_input">
+                                        <span>Номер телефона</span>
+                                        <input name="contact_phone" id="contact_phone" placeholder="+7(999)999-99-99">
+                                    </div>
+
+                                    <div class="time_input">
+                                        <div class="time_input_text">Выберите удобное время</div>
+                                        <input type="number" name="" id="" min="00" max="24" class="hour_input">
+                                        :
+                                        <input type="number" name="" min="00" max="60" class="minute_input">
+                                    </div>
+
+                                </div>
+    
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacts">
+
+        <div class="contact_block">
+
+            <div class="container">
+
+                <div class="contacts_content">
+
+                    <div class="contacts_title">
+
+                        <div class="contacts_gradient">
+                            Контакты
+                        </div>
+
+                        <div class="contacts_bold">
+                            Осваивайте прогрессивный финансовый инструмент вместе с КП «Цифровой путь»
+                        </div>
+
+                        <div class="contacts_thin">
+                            Оставить заявку на вступление в потребительский кооператив «Цифровой путь».
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="office_content">
+
+                    <div class="office_card">
+                        <div class="card_content">
+                            <div class="office_gradient">
+                                Офис в Москве
+                            </div>
+                            <div class="office_location">
+                                Красносельский р-н,
+                                пер. Басманный, 5
+                            </div>
+                            <div class="office_phone">
+                                <span>
+                                    <img src="icons/circle-phone.svg" alt="">
+                                </span>
+                                8-800-396-2053
+                            </div>
+                            <div class="office_mail">
+
+                                <span>
+                                    <img src="icons/circle-envelope.svg" alt="">
+                                </span>
+                                napoleon05@schuster.org
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="office_card">
+                        <div class="card_content">
+                            <div class="office_gradient">
+                                Офис в Москве
+                            </div>
+                            <div class="office_location">
+                                Красносельский р-н,
+                                пер. Басманный, 5
+                            </div>
+                            <div class="office_phone">
+                                <span>
+                                    <img src="icons/circle-phone.svg" alt="">
+                                </span>
+                                8-800-396-2053
+                            </div>
+                            <div class="office_mail">
+
+                                <span>
+                                    <img src="icons/circle-envelope.svg" alt="">
+                                </span>
+                                napoleon05@schuster.org
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="office_card">
+                        <div class="card_content">
+                            <div class="office_gradient">
+                                Офис в Москве
+                            </div>
+                            <div class="office_location">
+                                Красносельский р-н,
+                                пер. Басманный, 5
+                            </div>
+                            <div class="office_phone">
+                                <span>
+                                    <img src="icons/circle-phone.svg" alt="">
+                                </span>
+                                8-800-396-2053
+                            </div>
+                            <div class="office_mail">
+
+                                <span>
+                                    <img src="icons/circle-envelope.svg" alt="">
+                                </span>
+                                napoleon05@schuster.org
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="message_content">
+
+                    <div class="message_title">
+                        Написать нам в мессенджеры:
+                    </div>
+
+                    <div class="message_buttons">
+                        <button class="message_whatsapp">
+                            <span><img src="icons/whatsapp.svg" alt=""></span>
+                            Whatsapp
+                        </button>
+                        <button class="message_telegram">
+                            <span><img src="icons/telegram.svg" alt=""></span>
+                            Telegram
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="map_content">
+                    <div class="map_title">
+                        Наши представительства в РФ:
+                    </div>
+
+                    <div class="map" style="width: 1200px">
+
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.com/maps/geo/771288885/?ll=69.299702%2C41.293168&utm_medium=mapframe&utm_source=maps&z=11.62" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ташкент — Яндекс Карты</a><iframe src="https://yandex.com/map-widget/v1/-/CCUVVHBf~A" width="1200" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="footer">
+
+        <div class="container">
+
+            <div class="top_footer">
+
+                <div class="logo">
+                    <span class="footer_logo">
+                        <img src="icons/main_cube.svg" alt="">
+                    </span>
+                    <div class="logo_text">
+                        <span class="logo_bold">
+                            Цифровой Путь
+                        </span>
+                        потребительский кооператив
+                    </div>
+                </div>
+
+                <div class="footer_info">
+                    <div class="info_text">
+                        ПК «Цифровой путь» —  подразделение ассоциации кредитных потребительских кооперативов
+                        «Илма».
+                    </div>
+                </div>
+
+                <div class="footer_ilma">
+                    <img src="icons/ilma.svg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="bottom_footer">
+
+        <div class="container">
+
+            <div class="second_footer">
+
+                <div class="footer_year">
+                    © 2022 ПК «Цифровой путь»
+                </div>
+
+                <div class="footer_list">
+
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Про майнинг</a></li>
+                        <li><a href="#">Доходность</a></li>
+                        <li><a href="#">Кооператив</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="policy">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
     <script src="js/script.js"></script>
+
+
+
 </body>
 </html>
