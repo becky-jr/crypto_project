@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Title</title>
     <!--  Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -12,7 +13,7 @@
 </head>
 <body>
 
-    <header class="header" >
+    <header class="header">
 
 <!--        <div class="nav">-->
 <!--            <div class="logo">-->
@@ -51,6 +52,7 @@
                     </a>
                 </div>
 
+
                 <div class="nav_menu">
                     <ul>
                         <li class="list_item" ><a class="menu_link" href="#">О нас</a></li>
@@ -71,6 +73,12 @@
                         <span class="telegram-logo">
                         <a href="#"><img src="icons/telegram.svg" alt=""></a>
                     </span>
+                </div>
+
+                <div class="hamburger">
+                    <span class="header_burger"></span>
+                    <span class="header_burger"></span>
+                    <span class="header_burger"></span>
                 </div>
 
             </div>
@@ -523,9 +531,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="coop_icon_content">
-                            <span class="coop_icon">
+                            <div class="coop_icon">
                                 <img src="icons/coop1.svg" alt="">
-                            </span>
+                            </div>
 
                             <div class="icon_bold">
                                 Начинающие
@@ -539,9 +547,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="coop_icon_content">
-                            <span class="coop_icon">
+                            <div class="coop_icon">
                                 <img src="icons/coop2.svg" alt="">
-                            </span>
+                            </div>
 
                             <div class="icon_bold">
                                 Желающие выйти
@@ -559,9 +567,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="coop_icon_content">
-                            <span class="coop_icon">
+                            <div class="coop_icon">
                                 <img src="icons/coop3.svg" alt="">
-                            </span>
+                            </div>
 
                             <div class="icon_bold">
                                 Нуждающиеся
@@ -666,6 +674,12 @@
             </div>
 
         </div>
+
+    </section>
+
+<!--    todo join-->
+
+    <section id="history">
 
     </section>
 
@@ -896,7 +910,9 @@
 
                     <div class="revenue_chart">
 
-                        <img src="icons/revenue_block.svg" alt="">
+                        <img src="icons/revenue_block.svg" class="desktop_chart" alt="">
+
+                        <img src="icons/icons_mobile.svg" class="mobile_chart" alt="">
 
                     </div>
 
@@ -940,29 +956,15 @@
                         <img src="img/rights_icon.svg" alt="">
                     </span>
 
-                    <div class="bold_text">
-                        Ваши права защищены
-                    </div>
+                    <div>
+                        <div class="bold_text">
+                            Ваши права защищены
+                        </div>
 
-                    <div class="thin_text">
-                        Деятельность ПК «Цифровой путь» регулируется федеральным законом «О потребительской
-                        кооперации в РФ».
-                    </div>
-
-                </div>
-
-                <div class="rights_card">
-
-                    <span class="rights_icon">
-                        <img src="img/rights_icon.svg" alt="">
-                    </span>
-
-                    <div class="bold_text">
-                        У вас легальный доход
-                    </div>
-
-                    <div class="thin_text">
-                        Промышленный майнинг находится в «белой зоне», легален, кооператив регулярно платит НДФЛ за каждого пайщика.
+                        <div class="thin_text">
+                            Деятельность ПК «Цифровой путь» регулируется федеральным законом «О потребительской
+                            кооперации в РФ».
+                        </div>
                     </div>
 
                 </div>
@@ -973,13 +975,14 @@
                         <img src="img/rights_icon.svg" alt="">
                     </span>
 
-                    <div class="bold_text">
-                        Надежный партнер
-                    </div>
+                    <div>
+                        <div class="bold_text">
+                            У вас легальный доход
+                        </div>
 
-                    <div class="thin_text">
-                        Ассоциация «Илма» имеет большой опыт работы в нише,
-                        безупречную репутацию и дорожит ею.
+                        <div class="thin_text">
+                            Промышленный майнинг находится в «белой зоне», легален, кооператив регулярно платит НДФЛ за каждого пайщика.
+                        </div>
                     </div>
 
                 </div>
@@ -990,13 +993,34 @@
                         <img src="img/rights_icon.svg" alt="">
                     </span>
 
-                    <div class="bold_text">
-                        Вы участвуете в процессе
+                    <div>
+                        <div class="bold_text">
+                            Надежный партнер
+                        </div>
+
+                        <div class="thin_text">
+                            Ассоциация «Илма» имеет большой опыт работы в нише,
+                            безупречную репутацию и дорожит ею.
+                        </div>
                     </div>
 
-                    <div class="thin_text">
-                        Все пайщики участвуют в принятии решений и получают
-                        регулярную отчетность о результатах работы ПК.
+                </div>
+
+                <div class="rights_card">
+
+                    <span class="rights_icon">
+                        <img src="img/rights_icon.svg" alt="">
+                    </span>
+
+                    <div>
+                        <div class="bold_text">
+                            Вы участвуете в процессе
+                        </div>
+
+                        <div class="thin_text">
+                            Все пайщики участвуют в принятии решений и получают
+                            регулярную отчетность о результатах работы ПК.
+                        </div>
                     </div>
 
                 </div>
@@ -1044,10 +1068,12 @@
                     </div>
 
                 </div>
-
+                
             </div>
 
         </div>
+
+        <img src="img/family_mobile.svg" alt="mobile_family" class="mobile_family">
 
     </section>
 
@@ -1606,11 +1632,16 @@
 
                                     <div class="time_input">
                                         <div class="time_input_text">Выберите удобное время</div>
-                                        <input type="number" name="" id="" min="00" max="24" class="hour_input">
-                                        :
-                                        <input type="number" name="" min="00" max="60" class="minute_input">
-                                    </div>
+                                        <input type="time" name="" id="" min="00" max="24" class="hour_input"
+                                         value="16:00">
 
+                                    </div>
+                                    
+
+                                </div>
+                                <div class="check_input">
+                                    <input type="checkbox" name="">
+                                    Я даю согласие на <a href="#">обработку персональных данных</a>
                                 </div>
     
                             </div>
@@ -1644,7 +1675,7 @@
                         </div>
 
                         <div class="contacts_thin">
-                            Оставить заявку на вступление в потребительский кооператив «Цифровой путь».
+                            <a href="#">Оставить заявку</a> на вступление в потребительский кооператив «Цифровой путь».
                         </div>
 
                     </div>
@@ -1742,11 +1773,15 @@
                     <div class="message_buttons">
                         <button class="message_whatsapp">
                             <span><img src="icons/whatsapp.svg" alt=""></span>
-                            Whatsapp
+                            <a href="#">
+                                Whatsapp
+                            </a>
                         </button>
                         <button class="message_telegram">
                             <span><img src="icons/telegram.svg" alt=""></span>
-                            Telegram
+                            <a href="#">
+                                Telegram
+                            </a>
                         </button>
                     </div>
 
