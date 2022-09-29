@@ -3147,3 +3147,128 @@ header {
   }
 
 }
+
+.form_popup {
+
+    max-width: 620px;
+    margin: 100px auto;
+
+    border-radius: 3px 3px 0 0;
+    border: 1px solid;
+
+    .popup_logo {
+      margin: 16px 25px 16px 15px;
+
+      .logo {
+        display: flex;
+        justify-content: space-between;
+
+        .logo_cancel_button {
+          transform: rotate(135deg);
+        }
+      }
+
+    }
+
+    .phone_content {
+      background: #F8F8F8;
+      //box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
+      padding: 40px 50px 60px;
+
+
+      .popup_title {
+        padding: 0 0 35px;
+
+        font-family: 'Uni Neue Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+
+        color: #000000;
+      }
+
+      .popup_inputs {
+
+        font-family: 'Uni Neue Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+
+        color: #262626;
+
+        .name_input {
+          input {
+            border: 2px solid #EBEBEB;
+            border-radius: 2px;
+            padding: 15px 300px 15px 20px;
+            margin: 5px 0 25px;
+            background: #ffffff;
+          }
+        }
+
+        .radio_messenger {
+          margin: 5px 0 30px;
+          display: flex;
+
+          .phone_radio, .telegram_radio, .whatsapp_radio {
+            margin-right: 20px;
+            font-family: 'Uni Neue Thin';
+
+          }
+        }
+
+        .contact_inputs {
+          display: flex;
+          //justify-content: space-between;
+
+          .phone_input {
+            width: 240px;
+            margin-right: 20px;
+
+            input {
+              padding: 15px 65px 15px 20px;
+              border: 2px solid #EBEBEB;
+              border-radius: 2px;
+              background: #ffffff;
+            }
+          }
+
+          .time_input {
+
+            input {
+              padding: 14px 20px;
+              border: 2px solid #EBEBEB;
+              background: #ffffff;
+            }
+
+          }
+        }
+
+        .phone_popup_button {
+          margin: 25px 0 15px;
+          background-color: #33CC80;
+          color: #FFFFFF;
+          border-radius: 3px;
+          border: none;
+          padding: 15px 70px;
+        }
+
+        .check_input {
+          font-family: "Uni Neue Thin";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          color: #262626;
+          a {
+            color: #262626;
+          }
+        }
+
+
+      }
+
+
+
+    }
+
+}
