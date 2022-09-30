@@ -360,7 +360,7 @@ header {
 
   .main_page_bottom {
     width: 1440px;
-    padding: 80px 0 0 100px;
+    padding: 80px 0 0 0;
     margin: 0 auto;
     border-top: 1px solid $white_grey;
 
@@ -376,7 +376,7 @@ header {
           height: 90px;
           border-radius: 50px;
           .statistics_icon {
-            padding: 33px;
+            padding: 32px;
           }
         }
 
@@ -3084,6 +3084,7 @@ header {
 
       .name_input {
         input {
+          font-family: 'Uni Neue Thin';
           border: 2px solid #EBEBEB;
           border-radius: 2px;
           padding: 15px 300px 15px 20px;
@@ -3146,6 +3147,73 @@ header {
 
   }
 
+}
+
+
+// phone popup media
+@media screen and (max-width: 500px){
+  .phone_popup {
+    width: 310px;
+
+    .popup_logo {
+      margin: 16px 10px 16px 15px;
+      overflow-x: hidden;
+
+      .logo {
+        overflow: hidden;
+      }
+
+      .logo {
+        a {
+          img {
+            width: 200px;
+
+          }
+        }
+        span {
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+
+    .phone_content {
+
+      padding: 40px 30px 40px;
+
+      .popup_title {
+        font-size: 20px;
+        padding: 0 0 25px;
+      }
+
+      .popup_inputs {
+
+        .name_input {
+
+          input {
+            padding: 10px 82px 14px 22px;
+          }
+
+        }
+
+        .contact_inputs {
+          display: block;
+
+        }
+
+        .phone_popup_button {
+          padding: 15px 85px;
+        }
+
+        .check_input {
+          font-size: 10px;
+        }
+
+      }
+
+    }
+  }
 }
 
 .form_popup {
@@ -3271,4 +3339,164 @@ header {
 
     }
 
+}
+
+// form popup media
+@media screen and (max-width: 500px){
+  .form_popup {
+    width: 324px;
+
+
+    .popup_logo {
+      margin: 16px 15px;
+
+      .logo {
+        overflow: hidden;
+        a {
+          img {
+            width: 200px;
+          }
+        }
+      }
+
+
+    }
+
+    .phone_content {
+
+      padding: 30px;
+
+      .popup_title {
+        font-size: 20px;
+      }
+
+      .popup_inputs {
+        .name_input {
+
+          input {
+            padding: 15px 90px 15px 20px
+          }
+
+        }
+
+        .contact_inputs {
+          display: block;
+        }
+
+        .phone_popup_button {
+          padding: 15px 53px;
+        }
+
+        .check_input {
+          font-size: 10px;
+        }
+
+      }
+
+
+    }
+
+  }
+}
+
+
+
+// confidential popup
+.confidential_popup {
+  max-width: 900px;
+  margin: 100px auto;
+
+  border-radius: 3px 3px 0 0;
+  border: 1px solid;
+
+  .popup_logo {
+    background: #F8F8F8;
+
+    padding: 16px 25px 16px 15px;
+
+    .logo {
+      display: flex;
+      justify-content: space-between;
+
+      .logo_cancel_button {
+        transform: rotate(135deg);
+      }
+    }
+
+  }
+
+  .confidential_content {
+    padding: 40px 50px 60px;
+    height: 600px;
+
+
+    .content_title {
+      font-family: 'Uni Neue Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+
+      color: #000000;
+    }
+
+    .laws {
+
+      .low_title {
+        padding: 30px 0 15px;
+        font-family: 'Uni Neue Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+
+        color: #000000;
+      }
+
+
+
+    }
+
+  }
+
+}
+@media screen and (max-width: 500px){
+  .confidential_popup {
+    width: 350px;
+
+    .popup_logo {
+
+      .logo {
+        overflow: hidden;
+
+        a {
+          img {
+            width: 260px;
+          }
+        }
+      }
+    }
+
+    .confidential_content {
+      padding: 20px;
+
+      .content_title {
+        font-size: 20px;
+      }
+
+      .laws {
+
+        .low_card {
+
+          .low_title {
+            font-size: 14px;
+          }
+
+          .low_text {
+            font-size: 10px;
+          }
+
+        }
+
+      }
+    }
+  }
 }
