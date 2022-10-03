@@ -366,6 +366,9 @@ header {
   .second_page .right_menu {
     margin-top: 30px;
   }
+  .second_page .right_menu .right_img img {
+    width: 320px;
+  }
   .second_page .experience {
     padding: 30px 0 50px;
     justify-content: unset;
@@ -727,7 +730,7 @@ header {
   }
   .third_block .third_left_menu {
     padding: 0;
-    width: 400px;
+    width: 380px;
     margin: 0 auto;
     position: absolute;
     top: 1000px;
@@ -1166,7 +1169,7 @@ header {
   color: #262626;
 }
 .income_page .income_left_block .income_thin {
-  font-family: "Uni Neue Light";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1271,7 +1274,7 @@ header {
 }
 .method_block .method_card .card .card_text .card_text_thin {
   margin-top: 20px;
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1329,7 +1332,7 @@ header {
   display: none;
 }
 .revenue_block .revenue_content .revenue_title {
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1370,7 +1373,7 @@ header {
 }
 .rights_block .rights_title {
   padding: 0 0 150px;
-  width: 1100px;
+  width: 1200px;
   margin: 0 auto;
   text-align: left;
 }
@@ -1392,7 +1395,7 @@ header {
 }
 .rights_block .rights_title .rights_thin {
   width: 880px;
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1441,6 +1444,7 @@ header {
     font-size: 22px;
   }
   .rights_block .rights_title .rights_thin {
+    width: unset;
     font-size: 14px;
   }
   .rights_block .rights_content_cards {
@@ -1549,7 +1553,7 @@ header {
 @media screen and (max-width: 800px) {
   .application_block {
     height: unset;
-    width: 400px;
+    width: 390px;
     background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
   }
   .application_block .application_content {
@@ -1570,11 +1574,12 @@ header {
     margin: 20px 0 0;
   }
   .mobile_family {
-    width: 450px;
+    width: 385px;
     display: block;
   }
 }
 .youtube_block {
+  display: none;
   max-width: 1200px;
   margin: 100px auto 0;
 }
@@ -1777,6 +1782,16 @@ header {
 .advice_block .advice_right .advice_inputs .check_input a {
   color: #262626;
 }
+.advice_block .advice_right .advice_inputs .button_input {
+  margin-top: 20px;
+}
+.advice_block .advice_right .advice_inputs .button_input .adv_btn {
+  background: #33CC80;
+  border-radius: 3px;
+  color: #FFFFFF;
+  padding: 15px 60px;
+  border: none;
+}
 
 @media screen and (max-width: 800px) {
   .advice_block {
@@ -1820,7 +1835,7 @@ header {
 }
 .contact_block {
   background-color: #FAFAFA;
-  padding: 150px 0 0 80px;
+  padding: 150px 0 0 0;
 }
 .contact_block .contacts_content .contacts_title {
   width: 850px;
@@ -1857,6 +1872,7 @@ header {
 .contact_block .office_content {
   margin: 35px 0 50px;
   display: flex;
+  flex-wrap: wrap;
 }
 .contact_block .office_content .office_card {
   width: 380px;
@@ -1887,6 +1903,10 @@ header {
 }
 .contact_block .office_content .office_card .card_content .office_phone {
   line-height: 160%;
+}
+.contact_block .office_content .office_card .card_content .office_phone a {
+  text-decoration: none;
+  color: #000;
 }
 .contact_block .message_content {
   font-family: "Uni Neue Regular";
