@@ -62,9 +62,11 @@ const modalTrigger = document.querySelectorAll('[data-modal]'),
       modalTriggerForm = document.querySelectorAll('[data-form]'),
       modalForm = document.querySelector('.modal-form'),
       modalConfident = document.querySelectorAll('[data-confident]'),
-      confidentForm = document.querySelector('.confidential_popup');
+      confidentForm = document.querySelector('.confidential_popup'),
+      modalCloseConfident = document.querySelectorAll('[data-closeConfident]');
 
-modalTrigger.forEach(btn => {
+
+    modalTrigger.forEach(btn => {
     btn.addEventListener('click', () => {
 
             modal.classList.add('show');
@@ -105,10 +107,16 @@ modalClose.forEach(btn => {
         modal.classList.add('hide');
         modalForm.classList.remove('show');
         modalForm.classList.add('hide');
-        confidentForm.classList.remove('show');
-        confidentForm.classList.add('hide');
+
         document.body.style.overflow = '';
 
+    })
+})
+
+modalCloseConfident.forEach(btn => {
+    btn.addEventListener('click', () => {
+        confidentForm.classList.remove('show');
+        confidentForm.classList.add('hide');
     })
 })
 
