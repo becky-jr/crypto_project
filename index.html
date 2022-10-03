@@ -1048,6 +1048,11 @@
 
                     </div>
 
+                    <div class="revenue_chart_text">
+                        <img src="icons/revenue_chart_badge.svg" alt="badge">
+                        Область максимальной доходности с умеренным риском
+                    </div>
+
                 </div>
 
             </div>
@@ -1180,13 +1185,17 @@
 
                 <div class="application_radios">
                     <div class="now">
-                        <input type="radio" name="phone" id="now" class="radio_buttons">
+                        <input type="radio" name="phone" id="now" class="radio_buttons" data-timeClose>
                         Перезвонить сейчас
                     </div>
 
                     <div class="later">
-                        <input data-form type="radio" name="phone" id="later" class="radio_buttons">
+                        <input type="radio" name="phone" id="later" class="radio_buttons" data-time>
                         Выбрать удобное время
+                    </div>
+
+                    <div class="time_form">
+                        <input data-time type="time" id="radio_time">
                     </div>
                 </div>
                 
@@ -1644,7 +1653,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Что если криптовалюта подешевеет и прибыли не будет?
+                                Что если криптовалюту запретят?
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -1657,7 +1666,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Что если криптовалюта подешевеет и прибыли не будет?
+                                Что нужно для вступления в кооператив? Почему майнинг выгоднее, чем покупка криптовалюты?
                             </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
@@ -1670,7 +1679,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSix">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                Что если криптовалюта подешевеет и прибыли не будет?
+                                Почему майнинг выгоднее, чем покупка криптовалюты?
                             </button>
                         </h2>
                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -1683,7 +1692,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSeven">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseFive">
-                                Что если криптовалюта подешевеет и прибыли не будет?
+                                Я не разбираюсь в вопросе, но хочу выйти на крипторынок. Поможет ли мне “Цифровой Путь”?
                             </button>
                         </h2>
                         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
@@ -1696,7 +1705,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingEight">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                Что если криптовалюта подешевеет и прибыли не будет?
+                                Какие виды валют можно получить в процессе майнинга?
                             </button>
                         </h2>
                         <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
@@ -1709,7 +1718,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingNine">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseEight">
-                                Что если криптовалюта подешевеет и прибыли не будет?
+                                Может быть, мне самому купить видеокарты или стойку в отеле?
                             </button>
                         </h2>
                         <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
@@ -2110,7 +2119,7 @@
                         </div>
 
                         <button class="phone_popup_button">
-                            Call me back
+                            Перезвоните мне
                         </button>
 
                         <div class="check_input">

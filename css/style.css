@@ -1360,13 +1360,22 @@ header {
 .revenue_block .revenue_content .revenue_chart {
   position: absolute;
   top: -30px;
-  left: -5%;
 }
 .revenue_block .revenue_content .revenue_chart .desktop_chart {
   width: 1200px;
 }
 .revenue_block .revenue_content .revenue_chart .mobile_chart {
   display: none;
+}
+.revenue_block .revenue_content .revenue_chart_text {
+  position: absolute;
+  top: 460px;
+  left: 400px;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #494949;
 }
 .revenue_block .revenue_content .revenue_title {
   font-family: "Uni Neue Regular";
@@ -1514,6 +1523,17 @@ header {
     font-size: 14px;
   }
 }
+.time_form {
+  display: none;
+  margin-top: 30px;
+}
+.time_form input {
+  padding: 14px 23px 13px 20px;
+  width: 180px;
+  border: 2px solid #EBEBEB;
+  border-radius: 2px;
+}
+
 .application_block {
   height: 600px;
   max-width: 1440px;
