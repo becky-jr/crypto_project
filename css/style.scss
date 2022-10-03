@@ -887,7 +887,14 @@ header {
 // SECOND BLOCK
 
 .second_block {
+  position: relative;
   padding: 150px 0 0 0;
+
+  .second_icon {
+    position: absolute;
+    top: 270px;
+    right: 700px;
+  }
 
   .second_left_menu {
     width: 700px;
@@ -1013,6 +1020,33 @@ header {
 // THIRD BLOCK
 
 .third_block {
+  position: relative;
+  .third_badge {
+    position: absolute;
+    top: 450px;
+    left: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    /* shadow */
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(7.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 3px;
+
+    display: flex;
+    width: 310px;
+    padding: 20px 30px 20px 30px;
+    div {
+      margin-left: 10px;
+      font-family: 'Uni Neue Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+
+      color: #262626;
+    }
+  }
   //padding: 150px 0 0 150px;
 
   .third_left_menu {
@@ -1682,8 +1716,15 @@ header {
 // INCOME BLOCK
 
 .income_page {
+  position: relative;
 
   padding: 120px 0 80px 0;
+
+  .fourth_badge {
+    position: absolute;
+    top: 300px;
+    right: 700px;
+  }
 
   .income_left_block {
     width: 600px;
@@ -2696,7 +2737,7 @@ header {
       background: #FFFFFF;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       border-radius: 3px;
-      margin-right: 20px;
+      margin-left: 40px;
 
       .card_content {
         padding: 50px 0 50px 50px;
@@ -2738,6 +2779,8 @@ header {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
+
+    margin: 10px 0 0 40px;
 
     color: $black;
 
@@ -3002,7 +3045,7 @@ header {
         }
 
         .title_thin {
-          font-family: 'Uni Neue Thin';
+          font-family: 'Uni Neue Regular';
           font-style: normal;
           font-weight: 500;
           font-size: 20px;
@@ -3041,7 +3084,7 @@ header {
             margin: 23px 0;
           }
           .text_info, .text_list {
-            font-family: 'Uni Neue Thin';
+            font-family: 'Uni Neue Regular';
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
@@ -3496,7 +3539,7 @@ header {
           }
 
           .check_input {
-            font-family: "Uni Neue Thin";
+            font-family: "Uni Neue Regular";
             font-style: normal;
             font-weight: 400;
             font-size: 13px;

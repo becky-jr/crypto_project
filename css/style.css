@@ -529,7 +529,13 @@ header {
   }
 }
 .second_block {
+  position: relative;
   padding: 150px 0 0 0;
+}
+.second_block .second_icon {
+  position: absolute;
+  top: 270px;
+  right: 700px;
 }
 .second_block .second_left_menu {
   width: 700px;
@@ -626,6 +632,31 @@ header {
   .second_block .second_right_menu img {
     width: 310px;
   }
+}
+.third_block {
+  position: relative;
+}
+.third_block .third_badge {
+  position: absolute;
+  top: 450px;
+  left: 500px;
+  background: rgba(255, 255, 255, 0.9);
+  /* shadow */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(7.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 3px;
+  display: flex;
+  width: 310px;
+  padding: 20px 30px 20px 30px;
+}
+.third_block .third_badge div {
+  margin-left: 10px;
+  font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #262626;
 }
 .third_block .third_left_menu {
   padding: 158px 0 0 0;
@@ -1142,7 +1173,13 @@ header {
   }
 }
 .income_page {
+  position: relative;
   padding: 120px 0 80px 0;
+}
+.income_page .fourth_badge {
+  position: absolute;
+  top: 300px;
+  right: 700px;
 }
 .income_page .income_left_block {
   width: 600px;
@@ -1879,7 +1916,7 @@ header {
   background: #FFFFFF;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
-  margin-right: 20px;
+  margin-left: 40px;
 }
 .contact_block .office_content .office_card .card_content {
   padding: 50px 0 50px 50px;
@@ -1913,6 +1950,7 @@ header {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
+  margin: 10px 0 0 40px;
   color: #262626;
 }
 .contact_block .message_content .message_buttons {
@@ -2097,7 +2135,7 @@ header {
   color: #262626;
 }
 .middle_slider .slider_inner .first_slider .slider_title .title_thin {
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -2128,7 +2166,7 @@ header {
   margin: 23px 0;
 }
 .middle_slider .slider_inner .first_slider .slider .slider_text .text_info, .middle_slider .slider_inner .first_slider .slider .slider_text .text_list {
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -2431,7 +2469,7 @@ header {
   padding: 15px 70px;
 }
 .form_popup .popup_content .form .phone_content .popup_inputs .check_input {
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
