@@ -93,11 +93,14 @@
 
     <section id="main">
         <div class="main_page">
+
+            <span class="coin">
+                <img src="img/badge.svg" alt="badge">
+            </span>
+
             <div class="container">
                 <div class="row">
-<!--                        <div class="coin">-->
-<!--                            <img src="img/badge.svg" alt="badge">-->
-<!--                        </div>-->
+
 
                     
                         <div class="col-lg-6">
@@ -111,7 +114,7 @@
                                     майнинге криптовалют.
                                 </div>
                                 <div class="main_btn">
-                                    <button class="main_menu_btn">Стать пайщиком</button>
+                                    <button data-modal class="main_menu_btn">Стать пайщиком</button>
                                 </div>
                             </div>
                         </div>
@@ -207,9 +210,9 @@
     <!-- todo ABOUT MENU -->
     <section id="about">
         <div class="second_page">
-<!--                <span class="ilma">-->
-<!--                    <img src="img/ilma.svg" alt="">-->
-<!--                </span>-->
+                <span class="ilma">
+                    <img src="icons/ilma_logo.svg" alt="">
+                </span>
             
             
                 <div class="container">
@@ -306,6 +309,10 @@
     <section id="advantages">
 
         <div class="first_block">
+            <span class="new_times">
+                <img src="icons/new_times.svg" alt="">
+            </span>
+            
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -606,11 +613,11 @@
                             </div>
 
                             <div class="button">
-                                <a href="#">
-                                    <button class="join_button">
+<!--                                <a href="#">-->
+                                    <button data-form class="join_button">
                                         Вступить в кооператив
                                     </button>
-                                </a>
+<!--                                </a>-->
                             </div>
                         </div>
 
@@ -783,6 +790,12 @@
             <span class="history_usd">
                 USD/THash
             </span>
+
+            <div class="history_btn">
+                <button data-form class="btn">
+                    Хочу так же
+                </button>
+            </div>
 
         </div>
 
@@ -1508,19 +1521,44 @@
 
 
 <!--    todo youtube should be done but not finished-->
-<!--    <section id="youtube">-->
+    <section id="youtube">
 
-<!--        <div class="youtube_block">-->
+        <div class="youtube_block">
 
-<!--            <div class="youtube_content">-->
+            <div class="youtube_content">
 
+                <div class="left_block">
 
+                    <div class="left_block_title">
+                        “Станьте частью будущего и инвестируйте в майнинг уже сегодня!
+                        <span class="bold">
+                        Уже завтра у вас будет пассивный доход.”
+                        </span>
+                    </div>
 
-<!--            </div>-->
+                    <div class="title_author">
+                        Александр Титовский, идейный вдохновитель
+                    </div>
 
-<!--        </div>-->
+                </div>
 
-<!--    </section>-->
+                <div class="right_block">
+                    <img src="img/youtube_link.svg" alt="">
+                </div>
+
+                <span class="link">
+                    <a href="https://youtu.be/V1Pl8CzNzCw">
+                        <img src="icons/youtube.svg" alt="">
+                    </a>
+                </span>
+
+<!--                <iframe style="margin: 0 auto" width="1100" height="315" src="https://www.youtube.com/embed/bo2A3GOte9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+
+            </div>
+
+        </div>
+
+    </section>
 
     <section id="answers">
 
@@ -1876,17 +1914,17 @@
                     </div>
 
                     <div class="message_buttons">
-                        <button class="message_whatsapp">
+                        <button data-form class="message_whatsapp">
                             <span><img src="icons/whatsapp.svg" alt=""></span>
-                            <a href="#">
+<!--                            <a href="#">-->
                                 Whatsapp
-                            </a>
+<!--                            </a>-->
                         </button>
-                        <button class="message_telegram">
+                        <button data-form class="message_telegram">
                             <span><img src="icons/telegram.svg" alt=""></span>
-                            <a href="#">
+<!--                            <a href="#">-->
                                 Telegram
-                            </a>
+<!--                            </a>-->
                         </button>
                     </div>
 
@@ -1899,7 +1937,9 @@
 
                     <div class="map" style="width: 1200px">
 
-                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.com/maps/geo/771288885/?ll=69.299702%2C41.293168&utm_medium=mapframe&utm_source=maps&z=11.62" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ташкент — Яндекс Карты</a><iframe src="https://yandex.com/map-widget/v1/-/CCUVVHBf~A" width="1200" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3A99b98a272033a3efe8e2aa8635ce3b68d313014d272fee3ac770bc635bb6a4ec&amp;source=constructor"
+                                width="100%" height="570" frameborder="0"></iframe>
 
                     </div>
                 </div>
@@ -1967,8 +2007,10 @@
 
                 </div>
 
-                <div class="policy">
-                    <a href="#">Политика конфиденциальности</a>
+                <div data-confident class="policy">
+<!--                    <a href="#">-->
+                        Политика конфиденциальности
+<!--                    </a>-->
                 </div>
 
 
@@ -1980,60 +2022,68 @@
     </section>
 
 
-    <div class="phone_popup">
+    <div class="phone_popup modal">
 
-        <div class="popup_logo">
+        <div class="popup_content">
 
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logo_toghether.svg" alt="">
-                </a>
-                <span class="logo_cancel_button">
+            <div class="form">
+
+                <div class="popup_logo">
+
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo_toghether.svg" alt="">
+                        </a>
+                        <span data-close class="logo_cancel_button">
                     <img src="icons/plus.svg" alt="">
                 </span>
-            </div>
-
-        </div>
-
-        <div class="phone_content">
-
-            <div class="popup_title">
-
-                Мы перезвоним вам и на ответим на все вопросы
-
-            </div>
-
-            <div class="popup_inputs">
-
-                Как Вас звать?
-                <div class="name_input">
-                    <input type="name" placeholder="Name">
-                </div>
-
-
-                <div class="contact_inputs">
-
-                    <div class="phone_input">
-                        <span>Номер телефона</span>
-                        <input name="contact_phone" placeholder="+7(999)999-99-99">
                     </div>
-
-                    <div class="time_input">
-                        <div class="time_input_text">Выберите удобное время</div>
-                        <input type="time" min="08:00:00" max="20:00:00" required value="12:30">
-
-                    </div>
-
 
                 </div>
 
-                <button class="phone_popup_button">
-                    Call me back
-                </button>
+                <div class="phone_content">
 
-                <div class="check_input">
-                    <input type="checkbox" name="">
-                    Я даю согласие на <a href="#">обработку персональных данных</a>
+                    <div class="popup_title">
+
+                        Мы перезвоним вам и на ответим на все вопросы
+
+                    </div>
+
+                    <div class="popup_inputs">
+
+                        Как Вас звать?
+                        <div class="name_input">
+                            <input type="name" placeholder="Name">
+                        </div>
+
+
+                        <div class="contact_inputs">
+
+                            <div class="phone_input">
+                                <span>Номер телефона</span>
+                                <input name="contact_phone" placeholder="+7(999)999-99-99">
+                            </div>
+
+                            <div class="time_input">
+                                <div class="time_input_text">Выберите удобное время</div>
+                                <input type="time" min="08:00:00" max="20:00:00" required value="12:30">
+
+                            </div>
+
+
+                        </div>
+
+                        <button class="phone_popup_button">
+                            Call me back
+                        </button>
+
+                        <div class="check_input">
+                            <input type="checkbox" name="">
+                            Я даю согласие на <a href="#">обработку персональных данных</a>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -2043,156 +2093,171 @@
     </div>
 
 
-    <div class="form_popup">
+    <div class="form_popup modal-form">
 
-        <div class="popup_logo">
+        <div class="popup_content">
 
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logo_toghether.svg" alt="">
-                </a>
-                <span class="logo_cancel_button">
-                    <img src="icons/plus.svg" alt="">
-                </span>
+            <div class="form">
+
+                <div class="popup_logo">
+
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo_toghether.svg" alt="">
+                        </a>
+                        <span data-close class="logo_cancel_button">
+                            <img src="icons/plus.svg" alt="">
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="phone_content">
+
+                    <div class="popup_title">
+
+                        Оставьте ваши контакты. Мы с вами свяжемся и ответим на все вопросы.
+
+                    </div>
+
+                    <div class="popup_inputs">
+
+                        Как Вас звать?
+                        <div class="name_input">
+                            <input type="name" placeholder="Name">
+                        </div>
+
+                        Какой способ связи предпочитаете?
+
+                        <div class="radio_messenger">
+                            <div class="phone_radio">
+                                <input type="radio" name="message">
+                                Phone
+                            </div>
+                            <div class="telegram_radio">
+                                <input type="radio" name="message">
+                                Telegram
+                            </div>
+                            <div class="whatsapp_radio">
+                                <input type="radio" name="message">
+                                Whatsapp
+                            </div>
+                        </div>
+
+
+                        <div class="contact_inputs">
+
+                            <div class="phone_input">
+                                <span>Номер телефона</span>
+                                <input name="contact_phone" placeholder="+7(999)999-99-99">
+                            </div>
+
+                            <div class="time_input">
+                                <div class="time_input_text">Выберите удобное время</div>
+                                <input type="time" min="08:00:00" max="20:00:00" required value="12:30">
+
+                            </div>
+
+
+                        </div>
+
+                        <button class="phone_popup_button">
+                            Получить консультацию
+                        </button>
+
+                        <div class="check_input">
+                            <input type="checkbox" name="">
+                            Я даю согласие на <a href="#">обработку персональных данных</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
-
-        <div class="phone_content">
-
-            <div class="popup_title">
-
-                Оставьте ваши контакты. Мы с вами свяжемся и ответим на все вопросы.
-
-            </div>
-
-            <div class="popup_inputs">
-
-                Как Вас звать?
-                <div class="name_input">
-                    <input type="name" placeholder="Name">
-                </div>
-
-                Какой способ связи предпочитаете?
-
-                <div class="radio_messenger">
-                    <div class="phone_radio">
-                        <input type="radio" name="message">
-                        Phone
-                    </div>
-                    <div class="telegram_radio">
-                        <input type="radio" name="message">
-                        Telegram
-                    </div>
-                    <div class="whatsapp_radio">
-                        <input type="radio" name="message">
-                        Whatsapp
-                    </div>
-                </div>
-
-
-                <div class="contact_inputs">
-
-                    <div class="phone_input">
-                        <span>Номер телефона</span>
-                        <input name="contact_phone" placeholder="+7(999)999-99-99">
-                    </div>
-
-                    <div class="time_input">
-                        <div class="time_input_text">Выберите удобное время</div>
-                        <input type="time" min="08:00:00" max="20:00:00" required value="12:30">
-
-                    </div>
-
-
-                </div>
-
-                <button class="phone_popup_button">
-                    Получить консультацию
-                </button>
-
-                <div class="check_input">
-                    <input type="checkbox" name="">
-                    Я даю согласие на <a href="#">обработку персональных данных</a>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
 
     </div>
 
     <div class="confidential_popup">
 
-        <div class="popup_logo">
-
-            <div class="logo">
-                <a href="#">
-                    <img src="img/logo_toghether.svg" alt="">
-                </a>
-                <span class="logo_cancel_button">
-                    <img src="icons/plus.svg" alt="">
-                </span>
-            </div>
-
-        </div>
-
         <div class="confidential_content">
 
-            <div class="content_title">
-                Политика в отношении обработки персональных данных
-            </div>
+            <div class="form">
 
-            <div class="laws">
+                <div class="popup_logo">
 
-                <div class="low_card">
-
-                    <div class="low_title">
-                        1. Общие положения
-                    </div>
-
-                    <div class="low_text">
-
-                        Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым Иваном Сергеевичем (далее – Оператор).
-                        <br>
-                        <br>
-                        1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
-                        1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта httpsː//thismywebsite·com.
-
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/logo_toghether.svg" alt="">
+                        </a>
+                        <span data-close class="logo_cancel_button">
+                    <img src="icons/plus.svg" alt="">
+                </span>
                     </div>
 
                 </div>
 
-                <div class="low_card">
+                <div class="confidential_content">
 
-                    <div class="low_title">
-                        1. Общие положения
+                    <div class="content_title">
+                        Политика в отношении обработки персональных данных
                     </div>
 
-                    <div class="low_text">
+                    <div class="laws">
 
-                        Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым Иваном Сергеевичем (далее – Оператор).
-                        <br>
-                        <br>
-                        1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
-                        1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта httpsː//thismywebsite·com.
+                        <div class="low_card">
+
+                            <div class="low_title">
+                                1. Общие положения
+                            </div>
+
+                            <div class="low_text">
+
+                                Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым Иваном Сергеевичем (далее – Оператор).
+                                <br>
+                                <br>
+                                1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
+                                1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта httpsː//thismywebsite·com.
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="low_card">
+
+                            <div class="low_title">
+                                1. Общие положения
+                            </div>
+
+                            <div class="low_text">
+
+                                Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Михайловым Иваном Сергеевичем (далее – Оператор).
+                                <br>
+                                <br>
+                                1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.
+                                1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта httpsː//thismywebsite·com.
+
+                            </div>
+
+                        </div>
 
                     </div>
+
+
 
                 </div>
 
             </div>
-
-
-
-        </div>
 
         </div>
 
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
 

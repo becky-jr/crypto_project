@@ -42,10 +42,7 @@ $white: #FAFAFA;
 $icons_background: #E9F5EF;
 
 // STYLESHEET
-* {
-  overflow-x: hidden;
 
-}
 
 header {
   //justify-items: center;
@@ -273,6 +270,17 @@ header {
 
 .main_page {
 
+  position: relative;
+    .coin {
+      top: 300px;
+      position: absolute;
+      left: 895px;
+      z-index: 2;
+
+    }
+
+
+
 
 
   .main_footer_text {
@@ -359,16 +367,16 @@ header {
   // todo Main Bottom
 
   .main_page_bottom {
-    width: 1440px;
+    width: 1100px;
     padding: 80px 0 0 0;
-    margin: 0 auto;
+    //margin: 0 auto;
     border-top: 1px solid $white_grey;
 
     .content {
       display: flex;
 
       .statistics {
-        width: 450px;
+        width: 340px;
         display: flex;
         .chart {
           background-color: $icons_background;
@@ -510,6 +518,25 @@ header {
   width: 100%;
 }
 .second_page {
+
+  position: relative;
+
+  .ilma {
+    padding: 25px 25px 25px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    /* shadow */
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(7.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 7px;
+
+    position: absolute;
+    top: 400px;
+    right: 700px;
+    z-index: 2;
+  }
 
   .left_menu {
     width: 600px;
@@ -670,6 +697,16 @@ header {
 
 // FIRST BLOCK
 .first_block {
+  position: relative;
+
+  .new_times {
+    position: absolute;
+    top: 400px;
+    left: 680px;
+  }
+
+
+
   .first_left_menu {
     padding: 158px 0 0 0;
     max-width: 700px;
@@ -916,7 +953,7 @@ header {
   }
 
   .second_right_menu {
-    width: 700px;
+    width: 400px;
     margin: 0 auto 0 100px;
     padding-top: 40px;
   }
@@ -1554,6 +1591,18 @@ header {
 
   }
 
+  .history_btn {
+    margin: 50px auto;
+    text-align: center;
+    .btn {
+      padding: 15px 60px;
+      border: none;
+      background: #33CC80;
+      border-radius: 3px;
+      color: #FFFFFF;
+    }
+  }
+
 
 
 }
@@ -1863,7 +1912,7 @@ header {
 
   .revenue_content {
     margin: 0 auto;
-    width: 1400px;
+    width: 1200px;
     height: 600px;
     position: relative;
     overflow-y: hidden;
@@ -1873,13 +1922,16 @@ header {
       top: -30px;
       left: -5%;
 
+      .desktop_chart {
+        width: 1200px;
+      }
       .mobile_chart {
         display: none;
       }
     }
 
     .revenue_title {
-      margin-left: 100px;
+      //padding-left: 100px;
 
       font-family: 'Uni Neue Thin';
       font-style: normal;
@@ -1938,7 +1990,7 @@ header {
 
 .rights_block {
   .rights_title {
-    padding: 150px 0 150px;
+    padding: 0 0 150px;
     width: 1100px;
     margin: 0 auto;
     text-align: left;
@@ -1979,6 +2031,10 @@ header {
 
   .rights_card {
     width: 270px;
+
+    .rights_icon {
+
+    }
 
     .bold_text {
       margin: 15px 0 20px;
@@ -2204,13 +2260,59 @@ header {
 }
 
 // todo Youtube Block
-//.youtube_block {
-//  height: 600px;
-//  max-width: 1440px;
-//  margin: 120px auto;
-//  background: url("../img/youtube_link.svg") no-repeat;
-//  overflow-y: hidden;
-//}
+.youtube_block {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  .youtube_content {
+    position: relative;
+    display: flex;
+
+
+    .link {
+      position: absolute;
+      left: 525px;
+      top: 110px;
+    }
+
+    .left_block {
+      background: #494949;
+
+      padding: 80px 100px 50px 60px;
+
+
+      width: 600px;
+
+      .left_block_title {
+        font-family: 'Uni Neue Thin';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+
+        color: #FFFFFF;
+
+        .bold {
+          font-family: 'Uni Neue Bold';
+        }
+      }
+
+      .title_author {
+        font-family: 'Uni Neue Thin';
+        color: #FFFFFF;
+      }
+    }
+
+    .right_block {
+      //height: 600px;
+      //width: 600px;
+      //background: url("../img/youtube_link.svg") no-repeat;
+      object-fit: contain;
+
+      img {
+        width: 600px;
+      }
+    }
+  }
+}
 
 // todo Answers Block
 
@@ -3034,115 +3136,140 @@ header {
 }
 
 .phone_popup {
-  max-width: 700px;
-  margin: 100px auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
 
   border-radius: 3px 3px 0 0;
   border: 1px solid;
 
-  .popup_logo {
-    margin: 16px 25px 16px 15px;
-
-    .logo {
-      display: flex;
-      justify-content: space-between;
-
-      .logo_cancel_button {
-        transform: rotate(135deg);
-      }
-    }
+  .popup_content {
+    max-width: 700px;
+    margin: 100px auto;
 
 
-  }
+    .form {
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: 4px;
+      overflow-y: auto;
 
+      .popup_logo {
+        margin: 16px 25px 16px 15px;
 
-  .phone_content {
-    background: #F8F8F8;
-    //box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
-    padding: 40px 50px 60px;
+        .logo {
+          display: flex;
+          justify-content: space-between;
 
-
-    .popup_title {
-      padding: 0 0 35px;
-
-      font-family: 'Uni Neue Bold';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 26px;
-
-      color: #000000;
-    }
-
-    .popup_inputs {
-
-      font-family: 'Uni Neue Bold';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-
-      color: #262626;
-
-      .name_input {
-        input {
-          font-family: 'Uni Neue Thin';
-          border: 2px solid #EBEBEB;
-          border-radius: 2px;
-          padding: 15px 300px 15px 20px;
-          margin: 5px 0 25px;
-          background: #ffffff;
-        }
-      }
-
-      .contact_inputs {
-        display: flex;
-        //justify-content: space-between;
-
-        .phone_input {
-          width: 240px;
-          margin-right: 20px;
-
-          input {
-            padding: 15px 65px 15px 20px;
-            border: 2px solid #EBEBEB;
-            border-radius: 2px;
-            background: #ffffff;
+          .logo_cancel_button {
+            transform: rotate(135deg);
           }
         }
 
-        .time_input {
 
-          input {
-            padding: 14px 20px;
-            border: 2px solid #EBEBEB;
-            background: #ffffff;
-          }
+      }
 
+
+      .phone_content {
+        background: #F8F8F8;
+        //box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
+        padding: 40px 50px 60px;
+
+
+        .popup_title {
+          padding: 0 0 35px;
+
+          font-family: 'Uni Neue Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 26px;
+
+          color: #000000;
         }
-      }
 
-      .phone_popup_button {
-        margin: 25px 0 15px;
-        background-color: #33CC80;
-        color: #FFFFFF;
-        border-radius: 3px;
-        border: none;
-        padding: 15px 70px;
-      }
+        .popup_inputs {
 
-      .check_input {
-        font-family: "Uni Neue Thin";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        color: #262626;
-        a {
+          font-family: 'Uni Neue Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+
           color: #262626;
+
+          .name_input {
+            input {
+              font-family: 'Uni Neue Thin';
+              border: 2px solid #EBEBEB;
+              border-radius: 2px;
+              padding: 15px 300px 15px 20px;
+              margin: 5px 0 25px;
+              background: #ffffff;
+            }
+          }
+
+          .contact_inputs {
+            display: flex;
+            //justify-content: space-between;
+
+            .phone_input {
+              width: 240px;
+              margin-right: 20px;
+
+              input {
+                padding: 15px 65px 15px 20px;
+                border: 2px solid #EBEBEB;
+                border-radius: 2px;
+                background: #ffffff;
+              }
+            }
+
+            .time_input {
+
+              input {
+                padding: 14px 20px;
+                border: 2px solid #EBEBEB;
+                background: #ffffff;
+              }
+
+            }
+          }
+
+          .phone_popup_button {
+            margin: 25px 0 15px;
+            background-color: #33CC80;
+            color: #FFFFFF;
+            border-radius: 3px;
+            border: none;
+            padding: 15px 70px;
+          }
+
+          .check_input {
+            font-family: "Uni Neue Thin";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            color: #262626;
+            a {
+              color: #262626;
+            }
+          }
+
+
         }
+
+
+
       }
-
-
     }
-
 
 
   }
@@ -3153,7 +3280,8 @@ header {
 // phone popup media
 @media screen and (max-width: 500px){
   .phone_popup {
-    width: 310px;
+    //width: 310px;
+
 
     .popup_logo {
       margin: 16px 10px 16px 15px;
@@ -3218,126 +3346,152 @@ header {
 
 .form_popup {
 
-    max-width: 620px;
-    margin: 100px auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
+
+
 
     border-radius: 3px 3px 0 0;
     border: 1px solid;
 
-    .popup_logo {
-      margin: 16px 25px 16px 15px;
+  .popup_content {
+    max-width: 620px;
+    margin: 3% auto;
 
-      .logo {
-        display: flex;
-        justify-content: space-between;
+    .form {
 
-        .logo_cancel_button {
-          transform: rotate(135deg);
-        }
-      }
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: 4px;
+      overflow-y: auto;
 
-    }
+      .popup_logo {
+        margin: 16px 25px 16px 15px;
 
-    .phone_content {
-      background: #F8F8F8;
-      //box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
-      padding: 40px 50px 60px;
+        .logo {
+          display: flex;
+          justify-content: space-between;
 
-
-      .popup_title {
-        padding: 0 0 35px;
-
-        font-family: 'Uni Neue Bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-
-        color: #000000;
-      }
-
-      .popup_inputs {
-
-        font-family: 'Uni Neue Bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-
-        color: #262626;
-
-        .name_input {
-          input {
-            border: 2px solid #EBEBEB;
-            border-radius: 2px;
-            padding: 15px 300px 15px 20px;
-            margin: 5px 0 25px;
-            background: #ffffff;
+          .logo_cancel_button {
+            transform: rotate(135deg);
           }
         }
 
-        .radio_messenger {
-          margin: 5px 0 30px;
-          display: flex;
+      }
 
-          .phone_radio, .telegram_radio, .whatsapp_radio {
-            margin-right: 20px;
-            font-family: 'Uni Neue Thin';
+      .phone_content {
+        background: #F8F8F8;
+        //box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
+        padding: 40px 50px 60px;
 
-          }
+
+        .popup_title {
+          padding: 0 0 35px;
+
+          font-family: 'Uni Neue Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 26px;
+
+          color: #000000;
         }
 
-        .contact_inputs {
-          display: flex;
-          //justify-content: space-between;
+        .popup_inputs {
 
-          .phone_input {
-            width: 240px;
-            margin-right: 20px;
+          font-family: 'Uni Neue Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
 
+          color: #262626;
+
+          .name_input {
             input {
-              padding: 15px 65px 15px 20px;
               border: 2px solid #EBEBEB;
               border-radius: 2px;
+              padding: 15px 300px 15px 20px;
+              margin: 5px 0 25px;
               background: #ffffff;
             }
           }
 
-          .time_input {
+          .radio_messenger {
+            margin: 5px 0 30px;
+            display: flex;
 
-            input {
-              padding: 14px 20px;
-              border: 2px solid #EBEBEB;
-              background: #ffffff;
+            .phone_radio, .telegram_radio, .whatsapp_radio {
+              margin-right: 20px;
+              font-family: 'Uni Neue Thin';
+
+            }
+          }
+
+          .contact_inputs {
+            display: flex;
+            //justify-content: space-between;
+
+            .phone_input {
+              width: 240px;
+              margin-right: 20px;
+
+              input {
+                padding: 15px 65px 15px 20px;
+                border: 2px solid #EBEBEB;
+                border-radius: 2px;
+                background: #ffffff;
+              }
             }
 
+            .time_input {
+
+              input {
+                padding: 14px 20px;
+                border: 2px solid #EBEBEB;
+                background: #ffffff;
+              }
+
+            }
           }
-        }
 
-        .phone_popup_button {
-          margin: 25px 0 15px;
-          background-color: #33CC80;
-          color: #FFFFFF;
-          border-radius: 3px;
-          border: none;
-          padding: 15px 70px;
-        }
+          .phone_popup_button {
+            margin: 25px 0 15px;
+            background-color: #33CC80;
+            color: #FFFFFF;
+            border-radius: 3px;
+            border: none;
+            padding: 15px 70px;
+          }
 
-        .check_input {
-          font-family: "Uni Neue Thin";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 13px;
-          color: #262626;
-          a {
+          .check_input {
+            font-family: "Uni Neue Thin";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
             color: #262626;
+            a {
+              color: #262626;
+            }
           }
+
+
         }
+
 
 
       }
 
-
-
     }
+
+  }
 
 }
 
@@ -3403,61 +3557,90 @@ header {
 
 // confidential popup
 .confidential_popup {
-  max-width: 900px;
-  margin: 100px auto;
-
-  border-radius: 3px 3px 0 0;
-  border: 1px solid;
-
-  .popup_logo {
-    background: #F8F8F8;
-
-    padding: 16px 25px 16px 15px;
-
-    .logo {
-      display: flex;
-      justify-content: space-between;
-
-      .logo_cancel_button {
-        transform: rotate(135deg);
-      }
-    }
-
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
 
   .confidential_content {
-    padding: 40px 50px 60px;
-    height: 600px;
+    max-width: 900px;
+    margin: 5% auto;
+    overflow-x: auto;
+
+    .form {
+
+      position: relative;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: 4px;
+      overflow-y: auto;
 
 
-    .content_title {
-      font-family: 'Uni Neue Bold';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
 
-      color: #000000;
-    }
+      border-radius: 3px 3px 0 0;
+      border: 1px solid;
 
-    .laws {
+      .popup_logo {
+        background: #F8F8F8;
 
-      .low_title {
-        padding: 30px 0 15px;
-        font-family: 'Uni Neue Bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
+        padding: 16px 25px 16px 15px;
 
-        color: #000000;
+        .logo {
+          display: flex;
+          justify-content: space-between;
+
+          .logo_cancel_button {
+            transform: rotate(135deg);
+          }
+        }
+
       }
 
+      .confidential_content {
+        padding: 40px 50px 60px;
+        height: 600px;
 
+
+        .content_title {
+          font-family: 'Uni Neue Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+
+          color: #000000;
+        }
+
+        .laws {
+
+          .low_title {
+            padding: 30px 0 15px;
+            font-family: 'Uni Neue Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+
+            color: #000000;
+          }
+
+
+
+        }
+
+      }
 
     }
 
   }
 
 }
+
+
 @media screen and (max-width: 500px){
   .confidential_popup {
     width: 350px;
@@ -3500,3 +3683,11 @@ header {
     }
   }
 }
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+

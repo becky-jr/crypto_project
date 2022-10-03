@@ -55,3 +55,60 @@ $('.history_cards').slick({
 //         navMenu.classList.remove('active');
 //     })
 // })
+
+const modalTrigger = document.querySelectorAll('[data-modal]'),
+      modal = document.querySelector('.modal'),
+      modalClose = document.querySelectorAll('[data-close]'),
+      modalTriggerForm = document.querySelectorAll('[data-form]'),
+      modalForm = document.querySelector('.modal-form'),
+      modalConfident = document.querySelectorAll('[data-confident]'),
+      confidentForm = document.querySelector('.confidential_popup');
+
+modalTrigger.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+            modal.classList.add('show');
+            modal.classList.remove('hide');
+            document.body.style.overflow = 'hidden';
+
+
+        }
+    )
+})
+
+modalTriggerForm.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+            modalForm.classList.add('show');
+            modalForm.classList.remove('hide');
+            document.body.style.overflow = 'hidden';
+
+
+        }
+    )
+})
+
+modalConfident.forEach(btn => {
+    btn.addEventListener('click', () => {
+        confidentForm.classList.add('show');
+        confidentForm.classList.remove('hide');
+        document.body.style.overflow = 'hidden';
+    })
+})
+
+
+
+modalClose.forEach(btn => {
+    btn.addEventListener('click', ()=> {
+
+        modal.classList.remove('show');
+        modal.classList.add('hide');
+        modalForm.classList.remove('show');
+        modalForm.classList.add('hide');
+        confidentForm.classList.remove('show');
+        confidentForm.classList.add('hide');
+        document.body.style.overflow = '';
+
+    })
+})
+
