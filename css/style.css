@@ -191,6 +191,15 @@ header {
   header {
     display: none;
   }
+  .main_page .coin {
+    top: 620px;
+    position: absolute;
+    left: 25px;
+    z-index: 2;
+  }
+  .main_page .coin img {
+    width: 99px;
+  }
   .main_page .left_screen {
     max-width: 310px;
     margin: 0 auto;
@@ -224,6 +233,7 @@ header {
     width: 310px;
     padding: 0;
     border: none;
+    margin: 0 auto;
   }
   .main_page .main_page_bottom .content {
     flex-wrap: wrap;
@@ -274,6 +284,12 @@ header {
   top: 400px;
   right: 700px;
   z-index: 2;
+}
+.second_page .phone_icon {
+  position: fixed;
+  top: 750px;
+  right: 50px;
+  z-index: 11;
 }
 .second_page .left_menu {
   width: 600px;
@@ -472,10 +488,20 @@ header {
   font-family: "Uni Neue Bold";
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .first_block {
     height: 1400px;
     position: relative;
+  }
+  .first_block .new_times {
+    position: absolute;
+    top: unset;
+    bottom: 280px;
+    left: 295px;
+    z-index: 10;
+  }
+  .first_block .new_times img {
+    width: 100px;
   }
   .first_block .first_left_menu {
     position: absolute;
@@ -602,6 +628,15 @@ header {
 @media screen and (max-width: 800px) {
   .second_block {
     padding: 50px 0 0 0;
+  }
+  .second_block .second_icon {
+    position: absolute;
+    top: unset;
+    bottom: 100px;
+    right: unset;
+  }
+  .second_block .second_icon img {
+    width: 150px;
   }
   .second_block .second_left_menu {
     width: 310px;
@@ -759,12 +794,18 @@ header {
     height: 1600px;
     position: relative;
   }
+  .third_block .third_badge {
+    z-index: 10;
+    bottom: 250px;
+    top: unset;
+    left: 90px;
+  }
   .third_block .third_left_menu {
     padding: 0;
     width: 380px;
     margin: 0 auto;
     position: absolute;
-    top: 1000px;
+    top: 1050px;
     z-index: 2;
   }
   .third_block .third_left_menu img {
@@ -800,7 +841,7 @@ header {
     top: 1320px;
   }
   .third_block .info_block .info_block_content {
-    padding: 70px 0 30px 25px;
+    padding: 120px 0 30px 25px;
     justify-content: unset;
   }
   .third_block .info_block .info_block_content .info_block_icon {
@@ -880,7 +921,7 @@ header {
 @media screen and (max-width: 800px) {
   .coop_page {
     text-align: left;
-    margin: 0 0 50px 0;
+    margin: 50px 0 50px 0;
   }
   .coop_page .coop_title {
     width: 310px;
@@ -1086,14 +1127,17 @@ header {
   display: flex;
   position: relative;
 }
-.history_block .history_content .history_cards .hand {
-  display: none;
-}
 .history_block .history_content .history_cards .first_card {
+  position: relative;
   padding: 30px 40px 30px 30px;
   margin-right: 22px;
   max-width: 380px;
   background: #262626;
+}
+.history_block .history_content .history_cards .first_card .hand {
+  position: absolute;
+  left: 235px;
+  top: -30px;
 }
 .history_block .history_content .history_cards .first_card .card_number {
   font-family: "Uni Neue Regular";
@@ -1170,6 +1214,13 @@ header {
     margin: 0 0 0 10px;
     display: block;
     padding-top: 50px;
+  }
+  .history_block .history_content .history_cards .first_card .hand {
+    left: 225px;
+    top: 0;
+  }
+  .history_block .history_content .history_cards .first_card .hand img {
+    width: 90px;
   }
 }
 .income_page {
@@ -1536,14 +1587,14 @@ header {
 
 .application_block {
   height: 600px;
-  max-width: 1440px;
   margin: 0 auto;
   background: url("../img/family.svg") no-repeat;
+  background-size: cover;
   overflow-y: hidden;
 }
 .application_block .application_content {
   width: 562px;
-  margin: 150px 0 140px 150px;
+  margin: 150px 0 140px 200px;
 }
 .application_block .application_content .application_bold {
   font-family: "Uni Neue Regular";
@@ -1633,6 +1684,7 @@ header {
   .mobile_family {
     width: 385px;
     display: block;
+    margin: 0 auto;
   }
 }
 .youtube_block {
@@ -2011,7 +2063,8 @@ header {
   }
   .contact_block .office_content {
     display: block;
-    margin: 30px 0 30px;
+    max-width: 310px;
+    margin: 30px auto 30px;
   }
   .contact_block .office_content .office_card {
     width: 310px;
@@ -2079,6 +2132,20 @@ header {
   color: #999999;
 }
 
+@media screen and (max-width: 500px) {
+  #footer .top_footer {
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+  }
+  #footer .top_footer .logo {
+    width: unset;
+    display: block;
+  }
+  #footer .top_footer .footer_info {
+    margin: 10px 0 10px;
+  }
+}
 #bottom_footer {
   background-color: #181818;
 }
@@ -2102,6 +2169,17 @@ header {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .second_footer .footer_year {
+    font-size: 9px;
+  }
+  .second_footer .footer_list {
+    display: none;
+  }
+  .second_footer .policy {
+    font-size: 9px;
+  }
+}
 .middle_slider {
   padding: 120px 0 0;
 }

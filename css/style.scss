@@ -421,6 +421,16 @@ header {
   }
 
   .main_page {
+    .coin {
+      top: 620px;
+      position: absolute;
+      left: 25px;
+      z-index: 2;
+      img {
+        width: 99px;
+      }
+    }
+
     .left_screen {
       max-width: 310px;
       margin: 0 auto;
@@ -464,6 +474,7 @@ header {
       width: 310px;
       padding: 0;
       border: none;
+      margin: 0 auto;
 
       .content {
         flex-wrap: wrap;
@@ -537,6 +548,13 @@ header {
     top: 400px;
     right: 700px;
     z-index: 2;
+  }
+
+  .phone_icon {
+    position: fixed;
+    top: 750px;
+    right: 50px;
+    z-index: 11;
   }
 
   .left_menu {
@@ -811,8 +829,19 @@ header {
 }
 
 // first Block media
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .first_block {
+    .new_times {
+      position: absolute;
+      top: unset;
+      bottom: 280px;
+      left: 295px;
+      z-index: 10;
+      img {
+        width: 100px;
+      }
+    }
+
     height: 1400px;
 
     position: relative;
@@ -975,58 +1004,68 @@ header {
 // todo Second Block Media
 @media screen and (max-width: 800px) {
   .second_block {
-    padding: 50px 0 0 0;
-
-    .second_left_menu {
-      width: 310px;
-
-      .second_left_descr {
-        width: 310px;
-
-        .second_left_gradient {
-          font-size: 14px;
-          width: 192px;
-        }
-        .second_left_bold {
-          font-size: 22px;
-        }
-        .second_left_thin {
-          font-size: 14px;
-        }
-      }
-
-      .second_descr_info {
-        .second_descr_line {
-          height: 82px;
-        }
-        .second_descr_text {
-          font-size: 14px;
-        }
-      }
-    }
-
-    .second_right_menu {
-      width: 310px;
-      margin: 0 auto;
-      img {
-        width: 310px;
-      }
-    }
-
+.second_icon {
+  position: absolute;
+  top: unset;
+  bottom: 100px;
+  right: unset;
+  img {
+    width: 150px;
   }
+}
+
+  padding: 50px 0 0 0;
+
+  .second_left_menu {
+    width: 310px;
+
+    .second_left_descr {
+      width: 310px;
+
+      .second_left_gradient {
+        font-size: 14px;
+        width: 192px;
+      }
+      .second_left_bold {
+        font-size: 22px;
+      }
+      .second_left_thin {
+        font-size: 14px;
+      }
+    }
+
+    .second_descr_info {
+      .second_descr_line {
+        height: 82px;
+      }
+      .second_descr_text {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .second_right_menu {
+    width: 310px;
+    margin: 0 auto;
+    img {
+      width: 310px;
+    }
+  }
+
+}
 }
 
 
 // THIRD BLOCK
 
 .third_block {
-  position: relative;
-  .third_badge {
-    position: absolute;
-    top: 450px;
-    left: 500px;
-    background: rgba(255, 255, 255, 0.9);
-    /* shadow */
+position: relative;
+.third_badge {
+  position: absolute;
+  top: 450px;
+  left: 500px;
+  background: rgba(255, 255, 255, 0.9);
+  /* shadow */
 
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(7.5px);
@@ -1173,6 +1212,13 @@ header {
 // todo third block media
 @media screen and (max-width: 800px){
   .third_block {
+    .third_badge {
+      z-index: 10;
+      bottom: 250px;
+      top: unset;
+      left: 90px;
+    }
+
     height: 1600px;
     position: relative;
 
@@ -1182,7 +1228,7 @@ header {
       margin: 0 auto;
 
       position: absolute;
-      top: 1000px;
+      top: 1050px;
       z-index: 2;
       img {
         width: 365px;
@@ -1230,7 +1276,7 @@ header {
       top: 1320px;
 
       .info_block_content {
-        padding: 70px 0 30px 25px;
+        padding: 120px 0 30px 25px;
         justify-content: unset;
 
         .info_block_icon {
@@ -1322,7 +1368,7 @@ header {
 @media screen and (max-width: 800px) {
   .coop_page {
     text-align: left;
-    margin: 0 0 50px 0;
+    margin: 50px 0 50px 0;
 
     .coop_title {
       width: 310px;
@@ -1585,11 +1631,16 @@ header {
 
       position: relative;
 
-      .hand {
-        display: none ;
-      }
 
       .first_card {
+        position: relative;
+        .hand {
+          position: absolute;
+          left: 235px;
+          top: -30px;
+        }
+
+
         padding: 30px 40px 30px 30px;
         margin-right: 22px;
         max-width: 380px;
@@ -1700,6 +1751,16 @@ header {
         display: block;
 
         padding-top: 50px;
+
+        .first_card {
+          .hand {
+            left: 225px;
+            top: 0;
+            img {
+              width: 90px;
+            }
+          }
+        }
       }
 
 
@@ -2200,14 +2261,15 @@ header {
 
 .application_block {
   height: 600px;
-  max-width: 1440px;
+  //max-width: 1440px;
   margin: 0 auto;
   background: url("../img/family.svg") no-repeat;
+  background-size: cover;
   overflow-y: hidden;
 
   .application_content {
     width: 562px;
-    margin: 150px 0 140px 150px;
+    margin: 150px 0 140px 200px;
 
     .application_bold {
       font-family: 'Uni Neue Regular';
@@ -2330,6 +2392,7 @@ header {
   .mobile_family {
     width: 385px;
     display: block;
+    margin: 0 auto;
 
   }
 
@@ -2867,7 +2930,8 @@ header {
 
     .office_content {
       display: block;
-      margin: 30px 0 30px;
+      max-width: 310px;
+      margin: 30px auto 30px;
 
       .office_card {
         width: 310px;
@@ -2968,6 +3032,27 @@ header {
 
 }
 
+// footer media
+@media screen and (max-width: 500px){
+  #footer {
+    .top_footer {
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+
+      .logo {
+        width: unset;
+        display: block;
+      }
+      .footer_info {
+        margin: 10px 0 10px;
+      }
+    }
+
+  }
+}
+
+
 #bottom_footer {
   background-color: #181818;
 
@@ -2996,6 +3081,22 @@ header {
     }
   }
 
+}
+
+@media screen and (max-width: 500px){
+  .second_footer {
+    .footer_year {
+      font-size: 9px;
+    }
+
+    .footer_list {
+      display: none;
+    }
+
+    .policy {
+      font-size: 9px;
+    }
+  }
 }
 
 

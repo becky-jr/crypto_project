@@ -138,6 +138,8 @@ modalCloseConfident.forEach(btn => {
     btn.addEventListener('click', () => {
         confidentForm.classList.remove('show');
         confidentForm.classList.add('hide');
+        document.body.style.overflow = '';
+
     })
 })
 
