@@ -22,7 +22,7 @@
   font-weight: normal;
   font-style: normal;
 }
-header {
+.header {
   padding: 40px 50px 48px 74px;
   border-bottom: 1px solid #F2F2F2;
 }
@@ -65,16 +65,35 @@ header {
   color: #2EB873;
   font-weight: 500;
 }
-.header .header_body .hamburger {
-  display: none;
-  cursor: pointer;
+
+@media screen and (max-width: 1000px) {
+  .header {
+    padding: 12px 12px 15px 15px;
+  }
+  .header .header_body {
+    padding: 0;
+    display: block;
+  }
+  .header .header_body .nav_menu {
+    display: none;
+  }
+  .header .header_body .contact {
+    display: none;
+  }
 }
-.header .header_body .hamburger .header_burger {
-  display: block;
-  width: 25px;
-  height: 2px;
-  margin: 5px auto;
-  background-color: #33CC80;
+.hamburger {
+  flex: 0 0 24px;
+  z-index: 71;
+  width: 24px;
+  height: 24px;
+  background: url("../icons/burger.svg") no-repeat;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 16px;
+  margin: 25px 0 0;
 }
 
 .main_page {
@@ -187,10 +206,15 @@ header {
   font-size: 16px;
 }
 
-@media screen and (max-width: 800px) {
-  header {
-    display: none;
+@media screen and (max-width: 1400px) {
+  .main_page .coin {
+    top: 320px;
+    position: absolute;
+    left: 625px;
+    z-index: 2;
   }
+}
+@media screen and (max-width: 800px) {
   .main_page .coin {
     top: 620px;
     position: absolute;
@@ -364,6 +388,12 @@ header {
 }
 
 @media screen and (max-width: 800px) {
+  .second_page .phone_icon {
+    display: none;
+  }
+  .second_page .ilma {
+    display: none;
+  }
   .second_page .left_menu {
     padding: 50px 0 0 0;
     width: 310px;
@@ -1661,7 +1691,7 @@ header {
 @media screen and (max-width: 800px) {
   .application_block {
     height: unset;
-    width: 390px;
+    width: 400px;
     background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
   }
   .application_block .application_content {
@@ -1682,13 +1712,12 @@ header {
     margin: 20px 0 0;
   }
   .mobile_family {
-    width: 385px;
+    width: 405px;
     display: block;
     margin: 0 auto;
   }
 }
 .youtube_block {
-  display: none;
   max-width: 1200px;
   margin: 100px auto 0;
 }
@@ -1720,13 +1749,44 @@ header {
   font-family: "Uni Neue Thin";
   color: #FFFFFF;
 }
-.youtube_block .youtube_content .right_block {
-  object-fit: contain;
-}
-.youtube_block .youtube_content .right_block img {
+.youtube_block .youtube_content .right_block .youtube_pc {
   width: 600px;
 }
+.youtube_block .youtube_content .right_block .youtube_mobile {
+  display: none;
+}
 
+@media screen and (max-width: 500px) {
+  .youtube_block .youtube_content {
+    display: block;
+  }
+  .youtube_block .youtube_content .link {
+    position: absolute;
+    left: 15px;
+    top: 100px;
+  }
+  .youtube_block .youtube_content .link a img {
+    width: 100px;
+  }
+  .youtube_block .youtube_content .left_block {
+    position: absolute;
+    background: unset;
+    padding: unset;
+    width: 215px;
+    top: 220px;
+    left: 30px;
+  }
+  .youtube_block .youtube_content .left_block .left_block_title {
+    font-size: 18px;
+  }
+  .youtube_block .youtube_content .right_block .youtube_pc {
+    display: none;
+  }
+  .youtube_block .youtube_content .right_block .youtube_mobile {
+    display: block;
+    width: 400px;
+  }
+}
 .answers_block {
   max-width: 1200px;
   margin: 0 auto;
@@ -1888,8 +1948,9 @@ header {
   font-size: 13px;
   color: #262626;
 }
-.advice_block .advice_right .advice_inputs .check_input a {
+.advice_block .advice_right .advice_inputs .check_input span {
   color: #262626;
+  text-decoration: underline;
 }
 .advice_block .advice_right .advice_inputs .button_input {
   margin-top: 20px;
@@ -2695,6 +2756,59 @@ header {
 
 .hide {
   display: none;
+}
+
+.menu_burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(39, 24, 86, 0.9);
+  backdrop-filter: blur(10px);
+  font-size: 0;
+}
+
+.menu_burger.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu_burger .menu_scroll {
+  overflow: auto;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+}
+
+.menu_burger .menu_top ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu_burger .menu_top ul > li > a {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.menu_burger .menu_top ul > li > a:hover {
+  color: #78b82a;
 }
 
 /*# sourceMappingURL=style.css.map */
