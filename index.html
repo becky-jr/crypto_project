@@ -14,15 +14,17 @@
 <body>
 
 <nav class="menu_burger">
-    <div class="menuClose"><span></span></div>
+    <div class="menuClose" data-burgerClose>
+            <img src="icons/burgerClose.svg" alt="">
+    </div>
     <div class="menu_scroll">
         <div class="menu_top">
             <ul>
-                <li><a href="#">о нас</a></li>
-                <li><a href="">ТАрифы</a></li>
-                <li><a href="#maps">Зона покрытия</a></li>
-                <li><a href="#partners">партнеры</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="#about">О Нас</a></li>
+                <li><a href="#advantages">Майнинг</a></li>
+                <li><a href="#history">Доходность</a></li>
+                <li><a href="#income">Кооператив</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </div>
@@ -30,33 +32,6 @@
 
     <header class="header">
 
-<!--        <div class="nav">-->
-<!--            <div class="logo">-->
-<!--                <a href="#">-->
-<!--                    <img src="img/logo_toghether.svg" alt="">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="nav_menu">-->
-<!--                <ul>-->
-<!--                    <li class="list_item" ><a class="menu_link" href="#">О нас</a></li>-->
-<!--                    <li class="list_item" ><a class="menu_link" href="#">Про майнинг</a></li>-->
-<!--                    <li class="list_item" ><a class="menu_link" href="#">Доходность</a></li>-->
-<!--                    <li class="list_item" ><a class="menu_link" href="">Кооператив</a></li>-->
-<!--                    <li class="list_item" ><a class="menu_link" href="#">Контакты</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--            <div class="contact">-->
-<!--                <span>-->
-<!--                    <a class="tel" href="tel:8-800-100-20-30">8-800-100-20-30</a>-->
-<!--                </span>-->
-<!--                <span class="whatsapp-logo">-->
-<!--                    <a href="#"><img src="icons/whatsapp.svg" alt=""></a>-->
-<!--                </span>-->
-<!--                <span class="telegram-logo">-->
-<!--                    <a href="#"><img src="icons/telegram.svg" alt=""></a>-->
-<!--                </span>-->
-<!--            </div>-->
-<!--        </div>-->
 
         <div class="container-fluid">
             <div class="header_body">
@@ -90,7 +65,7 @@
                     </span>
                 </div>
 
-                <div class="hamburger">
+                <div data-burger class="hamburger">
                     <span></span>
                 </div>
 
@@ -2103,8 +2078,8 @@
                             <img src="img/logo_toghether.svg" alt="">
                         </a>
                         <span data-close class="logo_cancel_button">
-                    <img src="icons/plus.svg" alt="">
-                </span>
+                            <img src="icons/plus.svg" alt="">
+                        </span>
                     </div>
 
                 </div>
