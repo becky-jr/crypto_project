@@ -82,6 +82,7 @@
   }
 }
 .hamburger {
+  display: none;
   flex: 0 0 24px;
   z-index: 71;
   width: 24px;
@@ -96,6 +97,11 @@
   margin: 25px 0 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+}
 .menu_burger {
   position: fixed;
   top: 0;
