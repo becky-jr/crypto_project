@@ -702,11 +702,11 @@ $icons_background: #E9F5EF;
     //padding: 175px 0 0 100px;
     display: flex;
     justify-content: center;
-    margin-top: 175px;
+    margin-top: 200px;
   }
 
   .experience {
-    padding: 60px 100px 121px 150px;
+    padding: 60px 0 121px 0;
 
     display: flex;
     justify-content: space-between;
@@ -823,7 +823,7 @@ $icons_background: #E9F5EF;
 
 
   .first_left_menu {
-    padding: 158px 0 0 100px;
+    padding: 158px 0 0 0;
     max-width: 700px;
   }
 
@@ -889,7 +889,7 @@ $icons_background: #E9F5EF;
 
   .law_block {
     //height: 172px;
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 
     background: #CAEAF8;
@@ -1087,7 +1087,7 @@ $icons_background: #E9F5EF;
 
   .second_right_menu {
     width: 400px;
-    margin: 0 auto 0 100px;
+    margin: 20px auto 0 100px;
     padding-top: 40px;
   }
 }
@@ -1154,7 +1154,7 @@ position: relative;
 .third_badge {
   position: absolute;
   top: 450px;
-  left: 500px;
+  left: 540px;
   background: rgba(255, 255, 255, 0.9);
   /* shadow */
 
@@ -1271,7 +1271,7 @@ position: relative;
   }
 
   .info_block {
-    width: 1200px;
+    width: 1300px;
     margin: 130px auto 190px;
     background: #CAEAF8;
 
@@ -1666,7 +1666,7 @@ position: relative;
 
 
   .history_content {
-    width: 1200px;
+    width: 1255px;
     margin: 0 auto;
 
 
@@ -1935,7 +1935,7 @@ position: relative;
   }
 
   .income_data {
-    font-family: 'Uni Neue Thin';
+    font-family: 'Uni Neue Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -4025,4 +4025,36 @@ position: relative;
 }
 .hide {
   display: none;
+}
+
+// icons responsive
+@media screen and (max-width: 1450px) {
+  .second_page .phone_icon {
+    top: 1100px;
+    right: 130px;
+  }
+  .second_page .ilma {
+    right: 550px;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .first_block .new_times {
+    position: absolute;
+    top: 415px;
+    left: 505px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .second_block .second_icon {
+    right: 450px;
+  }
+  .third_block .third_badge {
+    left: 350px;
+  }
 }

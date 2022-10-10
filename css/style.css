@@ -442,10 +442,10 @@
 .second_page .right_menu {
   display: flex;
   justify-content: center;
-  margin-top: 175px;
+  margin-top: 200px;
 }
 .second_page .experience {
-  padding: 60px 100px 121px 150px;
+  padding: 60px 0 121px 0;
   display: flex;
   justify-content: space-between;
   font-family: "Uni Neue Regular";
@@ -523,7 +523,7 @@
   left: 680px;
 }
 .first_block .first_left_menu {
-  padding: 158px 0 0 100px;
+  padding: 158px 0 0 0;
   max-width: 700px;
 }
 .first_block .first_right_menu {
@@ -575,7 +575,7 @@
   margin: 0 0 50px 0;
 }
 .first_block .law_block {
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
   background: #CAEAF8;
 }
@@ -730,7 +730,7 @@
 }
 .second_block .second_right_menu {
   width: 400px;
-  margin: 0 auto 0 100px;
+  margin: 20px auto 0 100px;
   padding-top: 40px;
 }
 
@@ -783,7 +783,7 @@
 .third_block .third_badge {
   position: absolute;
   top: 450px;
-  left: 500px;
+  left: 540px;
   background: rgba(255, 255, 255, 0.9);
   /* shadow */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
@@ -875,7 +875,7 @@
   margin-top: 40px;
 }
 .third_block .info_block {
-  width: 1200px;
+  width: 1300px;
   margin: 130px auto 190px;
   background: #CAEAF8;
 }
@@ -1196,7 +1196,7 @@
   color: #999999;
 }
 .history_block .history_content {
-  width: 1200px;
+  width: 1255px;
   margin: 0 auto;
 }
 .history_block .history_content .history_title {
@@ -1389,7 +1389,7 @@
   margin: 50px auto;
 }
 .income_page .income_data {
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -2835,6 +2835,33 @@
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 1450px) {
+  .second_page .phone_icon {
+    top: 1100px;
+    right: 130px;
+  }
+  .second_page .ilma {
+    right: 550px;
+  }
+  .second_page .ilma img {
+    width: 100px;
+  }
+  .first_block .new_times {
+    position: absolute;
+    top: 415px;
+    left: 505px;
+  }
+  .first_block .new_times img {
+    width: 150px;
+  }
+  .second_block .second_icon {
+    right: 450px;
+  }
+  .third_block .third_badge {
+    left: 350px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
