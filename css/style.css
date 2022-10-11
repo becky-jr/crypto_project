@@ -1142,7 +1142,7 @@
     position: unset;
   }
   .join_content .left_block {
-    height: 350px;
+    height: 300px;
     position: unset;
     width: 90%;
   }
@@ -2899,6 +2899,15 @@
     bottom: 250px;
     top: unset;
     left: 90px;
+  }
+  .second_block .second_icon {
+    position: absolute;
+    top: unset;
+    bottom: 100px;
+    right: unset;
+  }
+  .second_block .second_icon img {
+    width: 150px;
   }
 }
 

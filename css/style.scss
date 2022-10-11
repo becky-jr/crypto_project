@@ -1592,7 +1592,7 @@ position: relative;
 
 
     .left_block {
-      height: 350px;
+      height: 300px;
       position: unset;
       width: 90%;
       .title {
@@ -4105,6 +4105,18 @@ position: relative;
       bottom: 250px;
       top: unset;
       left: 90px;
+    }
+  }
+  .second_block {
+    .second_icon {
+      position: absolute;
+      top: unset;
+      bottom: 100px;
+      right: unset;
+
+      img {
+        width: 150px;
+      }
     }
   }
 }
