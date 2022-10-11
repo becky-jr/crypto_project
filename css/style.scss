@@ -439,7 +439,7 @@ $icons_background: #E9F5EF;
   // todo Main Bottom
 
   .main_page_bottom {
-    width: 1400px;
+    width: 1350px;
     padding: 80px 0 0 0;
     margin: 0 auto;
     border-top: 1px solid $white_grey;
@@ -725,7 +725,7 @@ $icons_background: #E9F5EF;
   .experience {
     padding: 60px 0 121px 0;
 
-    max-width: 1440px;
+    max-width: 1350px;
     margin: 0 auto;
 
     display: flex;
@@ -1555,7 +1555,7 @@ position: relative;
         }
         .button {
           width: 308px;
-          margin: 39px auto 0;
+          margin:39px 300px 50px auto;
 
           .join_button {
             padding: 15px 60px;
@@ -1998,6 +1998,8 @@ position: relative;
       line-height: 160%;
       color: $dark_grey;
       margin-bottom: 40px;
+    }
+    .thin-2 {
       margin-left: 20px;
     }
 
@@ -2026,6 +2028,7 @@ position: relative;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
+    margin-left: 250px;
   }
 
 
@@ -2266,8 +2269,8 @@ position: relative;
       .chart_bg {
         width: 400px;
         position: absolute;
-        top: 260px;
-        right: 75px;
+        top: 315px;
+        right: 115px;
       }
     }
 

@@ -250,7 +250,7 @@
   height: 600px;
 }
 .main_page .main_page_bottom {
-  width: 1400px;
+  width: 1350px;
   padding: 80px 0 0 0;
   margin: 0 auto;
   border-top: 1px solid #F2F2F2;
@@ -454,7 +454,7 @@
 }
 .second_page .experience {
   padding: 60px 0 121px 0;
-  max-width: 1440px;
+  max-width: 1350px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1107,7 +1107,7 @@
 }
 .join_content .left_block .button {
   width: 308px;
-  margin: 39px auto 0;
+  margin: 39px 300px 50px auto;
 }
 .join_content .left_block .button .join_button {
   padding: 15px 60px;
@@ -1413,6 +1413,8 @@
   line-height: 160%;
   color: #565758;
   margin-bottom: 40px;
+}
+.income_page .income_left_block .thin-2 {
   margin-left: 20px;
 }
 .income_page .income_left_block .question .mini_bold {
@@ -1433,6 +1435,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  margin-left: 250px;
 }
 
 @media screen and (max-width: 800px) {
@@ -1601,8 +1604,8 @@
 .revenue_block .revenue_content .revenue_chart .chart_bg {
   width: 400px;
   position: absolute;
-  top: 260px;
-  right: 75px;
+  top: 315px;
+  right: 115px;
 }
 .revenue_block .revenue_content .revenue_chart_text {
   position: absolute;
