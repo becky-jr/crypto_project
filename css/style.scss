@@ -676,6 +676,9 @@ $icons_background: #E9F5EF;
       }
       .third_descr {
         margin-bottom: 40px;
+        .descr_list {
+          margin-left: 20px;
+        }
       }
     }
     .descr_info {
@@ -789,6 +792,7 @@ $icons_background: #E9F5EF;
 
     .right_menu {
       margin-top: 30px;
+      width: 310px;
       .right_img {
         img {
           width: 320px;
@@ -834,7 +838,7 @@ $icons_background: #E9F5EF;
   .new_times {
     position: absolute;
     top: 400px;
-    left: 680px;
+    left: 580px;
   }
 
 
@@ -1282,6 +1286,7 @@ position: relative;
         .third_descr_list {
           display: inline-block;
           margin-top: 40px;
+          margin-left: 20px;
         }
       }
 
@@ -1410,7 +1415,7 @@ position: relative;
   text-align: center;
   //margin-bottom: 120px;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
     .coop_title {
       margin-bottom: 70px;
       .coop_suit {
@@ -1938,6 +1943,7 @@ position: relative;
       line-height: 160%;
       color: $dark_grey;
       margin-bottom: 40px;
+      margin-left: 20px;
     }
 
     .question {
@@ -2155,7 +2161,7 @@ position: relative;
 
   .revenue_content {
     margin: 0 auto;
-    width: 1250px;
+    max-width: 1200px;
     height: 600px;
     position: relative;
     overflow-y: hidden;
@@ -2475,7 +2481,7 @@ position: relative;
         margin-left: 20px;
         background-color: $first_green;
         color: #FFFFFF;
-        padding: 15px 60px;
+        padding: 15px 50px;
         border: none;
         border-radius: 2px;
       }
@@ -3416,6 +3422,9 @@ position: relative;
 
             color: #565758;
           }
+          .text_list {
+            margin-left: 10px;
+          }
         }
 
       }
@@ -3503,7 +3512,7 @@ position: relative;
           }
 
           .slider_text {
-            margin-top: 100px;
+            margin: 100px 0 0 30px;
             .text_bold {
               font-size: 16px;
             }
