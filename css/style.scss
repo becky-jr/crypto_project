@@ -1939,6 +1939,7 @@ position: relative;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
+    margin-left: 10px;
   }
 
 
@@ -1998,7 +1999,7 @@ position: relative;
   margin: 40px 0 120px 0;
   .method_title {
     //width: 900px;
-    margin-left: 12%;
+    margin-left: 2%;
     .title_bold {
       font-family: 'Uni Neue Regular';
       font-style: normal;
@@ -2017,19 +2018,29 @@ position: relative;
   }
 
   .method_card {
+    display: flex;
 
 
     //margin-left: 10%;
     margin: 0 auto;
     width: 1250px;
 
+    :hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
 
 
     .card {
+      :hover {
+        box-shadow: unset;
+      }
+
       padding: 70px 0 70px 60px;
       width: 400px;
 
       border: 1px solid #EBEBEB;
+      border-radius: 5px;
 
       .card_text {
         margin-top: 25px;
@@ -2051,6 +2062,7 @@ position: relative;
           color: #565758;
         }
       }
+
 
 
 
@@ -2111,7 +2123,7 @@ position: relative;
 
   .revenue_content {
     margin: 0 auto;
-    width: 1200px;
+    width: 1250px;
     height: 600px;
     position: relative;
     overflow-y: hidden;
@@ -2596,7 +2608,7 @@ position: relative;
 // todo Answers Block
 
 .answers_block {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 150px 0 180px;
 
@@ -2718,7 +2730,8 @@ position: relative;
 // advice block
 .advice_block {
   background-color: #FFFFFF;
-  margin-bottom: 150px;
+  width: 1250px;
+  margin: 0 auto 150px;
   .advice_left {
 
     .advice_gradient {
@@ -3766,7 +3779,7 @@ position: relative;
 
             .phone_radio, .telegram_radio, .whatsapp_radio {
               margin-right: 20px;
-              font-family: 'Uni Neue Thin';
+              font-family: 'Uni Neue Regular';
 
             }
           }

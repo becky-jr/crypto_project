@@ -1393,6 +1393,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -1433,7 +1434,7 @@
   margin: 40px 0 120px 0;
 }
 .method_block .method_title {
-  margin-left: 12%;
+  margin-left: 2%;
 }
 .method_block .method_title .title_bold {
   font-family: "Uni Neue Regular";
@@ -1451,13 +1452,21 @@
   color: #565758;
 }
 .method_block .method_card {
+  display: flex;
   margin: 0 auto;
   width: 1250px;
+}
+.method_block .method_card :hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 .method_block .method_card .card {
   padding: 70px 0 70px 60px;
   width: 400px;
   border: 1px solid #EBEBEB;
+  border-radius: 5px;
+}
+.method_block .method_card .card :hover {
+  box-shadow: unset;
 }
 .method_block .method_card .card .card_text {
   margin-top: 25px;
@@ -1512,7 +1521,7 @@
 }
 .revenue_block .revenue_content {
   margin: 0 auto;
-  width: 1200px;
+  width: 1250px;
   height: 600px;
   position: relative;
   overflow-y: hidden;
@@ -1867,7 +1876,7 @@
   }
 }
 .answers_block {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 150px 0 180px;
 }
@@ -1949,7 +1958,8 @@
 }
 .advice_block {
   background-color: #FFFFFF;
-  margin-bottom: 150px;
+  width: 1250px;
+  margin: 0 auto 150px;
 }
 .advice_block .advice_left .advice_gradient {
   font-family: "Uni Neue Regular";
@@ -2678,7 +2688,7 @@
 }
 .form_popup .popup_content .form .phone_content .popup_inputs .radio_messenger .phone_radio, .form_popup .popup_content .form .phone_content .popup_inputs .radio_messenger .telegram_radio, .form_popup .popup_content .form .phone_content .popup_inputs .radio_messenger .whatsapp_radio {
   margin-right: 20px;
-  font-family: "Uni Neue Thin";
+  font-family: "Uni Neue Regular";
 }
 .form_popup .popup_content .form .phone_content .popup_inputs .contact_inputs {
   display: flex;
