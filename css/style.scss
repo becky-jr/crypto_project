@@ -2139,6 +2139,13 @@ position: relative;
       .mobile_chart {
         display: none;
       }
+
+      .chart_bg {
+        width: 400px;
+        position: absolute;
+        top: 260px;
+        right: 75px;
+      }
     }
 
     .revenue_chart_text {
