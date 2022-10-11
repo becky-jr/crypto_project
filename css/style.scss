@@ -2139,6 +2139,9 @@ position: relative;
       .mobile_chart {
         display: none;
       }
+      .chart_bg {
+        display: none;
+      }
 
       .chart_bg {
         width: 400px;
@@ -2189,6 +2192,7 @@ position: relative;
 @media screen and (max-width: 500px) {
   .revenue_block {
     .revenue_content {
+      overflow: hidden;
       height: unset;
 
       width: 310px;
@@ -4076,5 +4080,31 @@ position: relative;
   }
   .third_block .third_badge {
     left: 350px;
+  }
+}
+
+// icons mobile
+
+@media screen and (max-width: 500px) {
+  .first_block {
+    .new_times {
+      position: absolute;
+      top: unset;
+      bottom: 280px;
+      left: 295px;
+      z-index: 10;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+  .third_block {
+    .third_badge {
+      z-index: 10;
+      bottom: 250px;
+      top: unset;
+      left: 90px;
+    }
   }
 }
