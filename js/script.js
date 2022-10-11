@@ -19,6 +19,7 @@ $('.history_cards').slick({
     // width: 420,
     prevArrow: false,
     nextArrow: false,
+    dots: true,
     responsive: [
         {
             breakpoint: 767,

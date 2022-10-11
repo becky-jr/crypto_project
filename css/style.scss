@@ -367,7 +367,7 @@ $icons_background: #E9F5EF;
   .left_screen {
     padding: 100px 30px 0 0;
     width: 550px;
-    //margin: 0 auto;
+    margin: 0 auto;
 
     .main_text {
       font-family: 'Uni Neue Bold';
@@ -439,13 +439,15 @@ $icons_background: #E9F5EF;
   // todo Main Bottom
 
   .main_page_bottom {
-    width: 1100px;
+    width: 1400px;
     padding: 80px 0 0 0;
-    //margin: 0 auto;
+    margin: 0 auto;
     border-top: 1px solid $white_grey;
 
     .content {
       display: flex;
+
+
 
       .statistics {
         width: 340px;
@@ -498,6 +500,7 @@ $icons_background: #E9F5EF;
     }
   }
 }
+
 
 //todo MAIN PAGE MEDIA
 @media screen and (max-width: 800px) {
@@ -560,6 +563,11 @@ $icons_background: #E9F5EF;
       margin: 0 auto;
 
       .content {
+
+        .row>* {
+          width: 50%;
+
+        }
         flex-wrap: wrap;
 
         .statistics {
@@ -606,7 +614,9 @@ $icons_background: #E9F5EF;
 
 
 
-
+//* {
+//  outline: 1px red solid;
+//}
 
 #about {
   background-color: $white_grey;
@@ -641,8 +651,10 @@ $icons_background: #E9F5EF;
   }
 
   .left_menu {
-    width: 600px;
+    width: 550px;
     padding: 120px 0 0 0;
+    margin: 0 auto;
+
 
     .second_page_main_text {
       font-family: 'Uni Neue Bold';
@@ -700,13 +712,18 @@ $icons_background: #E9F5EF;
 
   .right_menu {
     //padding: 175px 0 0 100px;
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
+    //display: flex;
+    //justify-content: center;
+    //margin-top: 200px;
+    width: 550px;
+    margin: 200px auto 0;
   }
 
   .experience {
     padding: 60px 0 121px 0;
+
+    max-width: 1440px;
+    margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
@@ -824,7 +841,8 @@ $icons_background: #E9F5EF;
 
   .first_left_menu {
     padding: 158px 0 0 0;
-    max-width: 700px;
+    max-width: 550px;
+    margin: 0 auto;
   }
 
   .first_right_menu {
@@ -1017,7 +1035,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_left_menu {
-    width: 700px;
+    width: 550px;
     margin: 0 auto;
 
     .second_left_descr {
@@ -1181,7 +1199,7 @@ position: relative;
 
   .third_left_menu {
     padding: 158px 0 0 0;
-    width: 700px;
+    width: 550px;
     margin: 0 auto;
   }
 
@@ -1361,7 +1379,7 @@ position: relative;
     }
 
     .info_block {
-      width: 400px;
+      width: 100%;
       margin: 0;
       position: absolute;
       top: 1320px;
@@ -1390,7 +1408,9 @@ position: relative;
 // COOP BLOCK
 .coop_page {
   text-align: center;
-  margin-bottom: 120px;
+  //margin-bottom: 120px;
+  max-width: 1440px;
+  margin: 0 auto;
     .coop_title {
       margin-bottom: 70px;
       .coop_suit {
@@ -1548,8 +1568,13 @@ position: relative;
           display: flex;
           flex-wrap: wrap;
 
+          .row>* {
+            width: 50%;
+
+          }
+
             .ruble_block {
-              width: 250px;
+              width: 239px;
               margin: 0 70px 50px 0;
 
               .ruble_block_icon {
@@ -1612,6 +1637,7 @@ position: relative;
     .right_block {
       .right_block_info {
         margin: 50px 0 50px;
+        width: 385px;
 
         .ruble_block {
           width: 144px;
@@ -1704,7 +1730,7 @@ position: relative;
         display: flex;
         justify-content: space-around;
 
-        font-family: 'Uni Neue Thin';
+        font-family: 'Uni Neue Regular';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -1930,7 +1956,7 @@ position: relative;
 
   .income_right_block {
     width: 600px;
-    padding-left: 100px;
+    //padding-left: 100px;
     margin: 50px auto;
   }
 
@@ -1939,7 +1965,7 @@ position: relative;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
-    margin-left: 10px;
+    padding-left: 150px;
   }
 
 
@@ -1989,6 +2015,7 @@ position: relative;
     }
     .income_data {
       font-size: 10px;
+      margin: unset;
     }
   }
 }
@@ -2023,7 +2050,6 @@ position: relative;
 
     //margin-left: 10%;
     margin: 0 auto;
-    width: 1250px;
 
     :hover {
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -2117,6 +2143,12 @@ position: relative;
 
 
 
+@media screen and (max-width: 1200px){
+  .chart_bg {
+    display: none;
+  }
+}
+
 // REVENUE BLOCK
 
 .revenue_block {
@@ -2139,9 +2171,7 @@ position: relative;
       .mobile_chart {
         display: none;
       }
-      .chart_bg {
-        display: none;
-      }
+
 
       .chart_bg {
         width: 400px;
@@ -3124,6 +3154,7 @@ position: relative;
     .message_content {
       font-size: 16px;
 
+      margin: 0;
       text-align: center;
 
       .message_buttons {
@@ -3858,7 +3889,7 @@ position: relative;
 // form popup media
 @media screen and (max-width: 500px){
   .form_popup {
-    width: 324px;
+    width: 420px;
 
 
     .popup_logo {
