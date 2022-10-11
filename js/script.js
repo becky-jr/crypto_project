@@ -17,9 +17,9 @@ $('.history_cards').slick({
     variableWidth: true,
     adaptiveHeight: true,
     // width: 420,
+    dots: true,
     prevArrow: false,
     nextArrow: false,
-    dots: true,
     responsive: [
         {
             breakpoint: 767,
@@ -161,6 +161,67 @@ modalBurgerClose.forEach(btn => {
         modalBurger.classList.remove('opened');
         modalBurger.classList.add('closed');
         document.body.style.overflow = '';
+
+    })
+})
+
+const card1Trigger = document.querySelectorAll('.bank'),
+      card2Trigger = document.querySelectorAll('.estate'),
+      card3Trigger = document.querySelectorAll('.fund'),
+      card1 = document.querySelector('.card-1'),
+      card2 = document.querySelector('.card-2'),
+      card3 = document.querySelector('.card-3');
+
+console.log(card1Trigger)
+console.log(card1)
+
+card1Trigger.forEach(btn => {
+    btn.addEventListener('click', ()=> {
+        console.log(1)
+
+        card1.classList.add('cardClicked');
+        card2.classList.remove('cardClicked');
+        card3.classList.remove('cardClicked');
+
+        card1.style.display = 'block';
+
+
+        // card1.style.display = 'block';
+        // card2.style.display = 'none';
+        // card3.style.display = 'none';
+
+    })
+})
+
+card2Trigger.forEach(btn => {
+    btn.addEventListener('click', ()=> {
+        console.log(2)
+        card2.classList.add('cardClicked');
+        card1.classList.remove('cardClicked');
+        card3.classList.remove('cardClicked');
+
+        card1.style.display = 'none'
+
+        //
+        // card1.style.display = 'none';
+        // card2.style.display = 'block';
+        // card3.style.display = 'none';
+
+    })
+})
+
+card3Trigger.forEach(btn => {
+    btn.addEventListener('click', ()=> {
+        console.log(3)
+        card3.classList.add('cardClicked');
+        card2.classList.remove('cardClicked');
+        card1.classList.remove('cardClicked');
+
+        card1.style.display = 'none'
+
+        // card1.style.display = 'none';
+        // card2.style.display = 'none';
+        // card3.style.display = 'block';
 
     })
 })

@@ -531,7 +531,7 @@
 .first_block .new_times {
   position: absolute;
   top: 400px;
-  left: 580px;
+  left: 680px;
 }
 .first_block .first_left_menu {
   padding: 158px 0 0 0;
@@ -587,7 +587,7 @@
   margin: 0 0 50px 0;
 }
 .first_block .law_block {
-  width: 1300px;
+  width: 1350px;
   margin: 0 auto;
   background: #CAEAF8;
 }
@@ -888,7 +888,7 @@
   margin-left: 20px;
 }
 .third_block .info_block {
-  width: 1300px;
+  width: 1350px;
   margin: 130px auto 190px;
   background: #CAEAF8;
 }
@@ -1107,7 +1107,7 @@
 }
 .join_content .left_block .button {
   width: 308px;
-  margin: 39px auto 136px;
+  margin: 39px auto 0;
 }
 .join_content .left_block .button .join_button {
   padding: 15px 60px;
@@ -1253,6 +1253,28 @@
   padding-top: 75px;
   display: flex;
   position: relative;
+}
+.history_block .history_content .history_cards .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+}
+.history_block .history_content .history_cards .slick-dots li {
+  margin: 0 20px 0 0;
+}
+.history_block .history_content .history_cards .slick-dots button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 100%;
+  border: 6px solid #D9D9D9;
+  text-indent: -9999px;
+}
+.history_block .history_content .history_cards .slick-dots li.slick-active button {
+  border: 6px solid #33CC80;
 }
 .history_block .history_content .history_cards .first_card {
   position: relative;
@@ -1411,7 +1433,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  padding-left: 150px;
 }
 
 @media screen and (max-width: 800px) {
@@ -1452,9 +1473,6 @@
 .method_block {
   margin: 40px 0 120px 0;
 }
-.method_block .method_title {
-  margin-left: 2%;
-}
 .method_block .method_title .title_bold {
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -1473,6 +1491,25 @@
 .method_block .method_card {
   display: flex;
   margin: 0 auto;
+}
+.method_block .method_card .method_btn {
+  display: none;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 160px;
+  right: 160px;
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #262626;
+}
+.method_block .method_card .method_btn button {
+  width: 115px;
+  height: 50px;
+  background: #FAFAFA;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
 }
 .method_block .method_card :hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -1524,6 +1561,10 @@
   .method_block .method_card {
     padding: 0;
     width: 310px;
+    position: relative;
+  }
+  .method_block .method_card .method_btn {
+    display: flex;
   }
   .method_block .method_card .card {
     padding: 70px 0 70px 30px;
@@ -1551,10 +1592,8 @@
 }
 .revenue_block .revenue_content .revenue_chart {
   position: absolute;
-  top: -30px;
-}
-.revenue_block .revenue_content .revenue_chart .desktop_chart {
-  width: 1200px;
+  top: -55px;
+  left: -130px;
 }
 .revenue_block .revenue_content .revenue_chart .mobile_chart {
   display: none;
@@ -1567,7 +1606,7 @@
 }
 .revenue_block .revenue_content .revenue_chart_text {
   position: absolute;
-  top: 460px;
+  top: 505px;
   left: 400px;
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -1800,6 +1839,10 @@
   font-weight: 500;
   font-size: 12px;
   color: #FFFFFF;
+}
+.application_block .application_content .application_send .approve span {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .mobile_family {
@@ -2163,12 +2206,14 @@
   display: flex;
   flex-wrap: wrap;
 }
+.contact_block .office_content .card2 {
+  margin-left: 40px;
+}
 .contact_block .office_content .office_card {
   width: 380px;
   background: #FFFFFF;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
-  margin-left: 40px;
 }
 .contact_block .office_content .office_card .card_content {
   padding: 50px 0 50px 50px;
@@ -2202,7 +2247,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  margin: 10px 0 0 40px;
+  margin: 50px 0 0 0;
   color: #262626;
 }
 .contact_block .message_content .message_buttons {
@@ -2426,9 +2471,19 @@
 .middle_slider .slider_inner .first_slider .slider .slider_img {
   max-width: 500px;
   margin: 0 auto 0 150px;
+  position: relative;
 }
 .middle_slider .slider_inner .first_slider .slider .slider_img .img {
   width: 400px;
+}
+.middle_slider .slider_inner .first_slider .slider .slider_img .number {
+  font-size: 160px;
+  font-weight: 300;
+  /* colors/green */
+  position: absolute;
+  left: 415px;
+  top: -25px;
+  color: #33CC80;
 }
 .middle_slider .slider_inner .first_slider .slider .slider_text {
   margin-top: 70px;
@@ -2933,6 +2988,14 @@
   .second_block .second_icon img {
     width: 150px;
   }
+}
+@media screen and (max-width: 500px) {
+  .card-2, .card-3 {
+    display: none;
+  }
+}
+.cardClicked {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
