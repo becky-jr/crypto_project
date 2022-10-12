@@ -349,13 +349,13 @@
 }
 @media screen and (max-width: 800px) {
   .main_page .coin {
-    top: 620px;
+    top: 550px;
     position: absolute;
     left: 25px;
     z-index: 2;
   }
   .main_page .coin img {
-    width: 99px;
+    width: 100px;
   }
   .main_page .left_screen {
     max-width: 310px;
@@ -1499,8 +1499,16 @@
 @media screen and (max-width: 800px) {
   .income_page {
     padding: 50px 0 25px 0;
-    width: 310px;
+    width: 320px;
     margin: 0 auto;
+  }
+  .income_page .fourth_badge {
+    right: unset;
+    top: 800px;
+    left: -20px;
+  }
+  .income_page .fourth_badge img {
+    width: 140px;
   }
   .income_page .income_left_block {
     width: 310px;
