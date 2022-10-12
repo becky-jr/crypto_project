@@ -1585,6 +1585,10 @@
   border: 1px solid #EBEBEB;
   border-radius: 3px;
 }
+.method_block .method_card .method_btn button .buttonClicked {
+  background: #FFFFFF;
+  border: none;
+}
 .method_block .method_card :hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }

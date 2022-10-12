@@ -288,7 +288,7 @@ card3Trigger.forEach(btn => {
 
 $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 500) {
+    if (y > 300) {
         $('.phone_icon').fadeIn();
     } else {
         $('.phone_icon').fadeOut();

@@ -2235,6 +2235,11 @@ position: relative;
 
         border: 1px solid #EBEBEB;
         border-radius: 3px;
+
+        .buttonClicked {
+          background: #FFFFFF;
+          border: none;
+        }
       }
     }
 
@@ -2287,6 +2292,10 @@ position: relative;
   }
 }
 
+//.buttonClicked {
+//  background: #FFFFFF;
+//  border: none;
+//}
 
 //METHOD BLOCK MEDIA
 
