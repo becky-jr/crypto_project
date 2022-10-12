@@ -249,7 +249,7 @@ $icons_background: #E9F5EF;
   transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
-  background: rgb(26, 26, 26, 0.9);
+  background: rgb(26, 26, 26);
   backdrop-filter: blur(100px);
   font-size: 0
 }
@@ -269,10 +269,11 @@ $icons_background: #E9F5EF;
   overflow: auto;
   position: absolute;
   top: 60px;
-  left: 20px;
-  right: 0;
+  left: 50px;
+  right: 50px;
   bottom: 0;
   text-align: left;
+  overflow-x: hidden;
 
   font-family: 'Uni Neue Regular';
   font-style: normal;
@@ -298,13 +299,86 @@ $icons_background: #E9F5EF;
   line-height: 18px;
   //text-transform: uppercase;
   color: #FFFFFF;
-  padding: 12px 16px;
+  padding: 12px 0;
   text-decoration: none
 }
 
 .menu_burger .menu_top ul>li>a:hover {
   color: #78b82a
 }
+
+.menu_burger {
+  .menu_bottom {
+
+    margin-top: 20px;
+    .buttons {
+      width: 310px;
+      //margin: 0 auto;
+
+
+      .burger_menu_btn {
+        border: none;
+        border-radius: 3px;
+        background: $first_green;
+        color: $white;
+        padding: 15px 80px 15px 80px;
+        :hover,
+        :active {
+          cursor: pointer;
+        }
+      }
+
+      .burger_menu_phone {
+        margin: 25px 0 25px;
+        display: inline-block;
+        padding: 15px 79px 15px 79px;
+        border: #33CC80 1px solid;
+        color: #33CC80;
+        text-decoration: none;
+      }
+      .message_whatsapp{
+        padding: 15px 96px 15px 97px;
+
+
+        color: #33CC80;
+        background-color: #262626;
+        border: 1px solid #33CC80;
+        border-radius: 3px;
+
+
+        font-family: 'Uni Neue Regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+
+
+      }
+      .message_telegram{
+        margin-top: 25px;
+        padding: 15px 100px 15px 100px;
+
+
+        color: #33CC80;
+        background-color: #262626;
+        border: 1px solid #33CC80;
+        border-radius: 3px;
+
+
+        font-family: 'Uni Neue Regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+
+
+      }
+
+
+    }
+  }
+}
+
 
 .opened {
   visibility: visible;
@@ -1418,7 +1492,9 @@ position: relative;
 
   }
 
-
+//* {
+//  outline: 1px red solid;
+//}
 
 // COOP BLOCK
 .coop_page {
