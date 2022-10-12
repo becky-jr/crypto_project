@@ -3107,5 +3107,10 @@
     top: 900px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1300px) {
+  .coin {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
