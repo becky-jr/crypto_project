@@ -360,7 +360,7 @@ $icons_background: #E9F5EF;
     font-size: 13px;
     color: $grey;
     display: inline-block;
-    padding: 30px 0;
+    padding: 30px 0 30px 10px;
   }
 
   // todo left part
@@ -519,6 +519,7 @@ $icons_background: #E9F5EF;
 
     .left_screen {
       max-width: 310px;
+      padding: 50px 30px 0 0;
       margin: 0 auto;
       .main_text {
         font-weight: 800;
@@ -617,6 +618,9 @@ $icons_background: #E9F5EF;
 //* {
 //  outline: 1px red solid;
 //}
+.phoneIconShow {
+  display: block;
+}
 
 #about {
   background-color: $white_grey;
@@ -648,6 +652,7 @@ $icons_background: #E9F5EF;
     top: 750px;
     right: 50px;
     z-index: 11;
+    display: none;
   }
 
   .left_menu {
@@ -990,7 +995,7 @@ $icons_background: #E9F5EF;
           font-size: 14px;
 
           .second {
-            margin: 0 0 20px 0;
+            margin: 0 0 20px 10px;
           }
         }
 
@@ -1326,28 +1331,28 @@ position: relative;
 // todo third block media
 @media screen and (max-width: 800px){
   .third_block {
-    .third_badge {
-      z-index: 10;
-      bottom: 250px;
-      top: unset;
-      left: 90px;
-    }
 
-    height: 1600px;
-    position: relative;
-
-    .third_left_menu {
-      padding: 0;
-      width: 380px;
-      margin: 0 auto;
-
-      position: absolute;
-      top: 1050px;
-      z-index: 2;
-      img {
-        width: 365px;
+      height: 1600px;
+      position: relative;
+      .third_left_menu {
+        padding: 0;
+        width: 310px;
+        margin: 0 0 0 30px;
+        position: absolute;
+        top: 1050px;
+        z-index: 2;
+        img {
+          width: 310px;
+        }
       }
-    }
+      .third_badge {
+        z-index: 10;
+        bottom: 250px;
+        top: unset;
+        left: 90px;
+      }
+
+
 
     .third_right_menu {
       width: 310px;
@@ -1390,7 +1395,7 @@ position: relative;
       top: 1320px;
 
       .info_block_content {
-        padding: 120px 0 30px 25px;
+        padding: 90px 0 30px 25px;
         justify-content: unset;
 
         .info_block_icon {
@@ -1402,12 +1407,19 @@ position: relative;
 
         .info_block_text {
           margin-left: 15px;
-          font-size: 12px;
+          font-size: 15px;
           width: 263px;
         }
       }
     }
+
+    }
+
+
   }
+
+* {
+  outline: 1px red solid;
 }
 
 // COOP BLOCK
@@ -1437,7 +1449,7 @@ position: relative;
         color: $black;
       }
       .coop_thin {
-        font-family: 'Uni Neue Light';
+        font-family: 'Uni Neue Regular';
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -1642,7 +1654,7 @@ position: relative;
     .right_block {
       .right_block_info {
         margin: 50px 0 50px;
-        width: 385px;
+        width: 375px;
 
         .ruble_block {
           width: 144px;
@@ -2038,7 +2050,7 @@ position: relative;
 // income page media
 @media screen and (max-width: 800px) {
   .income_page {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 25px 0;
     width: 310px;
     margin: 0 auto;
 
@@ -2077,7 +2089,7 @@ position: relative;
       }
     }
     .income_data {
-      font-size: 10px;
+      font-size: 13px;
       margin: unset;
     }
   }
@@ -2338,7 +2350,7 @@ position: relative;
         }
         .mobile_chart {
           display: block;
-          width: 310px;
+          width: 330px;
         }
       }
     }
@@ -2461,7 +2473,7 @@ position: relative;
         .rights_icon {
           display: inline-block;
           width: 150px;
-          margin: 5px 0 0 0;
+          margin: 5px 20px 0 0;
           img {
             width: 50px;
           }
@@ -2598,12 +2610,12 @@ position: relative;
 
   .application_block {
     height: unset;
-    width: 400px;
+    width: 390px;
 
     background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
 
     .application_content {
-      width: 400px;
+      width: 380px;
       margin: 0;
       padding: 50px 25px 40px;
 
@@ -2631,7 +2643,7 @@ position: relative;
   }
 
   .mobile_family {
-    width: 405px;
+    width: 100%;
     display: block;
     margin: 0 auto;
 
@@ -2735,7 +2747,7 @@ position: relative;
 
         .youtube_mobile {
           display: block;
-          width: 400px;
+          width: 100%;
         }
       }
     }
@@ -3171,7 +3183,7 @@ position: relative;
     .message_buttons {
       margin: 30px 0 50px;
       .message_whatsapp, .message_telegram {
-        padding: 10px 35px;
+        padding: 10px 50px;
         margin-right: 30px;
 
         background-color: #FAFAFA;
@@ -3266,7 +3278,7 @@ position: relative;
 
         .message_telegram {
           margin: 10px 0 0;
-          padding: 10px 38px;
+          padding: 10px 54px;
         }
       }
 
@@ -3606,6 +3618,9 @@ position: relative;
         .slider {
           margin-top: 50px;
           .slider_img {
+            span {
+              display: none;
+            }
             margin: 0 auto;
             //max-width: 300px;
             width: 290px;
@@ -3785,66 +3800,80 @@ position: relative;
 @media screen and (max-width: 500px){
   .phone_popup {
     //width: 310px;
+    .popup_content {
+      max-width: 400px;
+      margin: 50px auto;
 
+      .form {
 
-    .popup_logo {
-      margin: 16px 10px 16px 15px;
-      overflow-x: hidden;
+        .popup_logo {
+          margin: 16px 10px 16px 15px;
+          overflow-x: hidden;
 
-      .logo {
-        overflow: hidden;
-      }
+          .logo {
+            overflow: hidden;
+          }
 
-      .logo {
-        a {
-          img {
-            width: 200px;
+          .logo {
+            a {
+              img {
+                width: 200px;
 
+              }
+            }
+            span {
+              img {
+                width: 25px;
+              }
+            }
           }
         }
-        span {
-          img {
-            width: 25px;
+
+        .phone_content {
+          max-width: 400px;
+
+          padding: 40px 30px 40px;
+
+          .popup_title {
+            font-size: 20px;
+            padding: 0 0 25px;
           }
+
+          .popup_inputs {
+
+            .name_input {
+
+              input {
+                padding: 10px 82px 14px 22px;
+              }
+
+            }
+
+            .contact_inputs {
+              display: block;
+
+            }
+
+            .phone_popup_button {
+              padding: 15px 85px;
+            }
+
+            .check_input {
+              font-size: 10px;
+              span {
+                text-decoration: underline;
+              }
+            }
+
+          }
+
         }
+
       }
+
     }
 
-    .phone_content {
 
-      padding: 40px 30px 40px;
-
-      .popup_title {
-        font-size: 20px;
-        padding: 0 0 25px;
-      }
-
-      .popup_inputs {
-
-        .name_input {
-
-          input {
-            padding: 10px 82px 14px 22px;
-          }
-
-        }
-
-        .contact_inputs {
-          display: block;
-
-        }
-
-        .phone_popup_button {
-          padding: 15px 85px;
-        }
-
-        .check_input {
-          font-size: 10px;
-        }
-
-      }
-
-    }
   }
 }
 
@@ -3895,8 +3924,7 @@ position: relative;
       .phone_content {
         background: #F8F8F8;
         //box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.5);
-        padding: 40px 50px 60px;
-
+        padding: 20px 20px 30px;
 
         .popup_title {
           padding: 0 0 35px;
@@ -4002,52 +4030,62 @@ position: relative;
 // form popup media
 @media screen and (max-width: 500px){
   .form_popup {
-    width: 420px;
+    width: 100%;
 
 
-    .popup_logo {
-      margin: 16px 15px;
+    .popup_content {
 
-      .logo {
-        overflow: hidden;
-        a {
-          img {
-            width: 200px;
-          }
-        }
-      }
+      .form {
 
+        .popup_logo {
+          margin: 16px 15px;
 
-    }
-
-    .phone_content {
-
-      padding: 30px;
-
-      .popup_title {
-        font-size: 20px;
-      }
-
-      .popup_inputs {
-        .name_input {
-
-          input {
-            padding: 15px 90px 15px 20px
+          .logo {
+            overflow: hidden;
+            a {
+              img {
+                width: 200px;
+              }
+            }
           }
 
+
         }
 
-        .contact_inputs {
-          display: block;
+        .phone_content {
+
+          padding: 30px;
+
+          .popup_title {
+            font-size: 20px;
+          }
+
+          .popup_inputs {
+            .name_input {
+
+              input {
+                padding: 15px 90px 15px 20px
+              }
+
+            }
+
+            .contact_inputs {
+              display: block;
+            }
+
+            .phone_popup_button {
+              padding: 15px 53px;
+            }
+
+            .check_input {
+              font-size: 10px;
+            }
+
+          }
+
+
         }
 
-        .phone_popup_button {
-          padding: 15px 53px;
-        }
-
-        .check_input {
-          font-size: 10px;
-        }
 
       }
 
@@ -4147,7 +4185,7 @@ position: relative;
 
 @media screen and (max-width: 500px){
   .confidential_popup {
-    width: 350px;
+    width: 100%;
 
     .popup_logo {
 
@@ -4163,26 +4201,29 @@ position: relative;
     }
 
     .confidential_content {
-      padding: 20px;
-
-      .content_title {
-        font-size: 20px;
-      }
-
-      .laws {
-
-        .low_card {
-
-          .low_title {
-            font-size: 14px;
+      .form {
+        .confidential_content {
+          padding: 20px 20px 60px;
+          .content_title {
+            font-size: 20px;
           }
 
-          .low_text {
-            font-size: 10px;
-          }
+          .laws {
 
+            .low_card {
+
+              .low_title {
+                font-size: 19px;
+              }
+
+              .low_text {
+                font-size: 15px;
+              }
+
+            }
+
+          }
         }
-
       }
     }
   }
@@ -4235,7 +4276,7 @@ position: relative;
       position: absolute;
       top: unset;
       bottom: 280px;
-      left: 295px;
+      left: 290px;
       z-index: 10;
 
       img {
@@ -4248,7 +4289,7 @@ position: relative;
       z-index: 10;
       bottom: 250px;
       top: unset;
-      left: 90px;
+      left: 80px;
     }
   }
   .second_block {

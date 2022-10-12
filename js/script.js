@@ -225,3 +225,28 @@ card3Trigger.forEach(btn => {
 
     })
 })
+
+// function phoneIcon() {
+//     const icon = document.querySelector('.phone_icon');
+//     const windowY = window.screenY;
+//     console.log(windowY)
+//
+//     if (windowY >= 500) {
+//         icon.classList.add('.phoneIconShow');
+//     } else if (windowY <= 500) {
+//         // icon.style.display = 'none'
+//         icon.classList.remove('.phoneIconShow');
+//
+//     }
+// }
+// phoneIcon();
+
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 500) {
+        $('.phone_icon').fadeIn();
+    } else {
+        $('.phone_icon').fadeOut();
+    }
+
+});

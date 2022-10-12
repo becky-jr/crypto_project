@@ -189,7 +189,7 @@
   font-size: 13px;
   color: #999999;
   display: inline-block;
-  padding: 30px 0;
+  padding: 30px 0 30px 10px;
 }
 .main_page .left_screen {
   padding: 100px 30px 0 0;
@@ -307,6 +307,7 @@
   }
   .main_page .left_screen {
     max-width: 310px;
+    padding: 50px 30px 0 0;
     margin: 0 auto;
   }
   .main_page .left_screen .main_text {
@@ -372,6 +373,10 @@
     width: 140px;
   }
 }
+.phoneIconShow {
+  display: block;
+}
+
 #about {
   background-color: #F2F2F2;
   width: 100%;
@@ -398,6 +403,7 @@
   top: 750px;
   right: 50px;
   z-index: 11;
+  display: none;
 }
 .second_page .left_menu {
   width: 550px;
@@ -652,7 +658,7 @@
     font-size: 14px;
   }
   .first_block .first_right_menu .first_right_descr .first_right_thin .second {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 10px;
   }
   .first_block .law_block {
     width: 412px;
@@ -916,22 +922,22 @@
     height: 1600px;
     position: relative;
   }
-  .third_block .third_badge {
-    z-index: 10;
-    bottom: 250px;
-    top: unset;
-    left: 90px;
-  }
   .third_block .third_left_menu {
     padding: 0;
-    width: 380px;
-    margin: 0 auto;
+    width: 310px;
+    margin: 0 0 0 30px;
     position: absolute;
     top: 1050px;
     z-index: 2;
   }
   .third_block .third_left_menu img {
-    width: 365px;
+    width: 310px;
+  }
+  .third_block .third_badge {
+    z-index: 10;
+    bottom: 250px;
+    top: unset;
+    left: 90px;
   }
   .third_block .third_right_menu {
     width: 310px;
@@ -963,7 +969,7 @@
     top: 1320px;
   }
   .third_block .info_block .info_block_content {
-    padding: 120px 0 30px 25px;
+    padding: 90px 0 30px 25px;
     justify-content: unset;
   }
   .third_block .info_block .info_block_content .info_block_icon {
@@ -974,10 +980,14 @@
   }
   .third_block .info_block .info_block_content .info_block_text {
     margin-left: 15px;
-    font-size: 12px;
+    font-size: 15px;
     width: 263px;
   }
 }
+* {
+  outline: 1px red solid;
+}
+
 .coop_page {
   text-align: center;
   max-width: 1440px;
@@ -1005,7 +1015,7 @@
   color: #262626;
 }
 .coop_page .coop_title .coop_thin {
-  font-family: "Uni Neue Light";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -1177,7 +1187,7 @@
   }
   .join_content .right_block .right_block_info {
     margin: 50px 0 50px;
-    width: 385px;
+    width: 375px;
   }
   .join_content .right_block .right_block_info .ruble_block {
     width: 144px;
@@ -1440,7 +1450,7 @@
 
 @media screen and (max-width: 800px) {
   .income_page {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 25px 0;
     width: 310px;
     margin: 0 auto;
   }
@@ -1469,7 +1479,7 @@
     width: 310px;
   }
   .income_page .income_data {
-    font-size: 10px;
+    font-size: 13px;
     margin: unset;
   }
 }
@@ -1655,7 +1665,7 @@
   }
   .revenue_block .revenue_content .revenue_chart .mobile_chart {
     display: block;
-    width: 310px;
+    width: 330px;
   }
 }
 .rights_block .rights_title {
@@ -1750,7 +1760,7 @@
   .rights_block .rights_content_cards .rights_card .rights_icon {
     display: inline-block;
     width: 150px;
-    margin: 5px 0 0 0;
+    margin: 5px 20px 0 0;
   }
   .rights_block .rights_content_cards .rights_card .rights_icon img {
     width: 50px;
@@ -1855,11 +1865,11 @@
 @media screen and (max-width: 800px) {
   .application_block {
     height: unset;
-    width: 400px;
+    width: 390px;
     background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
   }
   .application_block .application_content {
-    width: 400px;
+    width: 380px;
     margin: 0;
     padding: 50px 25px 40px;
   }
@@ -1876,7 +1886,7 @@
     margin: 20px 0 0;
   }
   .mobile_family {
-    width: 405px;
+    width: 100%;
     display: block;
     margin: 0 auto;
   }
@@ -1948,7 +1958,7 @@
   }
   .youtube_block .youtube_content .right_block .youtube_mobile {
     display: block;
-    width: 400px;
+    width: 100%;
   }
 }
 .answers_block {
@@ -2257,7 +2267,7 @@
   margin: 30px 0 50px;
 }
 .contact_block .message_content .message_buttons .message_whatsapp, .contact_block .message_content .message_buttons .message_telegram {
-  padding: 10px 35px;
+  padding: 10px 50px;
   margin-right: 30px;
   background-color: #FAFAFA;
   border: 1px solid #33CC80;
@@ -2321,7 +2331,7 @@
   }
   .contact_block .message_content .message_buttons .message_telegram {
     margin: 10px 0 0;
-    padding: 10px 38px;
+    padding: 10px 54px;
   }
 }
 #footer {
@@ -2564,6 +2574,9 @@
     margin: 0 auto;
     width: 290px;
   }
+  .middle_slider .slider_inner .first_slider .slider .slider_img span {
+    display: none;
+  }
   .middle_slider .slider_inner .first_slider .slider .slider_img .img {
     width: 290px;
   }
@@ -2680,37 +2693,45 @@
 }
 
 @media screen and (max-width: 500px) {
-  .phone_popup .popup_logo {
+  .phone_popup .popup_content {
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  .phone_popup .popup_content .form .popup_logo {
     margin: 16px 10px 16px 15px;
     overflow-x: hidden;
   }
-  .phone_popup .popup_logo .logo {
+  .phone_popup .popup_content .form .popup_logo .logo {
     overflow: hidden;
   }
-  .phone_popup .popup_logo .logo a img {
+  .phone_popup .popup_content .form .popup_logo .logo a img {
     width: 200px;
   }
-  .phone_popup .popup_logo .logo span img {
+  .phone_popup .popup_content .form .popup_logo .logo span img {
     width: 25px;
   }
-  .phone_popup .phone_content {
+  .phone_popup .popup_content .form .phone_content {
+    max-width: 400px;
     padding: 40px 30px 40px;
   }
-  .phone_popup .phone_content .popup_title {
+  .phone_popup .popup_content .form .phone_content .popup_title {
     font-size: 20px;
     padding: 0 0 25px;
   }
-  .phone_popup .phone_content .popup_inputs .name_input input {
+  .phone_popup .popup_content .form .phone_content .popup_inputs .name_input input {
     padding: 10px 82px 14px 22px;
   }
-  .phone_popup .phone_content .popup_inputs .contact_inputs {
+  .phone_popup .popup_content .form .phone_content .popup_inputs .contact_inputs {
     display: block;
   }
-  .phone_popup .phone_content .popup_inputs .phone_popup_button {
+  .phone_popup .popup_content .form .phone_content .popup_inputs .phone_popup_button {
     padding: 15px 85px;
   }
-  .phone_popup .phone_content .popup_inputs .check_input {
+  .phone_popup .popup_content .form .phone_content .popup_inputs .check_input {
     font-size: 10px;
+  }
+  .phone_popup .popup_content .form .phone_content .popup_inputs .check_input span {
+    text-decoration: underline;
   }
 }
 .form_popup {
@@ -2750,7 +2771,7 @@
 }
 .form_popup .popup_content .form .phone_content {
   background: #F8F8F8;
-  padding: 40px 50px 60px;
+  padding: 20px 20px 30px;
 }
 .form_popup .popup_content .form .phone_content .popup_title {
   padding: 0 0 35px;
@@ -2821,33 +2842,33 @@
 
 @media screen and (max-width: 500px) {
   .form_popup {
-    width: 420px;
+    width: 100%;
   }
-  .form_popup .popup_logo {
+  .form_popup .popup_content .form .popup_logo {
     margin: 16px 15px;
   }
-  .form_popup .popup_logo .logo {
+  .form_popup .popup_content .form .popup_logo .logo {
     overflow: hidden;
   }
-  .form_popup .popup_logo .logo a img {
+  .form_popup .popup_content .form .popup_logo .logo a img {
     width: 200px;
   }
-  .form_popup .phone_content {
+  .form_popup .popup_content .form .phone_content {
     padding: 30px;
   }
-  .form_popup .phone_content .popup_title {
+  .form_popup .popup_content .form .phone_content .popup_title {
     font-size: 20px;
   }
-  .form_popup .phone_content .popup_inputs .name_input input {
+  .form_popup .popup_content .form .phone_content .popup_inputs .name_input input {
     padding: 15px 90px 15px 20px;
   }
-  .form_popup .phone_content .popup_inputs .contact_inputs {
+  .form_popup .popup_content .form .phone_content .popup_inputs .contact_inputs {
     display: block;
   }
-  .form_popup .phone_content .popup_inputs .phone_popup_button {
+  .form_popup .popup_content .form .phone_content .popup_inputs .phone_popup_button {
     padding: 15px 53px;
   }
-  .form_popup .phone_content .popup_inputs .check_input {
+  .form_popup .popup_content .form .phone_content .popup_inputs .check_input {
     font-size: 10px;
   }
 }
@@ -2910,7 +2931,7 @@
 
 @media screen and (max-width: 500px) {
   .confidential_popup {
-    width: 350px;
+    width: 100%;
   }
   .confidential_popup .popup_logo .logo {
     overflow: hidden;
@@ -2918,17 +2939,17 @@
   .confidential_popup .popup_logo .logo a img {
     width: 260px;
   }
-  .confidential_popup .confidential_content {
-    padding: 20px;
+  .confidential_popup .confidential_content .form .confidential_content {
+    padding: 20px 20px 60px;
   }
-  .confidential_popup .confidential_content .content_title {
+  .confidential_popup .confidential_content .form .confidential_content .content_title {
     font-size: 20px;
   }
-  .confidential_popup .confidential_content .laws .low_card .low_title {
-    font-size: 14px;
+  .confidential_popup .confidential_content .form .confidential_content .laws .low_card .low_title {
+    font-size: 19px;
   }
-  .confidential_popup .confidential_content .laws .low_card .low_text {
-    font-size: 10px;
+  .confidential_popup .confidential_content .form .confidential_content .laws .low_card .low_text {
+    font-size: 15px;
   }
 }
 .show {
@@ -2970,7 +2991,7 @@
     position: absolute;
     top: unset;
     bottom: 280px;
-    left: 295px;
+    left: 290px;
     z-index: 10;
   }
   .first_block .new_times img {
@@ -2980,7 +3001,7 @@
     z-index: 10;
     bottom: 250px;
     top: unset;
-    left: 90px;
+    left: 80px;
   }
   .second_block .second_icon {
     position: absolute;
