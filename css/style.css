@@ -298,7 +298,6 @@
   background-color: #33CC80;
 }
 .main_page .right_screen .right_slider .slider-item {
-  max-width: 750px;
   max-height: 700px;
 }
 .main_page .right_screen .right_slider .slider-item .slider-img {
@@ -1202,6 +1201,12 @@
 }
 .join_content .right_block .right_block_info .ruble_block .ruble_block_icon .ruble_icon {
   padding: 33px;
+}
+.join_content .right_block .right_block_info .ruble_block .ruble_block_icon .ruble_icon4 {
+  padding: 38px;
+}
+.join_content .right_block .right_block_info .ruble_block .ruble_block_icon .ruble_icon2 {
+  padding: 36px;
 }
 .join_content .right_block .right_block_info .ruble_block .ruble_block_text {
   font-family: "Uni Neue Light";

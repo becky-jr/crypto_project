@@ -502,7 +502,7 @@ $icons_background: #E9F5EF;
 
     .right_slider {
       .slider-item {
-        max-width: 750px;
+        //max-width: 750px;
         max-height: 700px;
         .slider-img {
           height: 600px;
@@ -1683,9 +1683,15 @@ position: relative;
                 width: 90px;
                 height: 90px;
                 border-radius: 50px;
-                  .ruble_icon {
-                    padding: 33px;
-                  }
+                .ruble_icon {
+                  padding: 33px;
+                }
+                .ruble_icon4 {
+                  padding: 38px;
+                }
+                .ruble_icon2 {
+                  padding: 36px;
+                }
               }
 
               .ruble_block_text {
