@@ -984,10 +984,6 @@
     width: 263px;
   }
 }
-* {
-  outline: 1px red solid;
-}
-
 .coop_page {
   text-align: center;
   max-width: 1440px;
