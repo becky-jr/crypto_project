@@ -130,6 +130,10 @@ modalClose.forEach(btn => {
         modalForm.classList.remove('show');
         modalForm.classList.add('hide');
 
+        modalBurger.classList.remove('opened');
+        modalBurger.classList.add('closed');
+        document.body.style.overflow = '';
+
         document.body.style.overflow = '';
 
     })
@@ -163,7 +167,48 @@ modalBurgerClose.forEach(btn => {
         document.body.style.overflow = '';
 
     })
-})
+});
+
+$('ul li a[href="#about"]').on("click", function (e) {
+    // e.preventDefault();
+    modalBurger.classList.remove('opened');
+    modalBurger.classList.add('closed');
+    document.body.style.overflow = '';
+
+});
+$('ul li a[href="#advantages"]').on("click", function (e) {
+    // e.preventDefault();
+    modalBurger.classList.remove('opened');
+    modalBurger.classList.add('closed');
+    document.body.style.overflow = '';
+
+});
+$('ul li a[href="#history"]').on("click", function (e) {
+    // e.preventDefault();
+    modalBurger.classList.remove('opened');
+    modalBurger.classList.add('closed');
+    document.body.style.overflow = '';
+
+});
+$('ul li a[href="#income"]').on("click", function (e) {
+    // e.preventDefault();
+    modalBurger.classList.remove('opened');
+    modalBurger.classList.add('closed');
+    document.body.style.overflow = '';
+
+});
+$('ul li a[href="#contacts"]').on("click", function (e) {
+    // e.preventDefault();
+    modalBurger.classList.remove('opened');
+    modalBurger.classList.add('closed');
+    document.body.style.overflow = '';
+
+});
+
+
+
+
+
 
 const card1Trigger = document.querySelectorAll('.bank'),
       card2Trigger = document.querySelectorAll('.estate'),
