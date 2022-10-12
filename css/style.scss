@@ -2199,7 +2199,7 @@ position: relative;
 // METHOD PAGE
 
 .method_block {
-  margin: 40px 0 120px 0;
+  margin: 40px 0 120px 40px;
   .method_title {
     //width: 900px;
     //margin-left: 2%;
@@ -4489,8 +4489,11 @@ position: relative;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1300px){
+@media screen and (min-width: 600px) and (max-width: 1440px){
   .coin {
+    display: none;
+  }
+  .fourth_badge {
     display: none;
   }
 }
