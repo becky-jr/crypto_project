@@ -1630,7 +1630,7 @@
   color: #565758;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .method_block {
     margin: 40px auto 50px;
     width: 310px;
