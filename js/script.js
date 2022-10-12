@@ -22,7 +22,7 @@ $('.history_cards').slick({
     nextArrow: false,
     responsive: [
         {
-            breakpoint: 767,
+            breakpoint: 1000,
             settings: "unslick"
         }
     ]
@@ -287,11 +287,20 @@ card3Trigger.forEach(btn => {
 // phoneIcon();
 
 $(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 300) {
-        $('.phone_icon').fadeIn();
-    } else {
-        $('.phone_icon').fadeOut();
+    let windows = window.screen;
+
+    if (windows.availWidth > 1300) {
+        var y = $(this).scrollTop();
+        if (y > 300) {
+            $('.phone_icon').fadeIn();
+        } else {
+            $('.phone_icon').fadeOut();
+        }
+
     }
 
+
 });
+
+let windows = window.screen;
+console.log(windows)

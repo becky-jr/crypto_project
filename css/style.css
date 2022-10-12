@@ -230,6 +230,10 @@
   opacity: 0;
 }
 
+* {
+  outline: 1px red solid;
+}
+
 .main_page {
   position: relative;
 }
@@ -272,6 +276,7 @@
 }
 .main_page .left_screen .main_btn {
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 .main_page .left_screen .main_btn :hover {
   box-shadow: 5px 5px 5px #38E08C;
@@ -304,7 +309,7 @@
   height: 600px;
 }
 .main_page .main_page_bottom {
-  width: 1350px;
+  width: 100%;
   padding: 80px 0 0 0;
   margin: 0 auto;
   border-top: 1px solid #F2F2F2;
@@ -313,7 +318,6 @@
   display: flex;
 }
 .main_page .main_page_bottom .content .statistics {
-  width: 340px;
   display: flex;
 }
 .main_page .main_page_bottom .content .statistics .chart {
@@ -335,7 +339,7 @@
 .main_page .main_page_bottom .content .statistics .statistics_text, .main_page .main_page_bottom .content .statistics .statistics_mini_text {
   margin-left: 10px;
   display: inline-block;
-  width: 200px;
+  width: 100%;
 }
 .main_page .main_page_bottom .content .statistics .statistics_mini_text {
   font-size: 16px;
@@ -457,7 +461,6 @@
   top: 80%;
   right: 50px;
   z-index: 11;
-  display: none;
 }
 .second_page .left_menu {
   width: 550px;
@@ -509,15 +512,23 @@
   display: inline-block;
 }
 .second_page .right_menu {
-  width: 550px;
+  width: 100%;
   margin: 200px auto 0;
 }
+.second_page .right_menu .right_img {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.second_page .right_menu .right_img img {
+  width: 100%;
+}
 .second_page .experience {
-  padding: 60px 0 121px 0;
+  padding: 60px 0 121px 30px;
   max-width: 1350px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 400;
@@ -536,7 +547,7 @@
   color: #33CC80;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .second_page .phone_icon {
     display: none;
   }
@@ -568,7 +579,7 @@
   }
   .second_page .experience {
     padding: 30px 0 50px;
-    justify-content: unset;
+    justify-content: center;
     flex-wrap: wrap;
     font-size: 12px;
   }
@@ -596,14 +607,12 @@
 }
 .first_block .first_left_menu {
   padding: 158px 0 0 0;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
 }
-.first_block .first_right_menu {
-  padding: 120px 100px 0 0;
-}
 .first_block .first_right_menu .first_right_descr {
-  width: 600px;
+  margin-top: 130px;
+  width: 100%;
 }
 .first_block .first_right_menu .first_right_descr .first_right_gradient {
   font-family: "Uni Neue Bold";
@@ -753,7 +762,7 @@
   margin: 0 auto;
 }
 .second_block .second_left_menu .second_left_descr {
-  width: 600px;
+  width: 100%;
 }
 .second_block .second_left_menu .second_left_descr .second_left_gradient {
   font-family: "Uni Neue Bold";
@@ -805,12 +814,15 @@
   display: inline-block;
 }
 .second_block .second_right_menu {
-  width: 400px;
+  max-width: 550px;
   margin: 20px auto 0 100px;
   padding-top: 40px;
 }
+.second_block .second_right_menu img {
+  width: 100%;
+}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .second_block {
     padding: 50px 0 0 0;
   }
@@ -880,12 +892,15 @@
 }
 .third_block .third_left_menu {
   padding: 158px 0 0 0;
-  width: 550px;
+  max-width: 550px;
   margin: 0 auto;
 }
+.third_block .third_left_menu img {
+  width: 100%;
+}
 .third_block .third_right_menu {
-  width: 700px;
-  padding: 120px 100px 0 0;
+  max-width: 550px;
+  padding-top: 120px;
 }
 .third_block .third_right_menu .third_right_descr .third_right_gradient {
   font-family: "Uni Neue Bold";
@@ -902,7 +917,7 @@
 }
 .third_block .third_right_menu .third_right_descr .third_right_bold {
   height: 90px;
-  margin: 0 0 30px 0;
+  margin: 0 0 60px 0;
   font-family: "Uni Neue Bold";
   font-style: normal;
   font-weight: 700;
@@ -975,14 +990,19 @@
   font-family: "Uni Neue Bold";
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .third_block .third_right_menu {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
   .third_block {
     height: 1600px;
     position: relative;
   }
   .third_block .third_left_menu {
     padding: 0;
-    width: 370px;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -1029,7 +1049,7 @@
   }
   .third_block .info_block .info_block_content {
     padding: 90px 0 30px 25px;
-    justify-content: unset;
+    justify-content: center;
   }
   .third_block .info_block .info_block_content .info_block_icon {
     width: 30px;
@@ -1190,7 +1210,7 @@
   width: 50%;
 }
 .join_content .right_block .right_block_info .ruble_block {
-  width: 239px;
+  width: 210px;
   margin: 0 70px 50px 0;
 }
 .join_content .right_block .right_block_info .ruble_block .ruble_block_icon {
@@ -1248,7 +1268,6 @@
   }
   .join_content .right_block .right_block_info {
     margin: 50px 0 50px;
-    width: 375px;
   }
   .join_content .right_block .right_block_info .ruble_block {
     width: 144px;
@@ -1260,6 +1279,12 @@
   }
   .join_content .right_block .right_block_info .ruble_block .ruble_block_icon .ruble_icon {
     padding: 13px;
+  }
+  .join_content .right_block .right_block_info .ruble_block .ruble_block_icon .ruble_icon2 {
+    padding: 16px;
+  }
+  .join_content .right_block .right_block_info .ruble_block .ruble_block_icon .ruble_icon4 {
+    padding: 18px;
   }
   .join_content .right_block .right_block_info .ruble_block .ruble_block_text {
     font-size: 12px;
@@ -1285,7 +1310,6 @@
   color: #999999;
 }
 .history_block .history_content {
-  width: 1255px;
   margin: 0 auto;
 }
 .history_block .history_content .history_title {
@@ -1304,8 +1328,12 @@
   color: #262626;
 }
 .history_block .history_content .history_chart {
-  background: url("../img/history_chart2.svg") no-repeat;
+  background: url("../img/history_chart2.svg");
   position: relative;
+}
+.history_block .history_content .history_chart .chart_line {
+  width: 100%;
+  height: auto;
 }
 .history_block .history_content .history_chart .chart_line_mobile {
   display: none;
@@ -1323,6 +1351,7 @@
 .history_block .history_content .history_cards {
   padding-top: 75px;
   display: flex;
+  justify-content: center;
   position: relative;
 }
 .history_block .history_content .history_cards .slick-dots {
@@ -1356,7 +1385,7 @@
 }
 .history_block .history_content .history_cards .first_card .hand {
   position: absolute;
-  left: 235px;
+  right: 5px;
   top: -30px;
 }
 .history_block .history_content .history_cards .first_card .card_number {
@@ -1394,6 +1423,11 @@
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 800px) {
+  .middle_slider .slick-dots {
+    left: 15%;
+  }
+}
 @media screen and (max-width: 500px) {
   .history_block {
     margin: 50px auto 0;
@@ -1453,7 +1487,7 @@
   right: 700px;
 }
 .income_page .income_left_block {
-  width: 600px;
+  width: 90%;
   margin: 0 auto;
   text-align: left;
 }
@@ -1498,18 +1532,22 @@
   margin-bottom: 20px;
 }
 .income_page .income_right_block {
-  width: 600px;
+  max-width: 550px;
   margin: 50px auto;
 }
+.income_page .income_right_block img {
+  width: 100%;
+}
 .income_page .income_data {
+  max-width: 100%;
+  margin: 0 auto;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  margin-left: 250px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .income_page {
     padding: 50px 0 25px 0;
     width: 320px;
@@ -1563,7 +1601,7 @@
   font-size: 30px;
 }
 .method_block .method_title .title_thin {
-  width: 800px;
+  width: 100%;
   margin: 23px 0 50px 0;
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -1630,10 +1668,9 @@
   color: #565758;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .method_block {
     margin: 40px auto 50px;
-    width: 310px;
   }
   .method_block .method_title {
     margin: 0;
@@ -1682,6 +1719,9 @@
   top: -55px;
   left: -130px;
 }
+.revenue_block .revenue_content .revenue_chart .desktop_chart {
+  width: 100%;
+}
 .revenue_block .revenue_content .revenue_chart .mobile_chart {
   display: none;
 }
@@ -1717,7 +1757,7 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .revenue_block .revenue_content {
     overflow: hidden;
     height: unset;
@@ -1744,7 +1784,7 @@
 }
 .rights_block .rights_title {
   padding: 0 0 150px;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
 }
@@ -1765,7 +1805,7 @@
   color: #262626;
 }
 .rights_block .rights_title .rights_thin {
-  width: 880px;
+  width: 100%;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 400;
@@ -1773,13 +1813,10 @@
   color: #565758;
 }
 .rights_block .rights_content_cards {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto 150px;
   display: flex;
   justify-content: space-between;
-}
-.rights_block .rights_content_cards .rights_card {
-  width: 270px;
 }
 .rights_block .rights_content_cards .rights_card .bold_text {
   margin: 15px 0 20px;
@@ -1799,7 +1836,7 @@
   color: #565758;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .rights_block {
     width: 320px;
     margin: 0 auto;
@@ -1939,11 +1976,11 @@
 @media screen and (max-width: 800px) {
   .application_block {
     height: unset;
-    width: 390px;
+    width: 100%;
     background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
   }
   .application_block .application_content {
-    width: 377px;
+    width: 100%;
     margin: 0;
     padding: 50px 25px 40px;
   }
@@ -2004,7 +2041,7 @@
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .youtube_block .youtube_content {
     display: block;
   }
@@ -2118,7 +2155,7 @@
 }
 .advice_block {
   background-color: #FFFFFF;
-  width: 1250px;
+  width: 100%;
   margin: 0 auto 150px;
 }
 .advice_block .advice_left .advice_gradient {
@@ -2257,7 +2294,7 @@
   padding: 150px 0 0 0;
 }
 .contact_block .contacts_content .contacts_title {
-  width: 850px;
+  width: 100%;
 }
 .contact_block .contacts_content .contacts_title .contacts_gradient {
   font-family: "Uni Neue Regular";
@@ -2293,18 +2330,14 @@
   display: flex;
   flex-wrap: wrap;
 }
-.contact_block .office_content .card2 {
-  margin-left: 40px;
-}
 .contact_block .office_content .office_card {
-  width: 380px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
 }
 .contact_block .office_content .office_card .card_content {
   padding: 50px 0 50px 50px;
-  width: 265px;
 }
 .contact_block .office_content .office_card .card_content .office_gradient {
   font-family: "Uni Neue Regular";
@@ -2481,6 +2514,7 @@
   overflow-x: hidden;
   white-space: nowrap;
   width: 100%;
+  padding: 0;
 }
 #bottom_footer .second_footer .footer_list li {
   display: inline;
@@ -3040,10 +3074,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .second_page .phone_icon {
-    top: 1100px;
-    right: 130px;
-  }
   .second_page .ilma {
     right: 550px;
   }
@@ -3092,7 +3122,7 @@
     width: 150px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .card-2, .card-3 {
     display: none;
   }
@@ -3107,11 +3137,28 @@
     top: 900px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1440px) {
+@media screen and (min-width: 500px) and (max-width: 1440px) {
   .coin {
     display: none;
   }
   .fourth_badge {
+    display: none;
+  }
+  .new_times {
+    display: none;
+  }
+  .third_block .third_badge {
+    display: none;
+  }
+  .second_page .ilma {
+    display: none;
+  }
+  .second_block .second_icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .second_page .phone_icon {
     display: none;
   }
 }
