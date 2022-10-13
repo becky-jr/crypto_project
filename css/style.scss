@@ -3553,6 +3553,13 @@ position: relative;
 .map_content {
   max-width: 1200px;
   margin: 0 auto;
+  .map {
+    div {
+      frame {
+        width: 100%;
+      }
+    }
+  }
 }
 
 #footer {
