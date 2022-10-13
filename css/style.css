@@ -1212,7 +1212,6 @@
   }
 }
 .join_content {
-  height: 720px;
   background-color: #FAFAFA;
   position: relative;
 }
@@ -1758,7 +1757,7 @@
 .revenue_block .revenue_content {
   margin: 0 auto;
   max-width: 1200px;
-  height: 600px;
+  height: 500px;
   position: relative;
   overflow-y: hidden;
 }
@@ -1783,6 +1782,7 @@
   position: absolute;
   top: 505px;
   left: 400px;
+  display: none;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
@@ -2761,15 +2761,19 @@
     font-size: 14px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .middle_slider .slick-dots {
     left: unset;
-    right: 1%;
     margin-top: 30px;
   }
   .middle_slider .slick-dots button {
     width: 30px;
     height: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .middle_slider .slick-dots {
+    left: 15%;
   }
 }
 @media screen and (max-width: 1440px) {

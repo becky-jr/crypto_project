@@ -1734,7 +1734,7 @@ position: relative;
 // JOIN BLOCK
 
 .join_content {
-  height: 720px;
+  //height: 720px;
   background-color: $white;
   position: relative;
 
@@ -2520,7 +2520,7 @@ position: relative;
   .revenue_content {
     margin: 0 auto;
     max-width: 1200px;
-    height: 600px;
+    height: 500px;
     position: relative;
     overflow-y: hidden;
 
@@ -2549,6 +2549,7 @@ position: relative;
       position: absolute;
       top: 505px;
       left: 400px;
+      display: none;
 
       font-family: 'Uni Neue Regular';
       font-style: normal;
@@ -3940,17 +3941,24 @@ position: relative;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1000px){
+@media screen and (min-width: 600px) and (max-width: 768px){
   .middle_slider {
     .slick-dots {
       left: unset;
-      right: 1%;
+      //right: 1%;
       margin-top: 30px;
 
       button {
         width: 30px;
         height: 30px;
       }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  .middle_slider {
+    .slick-dots {
+      left: 15%;
     }
   }
 }
