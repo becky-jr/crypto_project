@@ -4556,13 +4556,13 @@ position: relative;
 // icons responsive
 @media screen and (max-width: 1750px) {
 
-  .second_page .ilma {
-    right: 550px;
-
-    img {
-      width: 100px;
-    }
-  }
+  //.second_page .ilma {
+  //  right: 550px;
+  //
+  //  img {
+  //    width: 100px;
+  //  }
+  //}
 
   .first_block .new_times {
     position: absolute;
@@ -4688,7 +4688,7 @@ position: relative;
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1440px){
+@media screen and (min-width: 500px) and (max-width: 1750px){
   .coin {
     display: none;
   }
