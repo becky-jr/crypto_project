@@ -1680,7 +1680,7 @@
 }
 .method_block .method_title .title_thin {
   width: 100%;
-  margin: 23px 0 50px 0;
+  margin: 20px 0 25px 0;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
@@ -1784,7 +1784,6 @@
   }
   .method_block .method_card .cards .info_card {
     padding: 70px 0 70px 30px;
-    margin-bottom: 50px;
   }
   .method_block .method_card .cards .info_card .card_text .card_text_bold {
     font-size: 16px;
