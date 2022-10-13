@@ -417,9 +417,7 @@ $icons_background: #E9F5EF;
 //  }
 //}
 
-//* {
-//  outline: 1px red solid;
-//}
+
 .main_page {
 
   position: relative;
@@ -696,9 +694,6 @@ $icons_background: #E9F5EF;
 
 
 
-//* {
-//  outline: 1px red solid;
-//}
 .phoneIconShow {
   display: block;
 }
@@ -1065,7 +1060,7 @@ $icons_background: #E9F5EF;
       padding: 0;
       z-index: 2;
       display: flex;
-      width: 365px;
+      width: 320px;
       justify-content: center;
       img {
         width: 365px;
@@ -1282,7 +1277,7 @@ position: relative;
 .third_badge {
   position: absolute;
   top: 450px;
-  left: 540px;
+  left: 600px;
   background: rgba(255, 255, 255, 0.9);
   /* shadow */
 
@@ -1535,9 +1530,9 @@ position: relative;
 
   }
 
-* {
-  outline: 1px red solid;
-}
+//* {
+//  outline: 1px red solid;
+//}
 
 // COOP BLOCK
 .coop_page {
@@ -2119,7 +2114,7 @@ position: relative;
   .fourth_badge {
     position: absolute;
     top: 300px;
-    right: 700px;
+    right: 600px;
   }
 
   .income_left_block {
@@ -3069,8 +3064,9 @@ position: relative;
     }
 
     .advice_bold {
-      //width: 530px;
-      margin-top: 5px;
+      max-width: 530px;
+      margin: 5px auto;
+
       margin-bottom: 50px;
       font-family: 'Uni Neue Regular';
       font-style: normal;
@@ -3733,7 +3729,7 @@ position: relative;
 
 
 // media slider block
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 600px){
   .middle_slider {
     padding: 50px 0 0;
 
@@ -3799,9 +3795,6 @@ position: relative;
         .slider {
           margin-top: 50px;
           .slider_img {
-            span {
-              display: none;
-            }
             margin: 0 auto;
             //max-width: 300px;
             width: 290px;
@@ -3834,6 +3827,33 @@ position: relative;
 
   }
 }
+
+@media screen and (min-width: 600px) and (max-width: 1000px){
+  .middle_slider {
+    .slick-dots {
+      left: unset;
+      right: 1%;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .middle_slider {
+    .slider_inner {
+      .first_slider {
+        .slider {
+          .slider_img {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
 
 .phone_popup {
 

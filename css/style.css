@@ -700,7 +700,7 @@
     padding: 0;
     z-index: 2;
     display: flex;
-    width: 365px;
+    width: 320px;
     justify-content: center;
   }
   .first_block .first_left_menu img {
@@ -871,7 +871,7 @@
 .third_block .third_badge {
   position: absolute;
   top: 450px;
-  left: 540px;
+  left: 600px;
   background: rgba(255, 255, 255, 0.9);
   /* shadow */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
@@ -1063,10 +1063,6 @@
     width: 263px;
   }
 }
-* {
-  outline: 1px red solid;
-}
-
 .coop_page {
   text-align: center;
   max-width: 1440px;
@@ -1488,7 +1484,7 @@
 .income_page .fourth_badge {
   position: absolute;
   top: 300px;
-  right: 700px;
+  right: 600px;
 }
 .income_page .income_left_block {
   width: 90%;
@@ -2176,7 +2172,8 @@
   text-fill-color: transparent;
 }
 .advice_block .advice_left .advice_bold {
-  margin-top: 5px;
+  max-width: 530px;
+  margin: 5px auto;
   margin-bottom: 50px;
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -2647,7 +2644,7 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .middle_slider {
     padding: 50px 0 0;
   }
@@ -2697,9 +2694,6 @@
     margin: 0 auto;
     width: 290px;
   }
-  .middle_slider .slider_inner .first_slider .slider .slider_img span {
-    display: none;
-  }
   .middle_slider .slider_inner .first_slider .slider .slider_img .img {
     width: 290px;
   }
@@ -2714,6 +2708,17 @@
   }
   .middle_slider .slider_inner .first_slider .slider .slider_text .text_list {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .middle_slider .slick-dots {
+    left: unset;
+    right: 1%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .middle_slider .slider_inner .first_slider .slider .slider_img span {
+    display: none;
   }
 }
 .phone_popup {
