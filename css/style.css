@@ -230,10 +230,6 @@
   opacity: 0;
 }
 
-* {
-  outline: 1px red solid;
-}
-
 .main_page {
   position: relative;
 }
@@ -610,6 +606,10 @@
   max-width: 500px;
   margin: 0 auto;
 }
+.first_block .first_right_menu {
+  max-width: 550px;
+  margin: 0 auto;
+}
 .first_block .first_right_menu .first_right_descr {
   margin-top: 130px;
   width: 100%;
@@ -815,7 +815,7 @@
 }
 .second_block .second_right_menu {
   max-width: 550px;
-  margin: 20px auto 0 100px;
+  margin: 20px auto;
   padding-top: 40px;
 }
 .second_block .second_right_menu img {
@@ -1002,7 +1002,7 @@
   }
   .third_block .third_left_menu {
     padding: 0;
-    width: 100%;
+    width: 367px;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -1063,6 +1063,10 @@
     width: 263px;
   }
 }
+* {
+  outline: 1px red solid;
+}
+
 .coop_page {
   text-align: center;
   max-width: 1440px;
@@ -2078,7 +2082,7 @@
   padding: 150px 0 180px;
 }
 .answers_block .answers_title {
-  width: 700px;
+  width: 100%;
 }
 .answers_block .answers_title .answers_gradient {
   font-family: "Uni Neue Regular";
@@ -2124,7 +2128,7 @@
   box-shadow: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .answers_block {
     max-width: 600px;
     width: 320px;
@@ -2158,6 +2162,9 @@
   width: 100%;
   margin: 0 auto 150px;
 }
+.advice_block .advice_left {
+  text-align: center;
+}
 .advice_block .advice_left .advice_gradient {
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -2169,7 +2176,6 @@
   text-fill-color: transparent;
 }
 .advice_block .advice_left .advice_bold {
-  width: 530px;
   margin-top: 5px;
   margin-bottom: 50px;
   font-family: "Uni Neue Regular";
@@ -2180,6 +2186,7 @@
 }
 .advice_block .advice_right {
   margin: 50px 0 0 0;
+  text-align: center;
 }
 .advice_block .advice_right .advice_inputs .name_input {
   margin-top: 5px;
@@ -2193,12 +2200,14 @@
 }
 .advice_block .advice_right .advice_inputs .radio_messenger {
   display: flex;
+  justify-content: center;
 }
 .advice_block .advice_right .advice_inputs .radio_messenger .phone_radio, .advice_block .advice_right .advice_inputs .radio_messenger .telegram_radio, .advice_block .advice_right .advice_inputs .radio_messenger .whatsapp_radio {
   margin-right: 25px;
 }
 .advice_block .advice_right .advice_inputs .contact_inputs {
   display: flex;
+  justify-content: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -2249,7 +2258,7 @@
   border: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .advice_block {
     width: 320px;
     margin: 30px auto 0;
@@ -2396,6 +2405,7 @@
   }
   .contact_block .contacts_content .contacts_title {
     width: 310px;
+    margin: 0 auto;
   }
   .contact_block .contacts_content .contacts_title .contacts_gradient {
     font-size: 14px;
@@ -2637,7 +2647,7 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .middle_slider {
     padding: 50px 0 0;
   }

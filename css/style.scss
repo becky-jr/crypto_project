@@ -417,9 +417,9 @@ $icons_background: #E9F5EF;
 //  }
 //}
 
-* {
-  outline: 1px red solid;
-}
+//* {
+//  outline: 1px red solid;
+//}
 .main_page {
 
   position: relative;
@@ -946,6 +946,9 @@ $icons_background: #E9F5EF;
   }
 
   .first_right_menu {
+    max-width: 550px;
+    margin: 0 auto;
+
 
     //padding: 120px 100px 0 0;
 
@@ -1209,7 +1212,7 @@ $icons_background: #E9F5EF;
 
   .second_right_menu {
     max-width: 550px;
-    margin: 20px auto 0 100px;
+    margin: 20px auto;
     padding-top: 40px;
     img {
       width: 100%;
@@ -1448,7 +1451,7 @@ position: relative;
       position: relative;
       .third_left_menu {
         padding: 0;
-        width: 100%;
+        width: 367px;
         display: flex;
         justify-content: center;
         //margin: 0 0 0 25px;
@@ -1532,9 +1535,9 @@ position: relative;
 
   }
 
-//* {
-//  outline: 1px red solid;
-//}
+* {
+  outline: 1px red solid;
+}
 
 // COOP BLOCK
 .coop_page {
@@ -2932,7 +2935,7 @@ position: relative;
 
 
   .answers_title {
-    width: 700px;
+    width: 100%;
 
     .answers_gradient {
       font-family: 'Uni Neue Regular';
@@ -2996,7 +2999,7 @@ position: relative;
 
 // answers media
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
   .answers_block {
     max-width: 600px;
     width: 320px;
@@ -3051,6 +3054,7 @@ position: relative;
   width: 100%;
   margin: 0 auto 150px;
   .advice_left {
+    text-align: center;
 
     .advice_gradient {
       font-family: 'Uni Neue Regular';
@@ -3065,7 +3069,7 @@ position: relative;
     }
 
     .advice_bold {
-      width: 530px;
+      //width: 530px;
       margin-top: 5px;
       margin-bottom: 50px;
       font-family: 'Uni Neue Regular';
@@ -3079,6 +3083,7 @@ position: relative;
 
   .advice_right {
     margin: 50px 0 0 0;
+    text-align: center;
 
     .advice_inputs {
 
@@ -3094,13 +3099,14 @@ position: relative;
       }
       .radio_messenger {
         display: flex;
+        justify-content: center;
         .phone_radio, .telegram_radio, .whatsapp_radio {
           margin-right: 25px;
         }
       }
       .contact_inputs {
         display: flex;
-        //justify-content: space-between;
+        justify-content: center;
 
         //font-family: 'Uni Neue Regular';
         font-style: normal;
@@ -3166,7 +3172,7 @@ position: relative;
 
 // media advice block
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
   .advice_block {
     width: 320px;
     margin: 30px auto 0;
@@ -3384,6 +3390,7 @@ position: relative;
 
       .contacts_title {
         width: 310px;
+        margin: 0 auto;
 
         .contacts_gradient {
           font-size: 14px;
@@ -3726,7 +3733,7 @@ position: relative;
 
 
 // media slider block
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
   .middle_slider {
     padding: 50px 0 0;
 
