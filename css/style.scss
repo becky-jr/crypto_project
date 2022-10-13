@@ -146,6 +146,12 @@ $icons_background: #E9F5EF;
 //Responsive Menu
 .header {
   .header_body {
+    .logo {
+      .logo_mobile {
+        display: none;
+      }
+    }
+
     display: flex;
     justify-content: space-between;
 
@@ -214,6 +220,22 @@ $icons_background: #E9F5EF;
 
 
 }
+
+@media screen and (max-width: 500px) {
+  .header {
+    .header_body {
+      .logo {
+        .logo_mobile {
+          display: block;
+        }
+        .logo_pc {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
 
 .hamburger {
   display: none;
@@ -2223,8 +2245,8 @@ position: relative;
 
   .fourth_badge {
     position: absolute;
-    top: 300px;
-    right: 600px;
+    top: 400px;
+    right: 510px;
   }
 
   .income_left_block {

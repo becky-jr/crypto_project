@@ -31,6 +31,9 @@
   display: flex;
   justify-content: space-between;
 }
+.header .header_body .logo .logo_mobile {
+  display: none;
+}
 .header .header_body .header_burger {
   display: none;
 }
@@ -78,6 +81,14 @@
     display: none;
   }
   .header .header_body .contact {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header .header_body .logo .logo_mobile {
+    display: block;
+  }
+  .header .header_body .logo .logo_pc {
     display: none;
   }
 }
@@ -1544,8 +1555,8 @@
 }
 .income_page .fourth_badge {
   position: absolute;
-  top: 300px;
-  right: 600px;
+  top: 400px;
+  right: 510px;
 }
 .income_page .income_left_block {
   width: 90%;
