@@ -586,12 +586,14 @@ $icons_background: #E9F5EF;
   .main_page {
     text-align: center;
     .left_screen {
+      padding-top: 50px;
       width: unset;
       .main_text {
         text-align: center;
       }
     }
   }
+
 }
 @media screen and (min-width: 2000px) {
   .main_page {
@@ -996,6 +998,17 @@ $icons_background: #E9F5EF;
 
 }
 
+@media screen and (min-width: 500px) and (max-width: 1000px){
+  .second_page {
+    .right_menu {
+      margin-top: 50px;
+    }
+    .experience {
+      padding: 50px 50px;
+    }
+  }
+}
+
 // #ADVABTAGES todo
 
 // FIRST BLOCK
@@ -1140,7 +1153,7 @@ $icons_background: #E9F5EF;
       //width: 320px;
       //justify-content: center;
       img {
-        width: 100%;
+        width: 97%;
       }
     }
 
@@ -1336,7 +1349,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_right_menu {
-    width: 327px;
+    width: 330px;
     margin: 0 auto;
     img {
       width: 330px;
@@ -1506,10 +1519,17 @@ position: relative;
 }
 
 @media screen and (min-width: 500px) and (max-width: 1000px){
+  .second_block {
+    padding-top: 50px;
+  }
+
   .third_block {
     .info_block {
       margin: 100px auto 100px;
 
+    }
+    .third_left_menu {
+      padding-top: 50px;
     }
     .third_right_menu {
       margin: 0 auto;
@@ -1739,10 +1759,8 @@ position: relative;
   position: relative;
 
     .left_block {
-      position: absolute;
-      top: 120px;
-      height: 480px;
-      width: 45%;
+      margin: 100px 0;
+      width: 90%;
       overflow-y: hidden;
       overflow-x: hidden;
       background-color: $first_green;
@@ -2288,7 +2306,6 @@ position: relative;
 // income page media
 @media screen and (max-width: 500px) {
   .income_page {
-    padding: 50px 0;
 
     .fourth_badge {
       right: unset;
@@ -2460,6 +2477,11 @@ position: relative;
 //METHOD BLOCK MEDIA
 
 @media screen and (max-width: 1000px) {
+  .income_page {
+    padding: 50px 0 25px 0;
+
+  }
+
   .method_block {
     margin: 40px auto 50px;
     //width: 310px;
@@ -3713,7 +3735,7 @@ position: relative;
     list-style-type: none;
 
     li {
-      margin: 0 70px 0 0 ;
+      margin: 0 60px 0 0 ;
     }
 
     button {
@@ -3943,6 +3965,7 @@ position: relative;
 
 @media screen and (min-width: 600px) and (max-width: 768px){
   .middle_slider {
+    padding-top: 50px;
     .slick-dots {
       left: unset;
       //right: 1%;
@@ -3957,6 +3980,7 @@ position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 1000px){
   .middle_slider {
+    padding-top: 70px;
     .slick-dots {
       left: 15%;
     }

@@ -347,6 +347,7 @@
     text-align: center;
   }
   .main_page .left_screen {
+    padding-top: 50px;
     width: unset;
   }
   .main_page .left_screen .main_text {
@@ -644,6 +645,14 @@
     font-size: 30px;
   }
 }
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .second_page .right_menu {
+    margin-top: 50px;
+  }
+  .second_page .experience {
+    padding: 50px 50px;
+  }
+}
 .first_block {
   position: relative;
 }
@@ -754,7 +763,7 @@
     display: flex;
   }
   .first_block .first_left_menu img {
-    width: 100%;
+    width: 97%;
   }
   .first_block .first_right_menu {
     padding: 50px 0 0 0;
@@ -902,7 +911,7 @@
     font-size: 14px;
   }
   .second_block .second_right_menu {
-    width: 327px;
+    width: 330px;
     margin: 0 auto;
   }
   .second_block .second_right_menu img {
@@ -1034,8 +1043,14 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
+  .second_block {
+    padding-top: 50px;
+  }
   .third_block .info_block {
     margin: 100px auto 100px;
+  }
+  .third_block .third_left_menu {
+    padding-top: 50px;
   }
   .third_block .third_right_menu {
     margin: 0 auto;
@@ -1216,10 +1231,8 @@
   position: relative;
 }
 .join_content .left_block {
-  position: absolute;
-  top: 120px;
-  height: 480px;
-  width: 45%;
+  margin: 100px 0;
+  width: 90%;
   overflow-y: hidden;
   overflow-x: hidden;
   background-color: #33CC80;
@@ -1596,7 +1609,6 @@
 
 @media screen and (max-width: 500px) {
   .income_page {
-    padding: 50px 0;
     padding: 50px 0 25px 0;
     width: 320px;
     margin: 0 auto;
@@ -1717,6 +1729,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .income_page {
+    padding: 50px 0 25px 0;
+  }
   .method_block {
     margin: 40px auto 50px;
   }
@@ -2605,7 +2620,7 @@
   list-style-type: none;
 }
 .middle_slider .slick-dots li {
-  margin: 0 70px 0 0;
+  margin: 0 60px 0 0;
 }
 .middle_slider .slick-dots button {
   display: block;
@@ -2762,6 +2777,9 @@
   }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
+  .middle_slider {
+    padding-top: 50px;
+  }
   .middle_slider .slick-dots {
     left: unset;
     margin-top: 30px;
@@ -2772,6 +2790,9 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {
+  .middle_slider {
+    padding-top: 70px;
+  }
   .middle_slider .slick-dots {
     left: 15%;
   }
