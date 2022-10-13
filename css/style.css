@@ -646,6 +646,7 @@
 }
 .first_block .first_right_menu .first_right_descr .first_right_thin .first {
   display: inline-block;
+  margin-top: 20px;
 }
 .first_block .first_right_menu .first_right_descr .first_right_thin .second {
   line-height: 2;
@@ -800,7 +801,6 @@
 .second_block .second_left_menu .second_descr_info .second_descr_line {
   display: inline-block;
   width: 10px;
-  height: 58px;
   background: #33CC80;
   margin-right: 17px;
 }
@@ -949,7 +949,6 @@
 .third_block .third_right_menu .third_descr_info .third_descr_line {
   display: inline-block;
   width: 8px;
-  height: 203px;
   background: #33CC80;
   margin-right: 17px;
 }
@@ -1179,6 +1178,7 @@
   height: 480px;
   width: 45%;
   overflow-y: hidden;
+  overflow-x: hidden;
   background-color: #33CC80;
 }
 .join_content .left_block .title {

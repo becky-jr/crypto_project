@@ -22,7 +22,7 @@ $('.history_cards').slick({
     nextArrow: false,
     responsive: [
         {
-            breakpoint: 1000,
+            breakpoint: 800,
             settings: "unslick"
         }
     ]
@@ -222,7 +222,7 @@ console.log(card1)
 
 card1Trigger.forEach(btn => {
     btn.addEventListener('click', ()=> {
-        console.log(1)
+        // console.log(1)
 
         card1.classList.add('cardClicked');
         card2.classList.remove('cardClicked');
@@ -240,7 +240,7 @@ card1Trigger.forEach(btn => {
 
 card2Trigger.forEach(btn => {
     btn.addEventListener('click', ()=> {
-        console.log(2)
+        // console.log(2)
         card2.classList.add('cardClicked');
         card1.classList.remove('cardClicked');
         card3.classList.remove('cardClicked');
@@ -257,7 +257,7 @@ card2Trigger.forEach(btn => {
 
 card3Trigger.forEach(btn => {
     btn.addEventListener('click', ()=> {
-        console.log(3)
+        // console.log(3)
         card3.classList.add('cardClicked');
         card2.classList.remove('cardClicked');
         card1.classList.remove('cardClicked');

@@ -988,6 +988,7 @@ $icons_background: #E9F5EF;
 
         .first {
           display: inline-block;
+          margin-top: 20px;
           //margin: 0 0 10px 0;
         }
         .second {
@@ -1186,7 +1187,6 @@ $icons_background: #E9F5EF;
       .second_descr_line {
         display: inline-block;
         width: 10px;
-        height: 58px;
         background: #33CC80;
         margin-right: 17px;
       }
@@ -1376,7 +1376,6 @@ position: relative;
       .third_descr_line {
         display: inline-block;
         width: 8px;
-        height: 203px;
         background: #33CC80;
         margin-right: 17px;
       }
@@ -1667,6 +1666,7 @@ position: relative;
       height: 480px;
       width: 45%;
       overflow-y: hidden;
+      overflow-x: hidden;
       background-color: $first_green;
         .title {
           margin: 121px auto 0;
