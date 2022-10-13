@@ -1820,7 +1820,7 @@ position: relative;
   .history_usd {
     position: absolute;
     transform: rotate(270deg);
-    left: 1px;
+    left: -20px;
     top: 165px;
 
     font-family: 'Uni Neue Thin';
@@ -1871,20 +1871,21 @@ position: relative;
 
       position: relative;
 
-      .history_years {
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-around;
-
-        font-family: 'Uni Neue Regular';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-
-        color: #999999;
-      }
 
 
+
+    }
+    .history_years {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+
+      font-family: 'Uni Neue Regular';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+
+      color: #999999;
     }
 
     .history_cards {
@@ -2434,7 +2435,7 @@ position: relative;
     .revenue_chart {
       position: absolute;
       top: -55px;
-      left: -130px;
+      left: -120px;
 
       .desktop_chart {
         width: 100%;
