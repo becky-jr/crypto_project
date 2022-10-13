@@ -2771,10 +2771,11 @@
   .middle_slider .slick-dots {
     left: unset;
     right: 1%;
+    margin-top: 30px;
   }
   .middle_slider .slick-dots button {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 1440px) {

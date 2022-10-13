@@ -3943,10 +3943,11 @@ position: relative;
     .slick-dots {
       left: unset;
       right: 1%;
+      margin-top: 30px;
 
       button {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
       }
     }
   }
