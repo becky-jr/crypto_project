@@ -313,9 +313,11 @@
   display: flex;
 }
 .main_page .main_page_bottom .content .statistics {
+  text-align: left;
   display: flex;
 }
 .main_page .main_page_bottom .content .statistics .chart {
+  margin-right: 10px;
   background-color: #E9F5EF;
   width: 150px;
   height: 90px;

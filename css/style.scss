@@ -530,9 +530,11 @@ $icons_background: #E9F5EF;
 
 
       .statistics {
+        text-align: left;
         //width: 340px;
         display: flex;
         .chart {
+          margin-right: 10px;
           background-color: $icons_background;
           width: 150px;
           height: 90px;
