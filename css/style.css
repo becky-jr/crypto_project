@@ -1553,6 +1553,7 @@
 @media screen and (min-width: 500px) and (max-width: 800px) {
   .history_block .history_content .history_cards {
     display: block;
+    margin-left: 10px;
   }
 }
 .income_page {
