@@ -424,7 +424,8 @@ $icons_background: #E9F5EF;
     .coin {
       top: 300px;
       position: absolute;
-      left: 895px;
+      //left: 895px;
+      right: 600px;
       z-index: 2;
 
     }
@@ -444,7 +445,7 @@ $icons_background: #E9F5EF;
   // todo left part
   .left_screen {
     padding: 100px 30px 0 0;
-    width: 550px;
+    //width: 550px;
     margin: 0 auto;
 
     .main_text {
@@ -579,10 +580,28 @@ $icons_background: #E9F5EF;
     }
   }
 }
+@media screen and (min-width: 500px) and (max-width: 1300px){
+  .main_page {
+    text-align: center;
+    .left_screen {
+      width: unset;
+      .main_text {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 2000px) {
+  .main_page {
+    .left_screen {
+      width: 550px;
+    }
+  }
+}
 
 
 //todo MAIN PAGE MEDIA
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
 
 
   .main_page {
@@ -692,7 +711,59 @@ $icons_background: #E9F5EF;
 
 }
 
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .main_page {
+    .main_page_bottom {
+      width: 100%;
+      padding: 0;
+      border: none;
+      margin: 0 auto;
 
+      .content {
+
+        .row>* {
+          width: 50%;
+        }
+
+        flex-wrap: wrap;
+
+        .statistics {
+          width: 150px;
+          height: 170px;
+          display: block;
+          margin-top: 30px;
+
+          .chart {
+            width: 60px;
+            height: 60px;
+
+            .statistics_icon {
+              padding: 17px;
+            }
+          }
+
+          .statistics_text {
+            margin: 0;
+            width: 110px;
+
+
+            font-weight: 700;
+            font-size: 24px;
+          }
+
+          .statistics_mini_text {
+            margin: 0;
+            font-weight: 500;
+            font-size: 12px;
+            width: 140px;
+          }
+        }
+
+      }
+    }
+
+  }
+}
 
 .phoneIconShow {
   display: block;
@@ -731,7 +802,7 @@ $icons_background: #E9F5EF;
   }
 
   .left_menu {
-    width: 550px;
+    max-width: 550px;
     padding: 120px 0 0 0;
     margin: 0 auto;
 
@@ -829,6 +900,7 @@ $icons_background: #E9F5EF;
 
     .year, .employee, .investors, .crisis, .crypto {
       width: 200px;
+      margin-top: 10px;
     }
 
     .experience_num {
@@ -906,6 +978,7 @@ $icons_background: #E9F5EF;
       }
 
       .year, .employee, .investors, .crisis {
+        margin-top: 20px;
         width: 140px;
 
         .experience_num {
@@ -1061,10 +1134,10 @@ $icons_background: #E9F5EF;
       padding: 0;
       z-index: 2;
       display: flex;
-      width: 320px;
-      justify-content: center;
+      //width: 320px;
+      //justify-content: center;
       img {
-        width: 365px;
+        width: 100%;
       }
     }
 
@@ -1074,6 +1147,7 @@ $icons_background: #E9F5EF;
       margin: 0 auto;
 
       .first_right_descr {
+        margin-top: 0;
         width: 310px;
 
         .first_right_gradient {
@@ -1138,7 +1212,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_left_menu {
-    width: 550px;
+    max-width: 550px;
     margin: 0 auto;
 
     .second_left_descr {
@@ -1231,10 +1305,10 @@ $icons_background: #E9F5EF;
   padding: 50px 0 0 0;
 
   .second_left_menu {
-    width: 310px;
+    //width: 310px;
 
     .second_left_descr {
-      width: 310px;
+      //width: 310px;
 
       .second_left_gradient {
         font-size: 14px;
@@ -1303,7 +1377,7 @@ position: relative;
   //padding: 150px 0 0 150px;
 
   .third_left_menu {
-    padding: 158px 0 0 0;
+    padding: 100px 0 0 0;
     max-width: 550px;
     margin: 0 auto;
     img {
@@ -1430,6 +1504,10 @@ position: relative;
 
 @media screen and (min-width: 500px) and (max-width: 1000px){
   .third_block {
+    .info_block {
+      margin: 100px auto 100px;
+
+    }
     .third_right_menu {
       margin: 0 auto;
     }
@@ -1487,9 +1565,6 @@ position: relative;
       }
 
       .third_descr_info {
-        .third_descr_line {
-          height: 231px;
-        }
         .third_descr_text {
           font-size: 14px;
           .third_descr_list {
@@ -1503,7 +1578,7 @@ position: relative;
       width: 100%;
       margin: 0;
       position: absolute;
-      top: 1320px;
+      top: 1300px;
 
       .info_block_content {
         padding: 90px 0 30px 25px;
@@ -1529,9 +1604,9 @@ position: relative;
 
   }
 
-//* {
-//  outline: 1px red solid;
-//}
+* {
+  outline: 1px red solid;
+}
 
 // COOP BLOCK
 .coop_page {
@@ -1607,11 +1682,11 @@ position: relative;
 @media screen and (max-width: 800px) {
   .coop_page {
     text-align: left;
-    margin: 50px 0 50px 0;
+    margin: 100px 0 50px 0;
 
     .coop_title {
       width: 310px;
-      margin: 100px auto 70px;
+      margin: 0 auto 70px;
 
       .coop_suit {
         font-size: 14px;
@@ -1678,8 +1753,9 @@ position: relative;
           color: #FAFAFA;
         }
         .button {
-          width: 308px;
-          margin:39px 300px 50px auto;
+          width: 380px;
+          margin: 40px auto;
+          //margin:39px 300px 50px auto;
 
           .join_button {
             padding: 15px 60px;
@@ -1703,7 +1779,7 @@ position: relative;
           }
 
             .ruble_block {
-              width: 210px;
+              //width: 185px;
               margin: 0 70px 50px 0;
 
               .ruble_block_icon {
@@ -1911,8 +1987,8 @@ position: relative;
 
         button {
           display: block;
-          width: 10px;
-          height: 10px;
+          width: 5px;
+          height: 5px;
           padding: 0;
 
           //border: none;
@@ -2037,6 +2113,7 @@ position: relative;
     margin: 50px auto 0;
 
     .history_usd {
+      display: none;
       font-size: 8px;
       left: 15px;
       top: 153px;
@@ -2105,6 +2182,17 @@ position: relative;
 
 }
 
+@media screen and (min-width: 500px) and (max-width: 800px){
+  .history_block {
+    .history_content {
+      .history_cards {
+        display: block;
+      }
+    }
+  }
+}
+
+
 // INCOME BLOCK
 
 .income_page {
@@ -2135,7 +2223,7 @@ position: relative;
     }
 
     .income_bold {
-      width: 500px;
+      //width: 500px;
       margin: 5px 0 30px;
       font-family: "Uni Neue Bold";
       font-style: normal;
@@ -2197,6 +2285,7 @@ position: relative;
 // income page media
 @media screen and (max-width: 500px) {
   .income_page {
+    padding: 50px 0;
 
     .fourth_badge {
       right: unset;
@@ -2381,7 +2470,7 @@ position: relative;
 
       .title_thin {
         font-size: 14px;
-        width: 310px;
+        //width: 310px;
       }
     }
 
@@ -2497,7 +2586,7 @@ position: relative;
       overflow: hidden;
       height: unset;
 
-      width: 310px;
+      //width: 310px;
 
       .revenue_title {
         margin: 0;
@@ -2511,6 +2600,8 @@ position: relative;
       .revenue_chart {
         position: unset;
         top: unset;
+        display: flex;
+        justify-content: center;
 
         .desktop_chart {
           display: none;
@@ -2604,11 +2695,11 @@ position: relative;
 
   .rights_block {
     width: 320px;
-    margin: 0 auto;
+    margin: 100px auto;
 
     .rights_title {
       padding: 0;
-      width: 320px;
+      //width: 320px;
 
       .rights_gradient {
         font-size: 14px;
@@ -2631,7 +2722,7 @@ position: relative;
       justify-content: unset;
 
       .rights_card {
-        width: 310px;
+        //width: 310px;
         display: flex;
         justify-content: space-between;
         margin-top: 30px;
@@ -3129,7 +3220,7 @@ position: relative;
             border-radius: 2px;
           }
 
-          width: 205px;
+          //width: 205px;
 
           .time_input_text {
             margin-bottom: 5px;
@@ -3541,6 +3632,7 @@ position: relative;
 
 
   .second_footer {
+    text-align: center;
     padding: 30px 0;
     color: #999999;
     display: flex;
@@ -3775,7 +3867,7 @@ position: relative;
       .first_slider {
 
         .slider_title {
-          width: 310px;
+          //width: 310px;
           margin: 0 auto;
           text-align: left;
 
@@ -3834,6 +3926,11 @@ position: relative;
     .slick-dots {
       left: unset;
       right: 1%;
+
+      button {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
@@ -4479,7 +4576,7 @@ position: relative;
       z-index: 10;
 
       img {
-        width: 100px;
+        width: 100%;
       }
     }
   }
