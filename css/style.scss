@@ -47,7 +47,7 @@ $icons_background: #E9F5EF;
 .header {
   //justify-items: center;
   //max-height: 120px;
-  padding: 40px 50px 48px 74px;
+  padding: 40px 0 40px 0;
   border-bottom: 1px solid $white_grey;
 }
 //
@@ -183,10 +183,10 @@ $icons_background: #E9F5EF;
     .contact {
       margin-top: 8px;
       .whatsapp-logo {
-        margin-left: 25px;
+        margin-left: 5px;
       }
       .telegram-logo {
-        margin-left: 20px;
+        margin-left: 5px;
       }
       .tel {
         text-decoration: none;
@@ -200,7 +200,7 @@ $icons_background: #E9F5EF;
 
 }
 // hamburger menu
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .header {
     padding: 12px 12px 15px 15px;
 
@@ -1690,7 +1690,7 @@ position: relative;
     }
 
     .coop_icon_content {
-      width: 320px;
+      //width: 320px;
       margin: 0 auto;
       text-align: center;
 
@@ -1730,7 +1730,7 @@ position: relative;
     margin: 100px 0 50px 0;
 
     .coop_title {
-      width: 310px;
+      max-width: 550px;
       margin: 0 auto 70px;
 
       .coop_suit {
@@ -1746,7 +1746,7 @@ position: relative;
     }
 
     .coop_icon_content {
-      width: 310px;
+      max-width: 550px;
       text-align: left;
       display: flex;
       flex-wrap: wrap;
@@ -3157,14 +3157,12 @@ position: relative;
 
 @media screen and (max-width: 600px){
   .answers_block {
-    max-width: 600px;
-    width: 320px;
-    margin: 0 auto;
-    padding: 50px 0 0;
+    //max-width: 600px;
+    //width: 320px;
+    //margin: 0 auto;
+    //padding: 50px 0 0;
 
-    ::after {
-      margin-left: 20px;
-    }
+
 
     .answers_title {
       width: 320px;
