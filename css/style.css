@@ -460,6 +460,7 @@
     height: 170px;
     display: block;
     margin-top: 30px;
+    display: flex;
   }
   .main_page .main_page_bottom .content .statistics .chart {
     width: 60px;
@@ -658,7 +659,7 @@
   left: 680px;
 }
 .first_block .first_left_menu {
-  padding: 158px 0 0 0;
+  padding: 100px 0 0 0;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -1833,7 +1834,6 @@
   }
   .revenue_block .revenue_content .revenue_chart .mobile_chart {
     display: block;
-    width: 330px;
   }
 }
 .rights_block .rights_title {
@@ -1890,6 +1890,11 @@
   color: #565758;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .rights_block .rights_content_cards .row > * {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 500px) {
   .rights_block {
     width: 320px;

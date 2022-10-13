@@ -732,6 +732,7 @@ $icons_background: #E9F5EF;
           height: 170px;
           display: block;
           margin-top: 30px;
+          display: flex;
 
           .chart {
             width: 60px;
@@ -1008,7 +1009,7 @@ $icons_background: #E9F5EF;
 
 
   .first_left_menu {
-    padding: 158px 0 0 0;
+    padding: 100px 0 0 0;
     max-width: 500px;
     margin: 0 auto;
   }
@@ -2608,7 +2609,7 @@ position: relative;
         }
         .mobile_chart {
           display: block;
-          width: 330px;
+          //width: 330px;
         }
       }
     }
@@ -2689,6 +2690,15 @@ position: relative;
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .rights_block {
+    .rights_content_cards {
+      .row>* {
+        width: 50%;
+      }
+    }
+  }
+}
 // RIGHTS MEDIA
 
 @media screen and (max-width: 500px){
