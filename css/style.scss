@@ -165,15 +165,16 @@ $icons_background: #E9F5EF;
       padding-top: 8px;
       ul {
         display: flex;
+        justify-content: space-between;
       }
       li {
         list-style: none;
-        margin-right: 20px;
+        margin-right: 10px;
       }
       .menu_link {
         text-decoration: none;
         color: $dark_grey;
-        font-family: sans-serif Uni Neue;
+        font-family: 'Uni Neue Regular';
         font-weight: 400;
         font-size: 14px;
       }
@@ -200,7 +201,7 @@ $icons_background: #E9F5EF;
 
 }
 // hamburger menu
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
   .header {
     padding: 12px 12px 15px 15px;
 
@@ -254,7 +255,7 @@ $icons_background: #E9F5EF;
   margin: 25px 0 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
   .hamburger {
     display: block;
   }
