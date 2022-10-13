@@ -1691,7 +1691,7 @@ position: relative;
     }
 
     .coop_icon_content {
-      //width: 320px;
+      max-width: 550px;
       margin: 0 auto;
       text-align: center;
 
@@ -2757,7 +2757,7 @@ position: relative;
         }
         .mobile_chart {
           display: block;
-          //width: 330px;
+          width: 100%;
         }
       }
     }
@@ -3176,7 +3176,7 @@ position: relative;
 .answers_block {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 150px 0 180px;
+  padding: 150px 0 100px;
 
 
   .answers_title {
@@ -3254,7 +3254,7 @@ position: relative;
 
 
     .answers_title {
-      width: 320px;
+      //width: 320px;
 
       .answers_gradient {
         font-size: 14px;
@@ -3295,7 +3295,7 @@ position: relative;
 .advice_block {
   background-color: #FFFFFF;
   width: 100%;
-  margin: 0 auto 150px;
+  margin: 0 auto 50px;
   .advice_left {
     text-align: center;
 
@@ -3349,8 +3349,8 @@ position: relative;
         }
       }
       .contact_inputs {
-        display: flex;
-        justify-content: center;
+        //display: flex;
+        //justify-content: center;
 
         //font-family: 'Uni Neue Regular';
         font-style: normal;
@@ -3361,7 +3361,7 @@ position: relative;
 
         margin-top: 30px;
         .phone_input {
-          width: 280px;
+          //width: 280px;
           input {
             padding: 16px 64px 16px 20px;
             border: 2px solid #EBEBEB;
@@ -3416,9 +3416,9 @@ position: relative;
 
 // media advice block
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
   .advice_block {
-    width: 320px;
+    //width: 320px;
     margin: 30px auto 0;
 
     .advice_left {
@@ -3492,7 +3492,7 @@ position: relative;
 
 .contact_block {
   background-color: #FAFAFA;
-  padding: 150px 0 0 0;
+  padding: 100px 0 0 0;
 
   .contacts_content {
 

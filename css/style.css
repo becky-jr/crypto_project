@@ -1168,6 +1168,7 @@
   color: #565758;
 }
 .coop_page .coop_icon_content {
+  max-width: 550px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1907,6 +1908,7 @@
   }
   .revenue_block .revenue_content .revenue_chart .mobile_chart {
     display: block;
+    width: 100%;
   }
 }
 .rights_block .rights_title {
@@ -2205,7 +2207,7 @@
 .answers_block {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 150px 0 180px;
+  padding: 150px 0 100px;
 }
 .answers_block .answers_title {
   width: 100%;
@@ -2255,9 +2257,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .answers_block .answers_title {
-    width: 320px;
-  }
   .answers_block .answers_title .answers_gradient {
     font-size: 14px;
   }
@@ -2277,7 +2276,7 @@
 .advice_block {
   background-color: #FFFFFF;
   width: 100%;
-  margin: 0 auto 150px;
+  margin: 0 auto 50px;
 }
 .advice_block .advice_left {
   text-align: center;
@@ -2324,17 +2323,12 @@
   margin-right: 25px;
 }
 .advice_block .advice_right .advice_inputs .contact_inputs {
-  display: flex;
-  justify-content: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
   color: #262626;
   margin-top: 30px;
-}
-.advice_block .advice_right .advice_inputs .contact_inputs .phone_input {
-  width: 280px;
 }
 .advice_block .advice_right .advice_inputs .contact_inputs .phone_input input {
   padding: 16px 64px 16px 20px;
@@ -2373,9 +2367,8 @@
   border: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .advice_block {
-    width: 320px;
     margin: 30px auto 0;
   }
   .advice_block .advice_left .advice_title .advice_gradient {
@@ -2415,7 +2408,7 @@
 }
 .contact_block {
   background-color: #FAFAFA;
-  padding: 150px 0 0 0;
+  padding: 100px 0 0 0;
 }
 .contact_block .contacts_content .contacts_title {
   width: 100%;
