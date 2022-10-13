@@ -1956,7 +1956,7 @@
 .application_block {
   height: 600px;
   margin: 0 auto;
-  background: url("../img/family.svg") no-repeat;
+  background: url("../img/family.svg") no-repeat 100%;
   background-size: cover;
   overflow-y: hidden;
 }
