@@ -1687,10 +1687,18 @@
   color: #565758;
 }
 .method_block .method_card {
+  justify-content: center;
+}
+.method_block .method_card .cards {
+  position: relative;
   display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
-.method_block .method_card .method_btn {
+.method_block .method_card .cards .row > * {
+  padding: 0;
+}
+.method_block .method_card .cards .method_btn {
   display: none;
   position: absolute;
   transform: rotate(-90deg);
@@ -1702,40 +1710,39 @@
   font-size: 11px;
   color: #262626;
 }
-.method_block .method_card .method_btn button {
+.method_block .method_card .cards .method_btn button {
   width: 115px;
   height: 50px;
   background: #FAFAFA;
   border: 1px solid #EBEBEB;
   border-radius: 3px;
 }
-.method_block .method_card .method_btn button .buttonClicked {
+.method_block .method_card .cards .method_btn button .buttonClicked {
   background: #FFFFFF;
   border: none;
 }
-.method_block .method_card :hover {
+.method_block .method_card .cards .info_card :hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
-.method_block .method_card .card {
+.method_block .method_card .cards .info_card .card_content {
   padding: 70px 0 70px 60px;
-  width: 400px;
   border: 1px solid #EBEBEB;
   border-radius: 5px;
 }
-.method_block .method_card .card :hover {
+.method_block .method_card .cards .info_card .card_content :hover {
   box-shadow: unset;
 }
-.method_block .method_card .card .card_text {
+.method_block .method_card .cards .info_card .card_content .card_text {
   margin-top: 25px;
 }
-.method_block .method_card .card .card_text .card_text_bold {
+.method_block .method_card .cards .info_card .card_content .card_text .card_text_bold {
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   color: #262626;
 }
-.method_block .method_card .card .card_text .card_text_thin {
+.method_block .method_card .cards .info_card .card_content .card_text .card_text_thin {
   margin-top: 20px;
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -1745,7 +1752,7 @@
   color: #565758;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 400px) {
   .income_page {
     padding: 50px 0 25px 0;
   }
@@ -1763,22 +1770,62 @@
   }
   .method_block .method_card {
     padding: 0;
-    width: 310px;
+    max-width: 550px;
+  }
+  .method_block .method_card .cards {
     position: relative;
   }
-  .method_block .method_card .method_btn {
+  .method_block .method_card .cards .method_btn {
     display: flex;
+    top: 250px;
+    left: -155px;
+    right: unset;
   }
-  .method_block .method_card .card {
+  .method_block .method_card .cards .info_card {
     padding: 70px 0 70px 30px;
-    width: 305px;
     margin-bottom: 50px;
   }
-  .method_block .method_card .card .card_text .card_text_bold {
+  .method_block .method_card .cards .info_card .card_text .card_text_bold {
     font-size: 16px;
   }
-  .method_block .method_card .card .card_text .card_text_thin {
+  .method_block .method_card .cards .info_card .card_text .card_text_thin {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .method_block .method_card .cards .method_btn {
+    display: flex;
+    left: -185px;
+    z-index: 99;
+    top: 170px;
+    right: unset;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .method_block .method_card .cards .method_btn {
+    display: flex;
+    left: -160px;
+    z-index: 99;
+    top: 170px;
+    right: unset;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 765px) {
+  .method_block .method_card .cards .method_btn {
+    display: flex;
+    left: -160px;
+    z-index: 99;
+    top: 170px;
+    right: unset;
+  }
+}
+@media screen and (min-width: 765px) and (max-width: 990px) {
+  .method_block .method_card .cards .method_btn {
+    display: flex;
+    left: -170px;
+    z-index: 99;
+    top: 170px;
+    right: unset;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -2408,13 +2455,15 @@
   flex-wrap: wrap;
 }
 .contact_block .office_content .office_card {
+  margin-bottom: 20px;
   width: 100%;
   background: #FFFFFF;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   border-radius: 3px;
 }
 .contact_block .office_content .office_card .card_content {
-  padding: 50px 0 50px 50px;
+  padding: 50px 0 50px 0;
+  text-align: center;
 }
 .contact_block .office_content .office_card .card_content .office_gradient {
   font-family: "Uni Neue Regular";
@@ -2472,7 +2521,6 @@
     padding: 50px 25px;
   }
   .contact_block .contacts_content .contacts_title {
-    width: 310px;
     margin: 0 auto;
   }
   .contact_block .contacts_content .contacts_title .contacts_gradient {
@@ -2486,11 +2534,10 @@
   }
   .contact_block .office_content {
     display: block;
-    max-width: 310px;
+    max-width: 550px;
     margin: 30px auto 30px;
   }
   .contact_block .office_content .office_card {
-    width: 310px;
     margin: 0 0 20px;
   }
   .contact_block .office_content .office_card .card_content .office_gradient {
@@ -3285,7 +3332,7 @@
     width: 150px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 990px) {
   .card-2, .card-3 {
     display: none;
   }

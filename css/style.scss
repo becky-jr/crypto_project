@@ -2422,84 +2422,105 @@ position: relative;
   }
 
   .method_card {
-    display: flex;
-    .method_btn {
 
-      display: none;
-      position: absolute;
-      transform: rotate(-90deg);
-      //left: -180px;
-      top: 160px;
-      right: 160px;
+    justify-content: center;
+    .cards {
 
-
-      font-family: 'Uni Neue Regular';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 11px;
-
-      color: #262626;
-      button {
-        width: 115px;
-        height: 50px;
-
-        background: #FAFAFA;
-
-        border: 1px solid #EBEBEB;
-        border-radius: 3px;
-
-        .buttonClicked {
-          background: #FFFFFF;
-          border: none;
-        }
-      }
-    }
-
-
-    //margin-left: 10%;
-    margin: 0 auto;
-
-    :hover {
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    }
-
-
-
-    .card {
-      :hover {
-        box-shadow: unset;
+      .row>* {
+        padding: 0;
       }
 
-      padding: 70px 0 70px 60px;
-      width: 400px;
 
-      border: 1px solid #EBEBEB;
-      border-radius: 5px;
+      position: relative;
+      display: flex;
+      justify-content: center;
 
-      .card_text {
-        margin-top: 25px;
-        .card_text_bold {
-          font-family: 'Uni Neue Regular';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 20px;
-          color: $black;
-        }
 
-        .card_text_thin {
-          margin-top: 20px;
-          font-family: 'Uni Neue Regular';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 160%;
-          color: #565758;
+
+      .method_btn {
+
+        display: none;
+        position: absolute;
+        transform: rotate(-90deg);
+        //left: -180px;
+        top: 160px;
+        right: 160px;
+
+
+        font-family: 'Uni Neue Regular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+
+        color: #262626;
+        button {
+          width: 115px;
+          height: 50px;
+
+          background: #FAFAFA;
+
+          border: 1px solid #EBEBEB;
+          border-radius: 3px;
+
+          .buttonClicked {
+            background: #FFFFFF;
+            border: none;
+          }
         }
       }
 
 
+      //margin-left: 10%;
+      margin: 0 auto;
 
 
+
+
+
+      .info_card {
+        :hover {
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        //:hover {
+        //  box-shadow: unset;
+        //}
+
+        .card_content {
+          :hover {
+            box-shadow: unset;
+          }
+          padding: 70px 0 70px 60px;
+          //width: 400px;
+
+          border: 1px solid #EBEBEB;
+          border-radius: 5px;
+
+          .card_text {
+            margin-top: 25px;
+            .card_text_bold {
+              font-family: 'Uni Neue Regular';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 20px;
+              color: $black;
+            }
+
+            .card_text_thin {
+              margin-top: 20px;
+              font-family: 'Uni Neue Regular';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 160%;
+              color: #565758;
+            }
+          }
+        }
+
+
+
+
+      }
     }
   }
 }
@@ -2511,7 +2532,7 @@ position: relative;
 
 //METHOD BLOCK MEDIA
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 400px) {
   .income_page {
     padding: 50px 0 25px 0;
 
@@ -2536,25 +2557,31 @@ position: relative;
 
     .method_card {
       padding: 0;
-      width: 310px;
-      position: relative;
-      .method_btn {
-        display: flex;
-      }
+      max-width: 550px;
 
-      .card {
-        padding: 70px 0 70px 30px;
-        width: 305px;
-        margin-bottom: 50px;
+      .cards {
+        position: relative;
+        .method_btn {
+          display: flex;
+          top: 250px;
+          left: -155px;
+          right: unset;
+        }
 
-        .card_text {
+        .info_card {
+          padding: 70px 0 70px 30px;
+          //width: 305px;
+          margin-bottom: 50px;
 
-          .card_text_bold {
-            font-size: 16px;
-          }
+          .card_text {
 
-          .card_text_thin {
-            font-size: 14px;
+            .card_text_bold {
+              font-size: 16px;
+            }
+
+            .card_text_thin {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -2562,6 +2589,67 @@ position: relative;
   }
 }
 
+@media screen and (min-width: 400px) and (max-width: 500px){
+  .method_block {
+    .method_card {
+      .cards {
+        .method_btn {
+          display: flex;
+          left: -185px;
+          z-index: 99;
+          top: 170px;
+          right: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px){
+  .method_block {
+    .method_card {
+      .cards {
+        .method_btn {
+          display: flex;
+          left: -160px;
+          z-index: 99;
+          top: 170px;
+          right: unset;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 765px){
+  .method_block {
+    .method_card {
+      .cards {
+        .method_btn {
+          display: flex;
+          left: -160px;
+          z-index: 99;
+          top: 170px;
+          right: unset;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 765px) and (max-width: 990px){
+  .method_block {
+    .method_card {
+      .cards {
+        .method_btn {
+          display: flex;
+          left: -170px;
+          z-index: 99;
+          top: 170px;
+          right: unset;
+        }
+      }
+    }
+  }
+}
 
 
 @media screen and (max-width: 1200px){
@@ -3456,17 +3544,17 @@ position: relative;
     display: flex;
     flex-wrap: wrap;
 
-    .card2 {
-      //margin-left: 40px;
-    }
+
     .office_card {
+      margin-bottom: 20px;
       width: 100%;
       background: #FFFFFF;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
       border-radius: 3px;
 
       .card_content {
-        padding: 50px 0 50px 50px;
+        padding: 50px 0 50px 0;
+        text-align: center;
         //width: 265px;
 
         .office_gradient {
@@ -3545,7 +3633,7 @@ position: relative;
     .contacts_content {
 
       .contacts_title {
-        width: 310px;
+        //width: 310px;
         margin: 0 auto;
 
         .contacts_gradient {
@@ -3566,11 +3654,11 @@ position: relative;
 
     .office_content {
       display: block;
-      max-width: 310px;
+      max-width: 550px;
       margin: 30px auto 30px;
 
       .office_card {
-        width: 310px;
+        //width: 310px;
         margin: 0 0 20px;
 
         .card_content {
@@ -4835,7 +4923,7 @@ position: relative;
 //  }
 //}
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 990px){
   .card-2, .card-3 {
     display: none;
   }
