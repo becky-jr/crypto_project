@@ -2698,7 +2698,7 @@
   font-weight: 300;
   /* colors/green */
   position: absolute;
-  left: 415px;
+  left: 515px;
   top: -25px;
   color: #33CC80;
 }
@@ -2728,7 +2728,7 @@
   margin-left: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   .middle_slider {
     padding: 50px 0 0;
   }
@@ -2793,6 +2793,70 @@
     font-size: 14px;
   }
 }
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .middle_slider {
+    padding: 50px 0 0;
+  }
+  .middle_slider .slick-dots {
+    position: absolute;
+    top: 65%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+  }
+  .middle_slider .slick-dots li {
+    margin: 0 20px 0 0;
+  }
+  .middle_slider .slick-dots button {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 6px solid #D9D9D9;
+    text-indent: -9999px;
+  }
+  .middle_slider .slick-dots li.slick-active button {
+    border: 6px solid #33CC80;
+  }
+  .middle_slider .slider_inner .first_slider .slider_title {
+    margin: 0 auto;
+    text-align: left;
+  }
+  .middle_slider .slider_inner .first_slider .slider_title .title_gradient {
+    font-size: 14px;
+  }
+  .middle_slider .slider_inner .first_slider .slider_title .title_bold {
+    font-size: 22px;
+  }
+  .middle_slider .slider_inner .first_slider .slider_title .title_thin {
+    font-size: 14px;
+  }
+  .middle_slider .slider_inner .first_slider .slider {
+    margin-top: 50px;
+  }
+  .middle_slider .slider_inner .first_slider .slider .slider_img {
+    margin: 0 auto;
+    width: 290px;
+  }
+  .middle_slider .slider_inner .first_slider .slider .slider_img .img {
+    width: 290px;
+  }
+  .middle_slider .slider_inner .first_slider .slider .slider_text {
+    margin: 100px 0 0 30px;
+  }
+  .middle_slider .slider_inner .first_slider .slider .slider_text .text_bold {
+    font-size: 16px;
+  }
+  .middle_slider .slider_inner .first_slider .slider .slider_text .text_info {
+    font-size: 14px;
+  }
+  .middle_slider .slider_inner .first_slider .slider .slider_text .text_list {
+    font-size: 14px;
+  }
+}
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .middle_slider {
     padding-top: 50px;
@@ -2800,6 +2864,7 @@
   .middle_slider .slick-dots {
     left: unset;
     margin-top: 30px;
+    top: 30%;
   }
   .middle_slider .slick-dots button {
     width: 30px;

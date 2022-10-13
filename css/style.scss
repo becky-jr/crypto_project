@@ -3852,7 +3852,7 @@ position: relative;
             font-weight: 300;
             /* colors/green */
             position: absolute;
-            left: 415px;
+            left: 515px;
             top: -25px;
             color: #33CC80;
           }
@@ -3898,7 +3898,7 @@ position: relative;
 
 
 // media slider block
-@media screen and (max-width: 600px){
+@media screen and (max-width: 450px){
   .middle_slider {
     padding: 50px 0 0;
 
@@ -3997,6 +3997,105 @@ position: relative;
   }
 }
 
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .middle_slider {
+    padding: 50px 0 0;
+
+    .slick-dots {
+      position: absolute;
+      top: 65%;
+      //left: 20%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 1rem 0;
+
+      list-style-type: none;
+
+      li {
+        margin: 0 20px 0 0 ;
+      }
+
+      button {
+        display: block;
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+
+        //border: none;
+        border-radius: 100%;
+        //background-color: orange;
+        border: 6px solid #D9D9D9;
+
+        text-indent: -9999px;
+      }
+
+      li.slick-active button {
+        border: 6px solid #33CC80;
+        //padding: 6px;
+      }
+
+    }
+
+    .slider_inner {
+
+      .first_slider {
+
+        .slider_title {
+          //width: 310px;
+          margin: 0 auto;
+          text-align: left;
+
+          .title_gradient {
+            font-size: 14px;
+          }
+
+          .title_bold {
+            font-size: 22px;
+          }
+
+          .title_thin {
+            font-size: 14px;
+          }
+        }
+
+
+        .slider {
+          margin-top: 50px;
+          .slider_img {
+            margin: 0 auto;
+            //max-width: 300px;
+            width: 290px;
+
+            .img {
+              width: 290px;
+            }
+          }
+
+          .slider_text {
+            margin: 100px 0 0 30px;
+            .text_bold {
+              font-size: 16px;
+            }
+            .text_info {
+              font-size: 14px;
+            }
+            .text_list {
+              font-size: 14px;
+            }
+          }
+        }
+
+      }
+
+    }
+
+
+
+
+  }
+}
+
 @media screen and (min-width: 600px) and (max-width: 768px){
   .middle_slider {
     padding-top: 50px;
@@ -4004,6 +4103,7 @@ position: relative;
       left: unset;
       //right: 1%;
       margin-top: 30px;
+      top: 30%;
 
       button {
         width: 30px;
