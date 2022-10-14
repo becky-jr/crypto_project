@@ -1543,7 +1543,16 @@
     padding-top: 50px;
   }
   .history_block .history_content .history_cards .first_card .hand {
-    left: 225px;
+    right: 50px;
+    top: 0;
+  }
+  .history_block .history_content .history_cards .first_card .hand img {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .history_block .history_content .history_cards .first_card .hand {
+    right: 50px;
     top: 0;
   }
   .history_block .history_content .history_cards .first_card .hand img {
@@ -1911,7 +1920,7 @@
   }
 }
 .rights_block .rights_title {
-  padding: 0 0 150px;
+  padding: 0 0 100px;
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -1969,9 +1978,8 @@
     width: 50%;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .rights_block {
-    width: 320px;
     margin: 100px auto;
   }
   .rights_block .rights_title {
@@ -2001,7 +2009,6 @@
   }
   .rights_block .rights_content_cards .rights_card .rights_icon {
     display: inline-block;
-    width: 150px;
     margin: 5px 20px 0 0;
   }
   .rights_block .rights_content_cards .rights_card .rights_icon img {
@@ -2009,7 +2016,6 @@
   }
   .rights_block .rights_content_cards .rights_card .bold_text {
     font-size: 16px;
-    width: 220px;
     margin: 0;
   }
   .rights_block .rights_content_cards .rights_card .thin_text {
@@ -2570,14 +2576,8 @@
   background-color: #262626;
 }
 #footer .top_footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 100px 0 40px;
-}
-#footer .top_footer .logo {
-  width: 275px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+  padding: 50px 0 50px;
 }
 #footer .top_footer .logo .footer_logo {
   width: 50px;
