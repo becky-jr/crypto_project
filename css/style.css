@@ -678,6 +678,9 @@
   max-width: 500px;
   margin: 0 auto;
 }
+.first_block .first_left_menu img {
+  width: 100%;
+}
 .first_block .first_right_menu {
   max-width: 550px;
   margin: 0 auto;
@@ -923,7 +926,7 @@
     font-size: 14px;
   }
   .second_block .second_right_menu {
-    width: 330px;
+    width: 100%;
     margin: 0 auto;
   }
   .second_block .second_right_menu img {
@@ -965,6 +968,7 @@
 }
 .third_block .third_right_menu {
   max-width: 550px;
+  margin: 0 auto;
   padding-top: 120px;
 }
 .third_block .third_right_menu .third_right_descr .third_right_gradient {

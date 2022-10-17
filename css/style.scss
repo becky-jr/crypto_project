@@ -1050,6 +1050,9 @@ $icons_background: #E9F5EF;
     padding: 100px 0 0 0;
     max-width: 500px;
     margin: 0 auto;
+    img {
+      width: 100%;
+    }
   }
 
   .first_right_menu {
@@ -1372,7 +1375,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_right_menu {
-    width: 330px;
+    width: 100%;
     margin: 0 auto;
     img {
       width: 330px;
@@ -1426,7 +1429,7 @@ position: relative;
 
   .third_right_menu {
     max-width: 550px;
-    //margin: 0 auto;
+    margin: 0 auto;
     //padding: 120px 100px 0 0;
     padding-top: 120px;
 
