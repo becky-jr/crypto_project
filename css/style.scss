@@ -1384,7 +1384,9 @@ $icons_background: #E9F5EF;
 
 }
 }
-
+* {
+  outline: 1px solid blue;
+}
 
 // THIRD BLOCK
 
@@ -2178,7 +2180,7 @@ position: relative;
     }
 
     .history_content {
-      width: 350px;
+      //width: 350px;
 
 
       .history_title {
@@ -2192,9 +2194,9 @@ position: relative;
       }
 
       .history_chart {
-        width: 350px;
+        //width: 350px;
         margin: 0 0 0 10px;
-        background: url("../img/grid_mobile.svg") no-repeat;
+        background: url("../img/grid_mobile.svg");
 
         .chart_line {
           display: none;
@@ -2202,6 +2204,7 @@ position: relative;
 
         .chart_line_mobile {
           display: block;
+          width: 100%;
         }
 
         .history_years {
@@ -2587,6 +2590,9 @@ position: relative;
         .info_card {
           padding: 70px 0 70px 30px;
           //width: 305px;
+          .card_content {
+            padding: 70px 0 70px 20px;
+          }
 
           .card_text {
 
