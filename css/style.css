@@ -933,10 +933,6 @@
     width: 330px;
   }
 }
-* {
-  outline: 1px solid blue;
-}
-
 .third_block {
   position: relative;
 }
