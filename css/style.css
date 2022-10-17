@@ -933,10 +933,6 @@
     width: 330px;
   }
 }
-* {
-  outline: 1px solid blue;
-}
-
 .third_block .third_left_menu {
   padding: 100px 0 0 0;
   max-width: 550px;
