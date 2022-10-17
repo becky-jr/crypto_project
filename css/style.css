@@ -926,45 +926,32 @@
     font-size: 14px;
   }
   .second_block .second_right_menu {
-    width: 100%;
+    width: 330px;
     margin: 0 auto;
   }
   .second_block .second_right_menu img {
     width: 330px;
   }
 }
-.third_block {
-  position: relative;
+* {
+  outline: 1px solid blue;
 }
-.third_block .third_badge {
-  position: absolute;
-  top: 450px;
-  left: 600px;
-  background: rgba(255, 255, 255, 0.9);
-  /* shadow */
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(7.5px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 3px;
-  display: flex;
-  width: 310px;
-  padding: 20px 30px 20px 30px;
-}
-.third_block .third_badge div {
-  margin-left: 10px;
-  font-family: "Uni Neue Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  color: #262626;
-}
+
 .third_block .third_left_menu {
   padding: 100px 0 0 0;
   max-width: 550px;
   margin: 0 auto;
+  position: relative;
 }
-.third_block .third_left_menu img {
+.third_block .third_left_menu .block_image {
   width: 100%;
+}
+.third_block .third_left_menu .third_badge {
+  position: absolute;
+  top: 400px;
+  left: 250px;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 3px;
 }
 .third_block .third_right_menu {
   max-width: 550px;
@@ -1079,21 +1066,23 @@
   }
   .third_block .third_left_menu {
     padding: 0;
-    width: 367px;
+    width: 97%;
     display: flex;
     justify-content: center;
     position: absolute;
     top: 1050px;
     z-index: 2;
   }
-  .third_block .third_left_menu img {
+  .third_block .third_left_menu .block_image {
     width: 320px;
   }
-  .third_block .third_badge {
+  .third_block .third_left_menu .third_badge {
     z-index: 10;
-    bottom: 250px;
-    top: unset;
-    left: 90px;
+    top: 200px;
+    left: 100px;
+  }
+  .third_block .third_left_menu .third_badge img {
+    width: 250px;
   }
   .third_block .third_right_menu {
     width: 310px;

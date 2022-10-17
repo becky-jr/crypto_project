@@ -1375,7 +1375,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_right_menu {
-    width: 100%;
+    width: 330px;
     margin: 0 auto;
     img {
       width: 330px;
@@ -1384,48 +1384,39 @@ $icons_background: #E9F5EF;
 
 }
 }
-//* {
-//  outline: 1px solid blue;
-//}
+* {
+  outline: 1px solid blue;
+}
 
 // THIRD BLOCK
 
 .third_block {
-position: relative;
-.third_badge {
-  position: absolute;
-  top: 450px;
-  left: 600px;
-  background: rgba(255, 255, 255, 0.9);
-  /* shadow */
+//position: relative;
 
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(7.5px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 3px;
-
-    display: flex;
-    width: 310px;
-    padding: 20px 30px 20px 30px;
-    div {
-      margin-left: 10px;
-      font-family: 'Uni Neue Bold';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-
-      color: #262626;
-    }
-  }
   //padding: 150px 0 0 150px;
 
   .third_left_menu {
     padding: 100px 0 0 0;
     max-width: 550px;
     margin: 0 auto;
-    img {
+    .block_image {
       width: 100%;
+    }
+
+    position: relative;
+
+    .third_badge {
+      position: absolute;
+      top: 400px;
+      left: 250px;
+
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 3px;
+
+      //width: 310px;
+
+
     }
   }
 
@@ -1574,23 +1565,28 @@ position: relative;
       position: relative;
       .third_left_menu {
         padding: 0;
-        width: 367px;
+        width: 97%;
         display: flex;
         justify-content: center;
         //margin: 0 0 0 25px;
         position: absolute;
         top: 1050px;
         z-index: 2;
-        img {
+        .block_image {
           width: 320px;
         }
+
+        .third_badge {
+          z-index: 10;
+          //bottom: 250px;
+          top: 200px;
+          left: 100px;
+          img {
+            width: 250px;
+          }
+        }
       }
-      .third_badge {
-        z-index: 10;
-        bottom: 250px;
-        top: unset;
-        left: 90px;
-      }
+
 
 
 
