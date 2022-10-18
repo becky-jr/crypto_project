@@ -56,6 +56,8 @@
   font-size: 14px;
 }
 .header .header_body .contact {
+  text-align: right;
+  margin-right: 30px;
   margin-top: 8px;
 }
 .header .header_body .contact .whatsapp-logo {
@@ -570,6 +572,9 @@
   color: #262626;
   display: inline-block;
 }
+.second_page .left_menu .descr_info .descr_info_text a {
+  color: #262626;
+}
 .second_page .right_menu {
   width: 100%;
   margin: 200px auto 0;
@@ -671,11 +676,11 @@
 }
 .first_block .new_times {
   position: absolute;
-  top: 400px;
+  top: 430px;
   left: 680px;
 }
 .first_block .first_left_menu {
-  padding: 100px 0 0 0;
+  padding: 170px 0 0 0;
   max-width: 500px;
   margin: 0 auto;
 }
@@ -939,7 +944,7 @@
   }
 }
 .third_block .third_left_menu {
-  padding: 100px 0 0 0;
+  padding: 170px 0 0 0;
   max-width: 550px;
   margin: 0 auto;
   position: relative;
@@ -949,7 +954,7 @@
 }
 .third_block .third_left_menu .third_badge {
   position: absolute;
-  top: 400px;
+  top: 500px;
   left: 250px;
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 3px;
@@ -1163,7 +1168,7 @@
   color: #565758;
 }
 .coop_page .coop_icon_content {
-  max-width: 550px;
+  max-width: 320px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1273,6 +1278,7 @@
   width: 50%;
 }
 .join_content .right_block .right_block_info .ruble_block {
+  max-width: 250px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -1672,7 +1678,8 @@
   }
 }
 .method_block {
-  margin: 40px 0 120px 40px;
+  max-width: 1350px;
+  margin: 40px auto;
 }
 .method_block .method_title .title_bold {
   font-family: "Uni Neue Regular";
@@ -1841,7 +1848,7 @@
 }
 .revenue_block .revenue_content {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1350px;
   height: 500px;
   position: relative;
   overflow-y: hidden;
@@ -1849,7 +1856,6 @@
 .revenue_block .revenue_content .revenue_chart {
   position: absolute;
   top: -55px;
-  left: -120px;
 }
 .revenue_block .revenue_content .revenue_chart .desktop_chart {
   width: 100%;
@@ -1915,6 +1921,10 @@
     display: block;
     width: 100%;
   }
+}
+.rights_block {
+  max-width: 1350px;
+  margin: 20px auto;
 }
 .rights_block .rights_title {
   padding: 0 0 100px;
@@ -2137,7 +2147,7 @@
   }
 }
 .youtube_block {
-  max-width: 1200px;
+  max-width: 1920px;
   margin: 100px auto 0;
 }
 .youtube_block .youtube_content {
@@ -2146,13 +2156,12 @@
 }
 .youtube_block .youtube_content .link {
   position: absolute;
-  left: 525px;
-  top: 110px;
+  left: 46%;
+  top: 230px;
 }
 .youtube_block .youtube_content .left_block {
   background: #494949;
-  padding: 80px 100px 50px 60px;
-  width: 600px;
+  width: 50%;
 }
 .youtube_block .youtube_content .left_block .left_block_title {
   font-family: "Uni Neue Thin";
@@ -2160,6 +2169,8 @@
   font-weight: 400;
   font-size: 28px;
   color: #FFFFFF;
+  max-width: 480px;
+  margin: 150px auto 0;
 }
 .youtube_block .youtube_content .left_block .left_block_title .bold {
   font-family: "Uni Neue Bold";
@@ -2167,9 +2178,14 @@
 .youtube_block .youtube_content .left_block .title_author {
   font-family: "Uni Neue Thin";
   color: #FFFFFF;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.youtube_block .youtube_content .right_block {
+  width: 50%;
 }
 .youtube_block .youtube_content .right_block .youtube_pc {
-  width: 600px;
+  width: 100%;
 }
 .youtube_block .youtube_content .right_block .youtube_mobile {
   display: none;
@@ -2207,7 +2223,7 @@
   }
 }
 .answers_block {
-  max-width: 1250px;
+  max-width: 1350px;
   margin: 0 auto;
   padding: 150px 0 100px;
 }
