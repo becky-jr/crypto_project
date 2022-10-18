@@ -1070,7 +1070,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 1050px;
+    top: 930px;
     z-index: 2;
   }
   .third_block .third_left_menu .block_image {
@@ -1085,7 +1085,7 @@
     width: 250px;
   }
   .third_block .third_right_menu {
-    width: 310px;
+    width: 350px;
     margin: 0 auto;
     padding: 50px 0 0 0;
   }
@@ -1094,6 +1094,7 @@
   }
   .third_block .third_right_menu .third_right_descr .third_right_bold {
     font-size: 22px;
+    margin: 0;
   }
   .third_block .third_right_menu .third_right_descr .third_right_thin {
     font-size: 14px;
@@ -1108,7 +1109,7 @@
     width: 100%;
     margin: 0;
     position: absolute;
-    top: 1300px;
+    top: 1200px;
   }
   .third_block .info_block .info_block_content {
     padding: 90px 0 30px 25px;
@@ -1189,10 +1190,10 @@
   color: #565758;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 100px 0 50px 20px;
+    margin: 0 0 50px 20px;
   }
   .coop_page .coop_title {
     max-width: 550px;
@@ -1314,6 +1315,7 @@
     height: 300px;
     position: unset;
     width: 90%;
+    margin: 100px 0 0;
   }
   .join_content .left_block .title {
     font-size: 20px;
@@ -2256,6 +2258,12 @@
 }
 
 @media screen and (max-width: 600px) {
+  .answers_block {
+    padding: 50px 0 50px;
+  }
+  .answers_block .answers_title {
+    margin-left: 10px;
+  }
   .answers_block .answers_title .answers_gradient {
     font-size: 14px;
   }

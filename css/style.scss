@@ -1571,7 +1571,7 @@ $icons_background: #E9F5EF;
         justify-content: center;
         //margin: 0 0 0 25px;
         position: absolute;
-        top: 1050px;
+        top: 930px;
         z-index: 2;
         .block_image {
           width: 320px;
@@ -1592,7 +1592,7 @@ $icons_background: #E9F5EF;
 
 
     .third_right_menu {
-      width: 310px;
+      width: 350px;
       margin: 0 auto;
       padding: 50px 0 0 0;
 
@@ -1604,6 +1604,7 @@ $icons_background: #E9F5EF;
 
         .third_right_bold {
           font-size: 22px;
+          margin: 0;
         }
 
         .third_right_thin {
@@ -1626,7 +1627,7 @@ $icons_background: #E9F5EF;
       width: 100%;
       margin: 0;
       position: absolute;
-      top: 1300px;
+      top: 1200px;
 
       .info_block_content {
         padding: 90px 0 30px 25px;
@@ -1725,10 +1726,10 @@ $icons_background: #E9F5EF;
 }
 
 // COOP PAGE MEDIA
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 100px 0 50px 20px;
+    margin: 0 0 50px 20px;
 
     .coop_title {
       max-width: 550px;
@@ -1877,6 +1878,7 @@ $icons_background: #E9F5EF;
       height: 300px;
       position: unset;
       width: 90%;
+      margin: 100px 0 0;
       .title {
         font-size: 20px;
         width: 275px;
@@ -3266,12 +3268,13 @@ $icons_background: #E9F5EF;
     //max-width: 600px;
     //width: 320px;
     //margin: 0 auto;
-    //padding: 50px 0 0;
+    padding: 50px 0 50px;
 
 
 
     .answers_title {
       //width: 320px;
+      margin-left: 10px;
 
       .answers_gradient {
         font-size: 14px;
