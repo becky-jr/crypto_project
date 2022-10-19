@@ -1821,7 +1821,7 @@
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .method_block .method_card .cards .method_btn {
     display: flex;
-    left: -185px;
+    left: -150px;
     z-index: 99;
     top: 170px;
     right: unset;
@@ -1936,7 +1936,12 @@
   }
   .revenue_block .revenue_content .revenue_chart_text {
     position: unset;
-    font-size: 13px;
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+  }
+  .revenue_block .revenue_content .revenue_chart_text img {
+    width: 15px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -2858,6 +2863,7 @@
     border: 6px solid #33CC80;
   }
   .middle_slider .slider_inner .first_slider .slider_title {
+    max-width: 310px;
     margin: 0 auto;
     text-align: left;
   }

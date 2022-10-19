@@ -2635,7 +2635,7 @@ $icons_background: #E9F5EF;
       .cards {
         .method_btn {
           display: flex;
-          left: -185px;
+          left: -150px;
           z-index: 99;
           top: 170px;
           right: unset;
@@ -2803,7 +2803,12 @@ $icons_background: #E9F5EF;
       }
       .revenue_chart_text {
         position: unset;
-        font-size: 13px;
+        display: flex;
+        font-size: 11px;
+        justify-content: center;
+        img {
+          width: 15px;
+        }
       }
     }
   }
@@ -4127,7 +4132,7 @@ $icons_background: #E9F5EF;
       .first_slider {
 
         .slider_title {
-          //width: 310px;
+          max-width: 310px;
           margin: 0 auto;
           text-align: left;
 
