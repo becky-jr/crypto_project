@@ -326,6 +326,8 @@
 }
 .main_page .main_page_bottom .content {
   display: flex;
+  max-width: 1370px;
+  margin: 0 auto;
 }
 .main_page .main_page_bottom .content .statistics {
   text-align: left;
@@ -514,7 +516,7 @@
   border-radius: 7px;
   position: absolute;
   top: 400px;
-  right: 600px;
+  right: 700px;
   z-index: 2;
 }
 .second_page .phone_icon {
@@ -580,7 +582,7 @@
   margin: 200px auto 0;
 }
 .second_page .right_menu .right_img {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
 }
 .second_page .right_menu .right_img img {
@@ -588,7 +590,7 @@
 }
 .second_page .experience {
   padding: 60px 0 90px 30px;
-  max-width: 1350px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -680,8 +682,8 @@
   left: 680px;
 }
 .first_block .first_left_menu {
-  padding: 170px 0 0 0;
-  max-width: 500px;
+  padding: 180px 0 0 0;
+  max-width: 550px;
   margin: 0 auto;
 }
 .first_block .first_left_menu img {
@@ -730,7 +732,7 @@
   margin-top: 20px;
 }
 .first_block .first_right_menu .first_right_descr .first_right_thin .second {
-  line-height: 2;
+  line-height: 1.5;
   display: inline-block;
   margin: 0 0 20px 20px;
 }
@@ -763,7 +765,7 @@
 
 @media screen and (max-width: 500px) {
   .first_block {
-    height: 1400px;
+    height: 1250px;
     position: relative;
   }
   .first_block .new_times {
@@ -778,13 +780,14 @@
   }
   .first_block .first_left_menu {
     position: absolute;
-    top: 850px;
+    top: 700px;
     padding: 0;
     z-index: 2;
     display: flex;
+    justify-content: center;
   }
   .first_block .first_left_menu img {
-    width: 97%;
+    width: 85%;
   }
   .first_block .first_right_menu {
     padding: 50px 0 0 0;
@@ -801,9 +804,13 @@
   .first_block .first_right_menu .first_right_descr .first_right_bold {
     height: 100px;
     font-size: 22px;
+    margin: 0;
   }
   .first_block .first_right_menu .first_right_descr .first_right_thin {
     font-size: 14px;
+  }
+  .first_block .first_right_menu .first_right_descr .first_right_thin .first {
+    margin: 0;
   }
   .first_block .first_right_menu .first_right_descr .first_right_thin .second {
     margin: 0 0 20px 10px;
@@ -811,10 +818,10 @@
   .first_block .law_block {
     width: 412px;
     position: absolute;
-    top: 1170px;
+    top: 970px;
   }
   .first_block .law_block .law_block_content {
-    padding: 72px 0 30px 25px;
+    padding: 90px 0 30px 30px;
     justify-content: unset;
   }
   .first_block .law_block .law_block_content .bottom_icon {
@@ -826,7 +833,6 @@
   .first_block .law_block .law_block_content .law_text {
     margin-left: 15px;
     font-size: 12px;
-    width: 263px;
   }
 }
 .second_block {
@@ -896,7 +902,7 @@
 .second_block .second_right_menu {
   max-width: 550px;
   margin: 20px auto;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 .second_block .second_right_menu img {
   width: 100%;
@@ -916,11 +922,13 @@
     width: 150px;
   }
   .second_block .second_left_menu {
-    width: 310px;
+    width: 90%;
     margin: 0 auto;
   }
   .second_block .second_left_menu .second_left_descr .second_left_gradient {
+    display: inline-block;
     font-size: 14px;
+    text-align: left;
     width: 192px;
   }
   .second_block .second_left_menu .second_left_descr .second_left_bold {
@@ -936,6 +944,7 @@
     font-size: 14px;
   }
   .second_block .second_right_menu {
+    padding-top: 30px;
     width: 330px;
     margin: 0 auto;
   }
@@ -962,7 +971,7 @@
 .third_block .third_right_menu {
   max-width: 550px;
   margin: 0 auto;
-  padding-top: 120px;
+  padding-top: 130px;
 }
 .third_block .third_right_menu .third_right_descr .third_right_gradient {
   font-family: "Uni Neue Bold";
@@ -1076,7 +1085,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 930px;
+    top: 905px;
     z-index: 2;
   }
   .third_block .third_left_menu .block_image {
@@ -1084,7 +1093,7 @@
   }
   .third_block .third_left_menu .third_badge {
     z-index: 10;
-    top: 200px;
+    top: 170px;
     left: 100px;
   }
   .third_block .third_left_menu .third_badge img {
@@ -1115,10 +1124,10 @@
     width: 100%;
     margin: 0;
     position: absolute;
-    top: 1200px;
+    top: 1180px;
   }
   .third_block .info_block .info_block_content {
-    padding: 90px 0 30px 25px;
+    padding: 90px 0 30px 0;
     justify-content: center;
   }
   .third_block .info_block .info_block_content .info_block_icon {
@@ -1199,7 +1208,7 @@
 @media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 0 0 50px 20px;
+    margin: 0 0 0 20px;
   }
   .coop_page .coop_title {
     max-width: 550px;
@@ -1322,7 +1331,7 @@
     height: 300px;
     position: unset;
     width: 90%;
-    margin: 100px 0 0;
+    margin: 30px 0 0;
   }
   .join_content .left_block .title {
     font-size: 20px;
@@ -1486,7 +1495,7 @@
   color: #FFFFFF;
 }
 .history_block .history_btn {
-  margin: 50px auto;
+  margin: 25px auto;
   text-align: center;
 }
 .history_block .history_btn .btn {
@@ -1515,10 +1524,13 @@
   .history_block .history_content .history_title {
     font-size: 22px;
     margin-bottom: 25px;
+    width: 217px;
+    margin-left: 10px;
   }
   .history_block .history_content .history_title_small {
     font-size: 14px;
     margin-bottom: 25px;
+    margin-left: 10px;
   }
   .history_block .history_content .history_chart {
     margin: 0 0 0 10px;
@@ -1537,7 +1549,7 @@
   }
   .history_block .history_content .history_cards {
     max-width: 370px;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 0;
     display: block;
     padding-top: 50px;
   }
@@ -1571,7 +1583,7 @@
 .income_page .fourth_badge {
   position: absolute;
   top: 400px;
-  right: 710px;
+  right: 683px;
 }
 .income_page .income_left_block {
   max-width: 550px;
@@ -1589,6 +1601,7 @@
   -webkit-text-fill-color: transparent;
 }
 .income_page .income_left_block .income_bold {
+  max-width: 500px;
   margin: 5px 0 30px;
   font-family: "Uni Neue Bold";
   font-style: normal;
@@ -1636,7 +1649,7 @@
 @media screen and (max-width: 500px) {
   .income_page {
     padding: 50px 0 25px 0;
-    width: 320px;
+    width: 350px;
     margin: 0 auto;
   }
   .income_page .fourth_badge {
@@ -1648,7 +1661,7 @@
     width: 140px;
   }
   .income_page .income_left_block {
-    width: 310px;
+    width: 350px;
   }
   .income_page .income_left_block .income_gradient {
     font-size: 14px;
@@ -1665,16 +1678,16 @@
     font-size: 14px;
   }
   .income_page .income_right_block {
-    width: 300px;
+    width: 340px;
     margin: 0 auto;
     padding: 0;
   }
   .income_page .income_right_block .income_img img {
-    width: 300px;
+    width: 100%;
   }
   .income_page .income_data {
     font-size: 13px;
-    margin: unset;
+    margin: 25px 0 0;
   }
 }
 .method_block {
@@ -1849,7 +1862,7 @@
 .revenue_block .revenue_content {
   margin: 0 auto;
   max-width: 1350px;
-  height: 500px;
+  height: 540px;
   position: relative;
   overflow-y: hidden;
 }
@@ -1873,7 +1886,6 @@
   position: absolute;
   top: 505px;
   left: 400px;
-  display: none;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
@@ -1902,7 +1914,8 @@
     height: unset;
   }
   .revenue_block .revenue_content .revenue_title {
-    margin: 0;
+    max-width: 310px;
+    margin: 0 auto;
     font-size: 14px;
   }
   .revenue_block .revenue_content .revenue_title .revenue_bold {
@@ -1921,10 +1934,19 @@
     display: block;
     width: 100%;
   }
+  .revenue_block .revenue_content .revenue_chart_text {
+    position: unset;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .revenue_block .revenue_content .revenue_chart {
+    top: 30px;
+  }
 }
 .rights_block {
   max-width: 1350px;
-  margin: 20px auto;
+  margin: 100px auto;
 }
 .rights_block .rights_title {
   padding: 0 0 100px;
@@ -2001,6 +2023,7 @@
   .rights_block .rights_title .rights_thin {
     width: unset;
     font-size: 14px;
+    margin-top: 30px;
   }
   .rights_block .rights_content_cards {
     width: 320px;
@@ -2029,6 +2052,12 @@
     font-size: 14px;
   }
 }
+@media screen and (max-width: 500px) {
+  .rights_block {
+    max-width: 370px;
+    margin: 50px auto 20px;
+  }
+}
 .time_form {
   display: none;
   margin-top: 30px;
@@ -2049,7 +2078,7 @@
 }
 .application_block .application_content {
   width: 562px;
-  margin: 150px 0 140px 200px;
+  margin: 150px 0 140px 300px;
 }
 .application_block .application_content .application_bold {
   font-family: "Uni Neue Regular";
@@ -2105,10 +2134,13 @@
   font-family: "Uni Neue Thin";
   font-style: normal;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   color: #FFFFFF;
 }
 .application_block .application_content .application_send .approve span {
+  padding-bottom: 5px;
+}
+.application_block .application_content .application_send .approve .data-text {
   color: #FFFFFF;
   text-decoration: underline;
 }
@@ -2117,6 +2149,11 @@
   display: none;
 }
 
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .application_block .application_content {
+    margin: 150px 0 140px 200px;
+  }
+}
 @media screen and (max-width: 800px) {
   .application_block {
     height: unset;
@@ -2208,11 +2245,14 @@
     background: unset;
     padding: unset;
     width: 215px;
-    top: 220px;
+    top: 80px;
     left: 30px;
   }
   .youtube_block .youtube_content .left_block .left_block_title {
     font-size: 18px;
+  }
+  .youtube_block .youtube_content .right_block {
+    width: 100%;
   }
   .youtube_block .youtube_content .right_block .youtube_pc {
     display: none;
@@ -2229,6 +2269,7 @@
 }
 .answers_block .answers_title {
   width: 100%;
+  padding-left: 20px;
 }
 .answers_block .answers_title .answers_gradient {
   font-family: "Uni Neue Regular";
@@ -2241,7 +2282,7 @@
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
 }
-.answers_block .answers_title .answers_title {
+.answers_block .answers_title .answers_title_text {
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 700;
@@ -2278,10 +2319,13 @@
   .answers_block {
     padding: 50px 0 50px;
   }
+  .answers_block .answers_title {
+    padding: 0 16px;
+  }
   .answers_block .answers_title .answers_gradient {
     font-size: 14px;
   }
-  .answers_block .answers_title .answers_title {
+  .answers_block .answers_title .answers_title_text {
     font-size: 22px;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -2300,7 +2344,9 @@
   margin: 0 auto 50px;
 }
 .advice_block .advice_left {
-  text-align: center;
+  text-align: left;
+  max-width: 530px;
+  margin: 0 auto;
 }
 .advice_block .advice_left .advice_gradient {
   font-family: "Uni Neue Regular";
@@ -2323,8 +2369,7 @@
   color: #262626;
 }
 .advice_block .advice_right {
-  margin: 50px 0 0 0;
-  text-align: center;
+  text-align: left;
 }
 .advice_block .advice_right .advice_inputs .name_input {
   margin-top: 5px;
@@ -2338,7 +2383,7 @@
 }
 .advice_block .advice_right .advice_inputs .radio_messenger {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 .advice_block .advice_right .advice_inputs .radio_messenger .phone_radio, .advice_block .advice_right .advice_inputs .radio_messenger .telegram_radio, .advice_block .advice_right .advice_inputs .radio_messenger .whatsapp_radio {
   margin-right: 25px;
@@ -2411,7 +2456,6 @@
   }
   .advice_block .advice_right .advice_inputs .radio_messenger {
     font-size: 12px;
-    justify-content: space-between;
   }
   .advice_block .advice_right .advice_inputs .contact_inputs {
     display: block;
@@ -2446,6 +2490,7 @@
   text-fill-color: transparent;
 }
 .contact_block .contacts_content .contacts_title .contacts_bold {
+  max-width: 700px;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 700;
@@ -2476,8 +2521,10 @@
   border-radius: 3px;
 }
 .contact_block .office_content .office_card .card_content {
-  padding: 50px 0 50px 0;
-  text-align: center;
+  padding: 50px 0 50px 30px;
+  text-align: left;
+  max-width: 290px;
+  margin: 0 auto;
 }
 .contact_block .office_content .office_card .card_content .office_gradient {
   font-family: "Uni Neue Regular";
@@ -2514,8 +2561,9 @@
   margin: 30px 0 50px;
 }
 .contact_block .message_content .message_buttons .message_whatsapp, .contact_block .message_content .message_buttons .message_telegram {
-  padding: 10px 50px;
+  padding: 10px 60px;
   margin-right: 30px;
+  color: #33CC80;
   background-color: #FAFAFA;
   border: 1px solid #33CC80;
   border-radius: 3px;
@@ -2577,17 +2625,22 @@
   }
   .contact_block .message_content .message_buttons .message_telegram {
     margin: 10px 0 0;
-    padding: 10px 54px;
+    padding: 10px 63px;
   }
 }
 .map_content {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 .map_content .map div frame {
   width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  .map_content {
+    text-align: center;
+  }
+}
 #footer {
   background-color: #262626;
 }
@@ -2720,6 +2773,7 @@
   font-weight: 700;
   font-size: 36px;
   color: #262626;
+  margin-bottom: 20px;
 }
 .middle_slider .slider_inner .first_slider .slider_title .title_thin {
   font-family: "Uni Neue Regular";
@@ -3317,7 +3371,7 @@
   .first_block .new_times {
     position: absolute;
     top: unset;
-    bottom: 280px;
+    bottom: 400px;
     left: 290px;
     z-index: 10;
   }

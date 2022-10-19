@@ -291,7 +291,7 @@ $(document).scroll(function () {
 
     if (windows.availWidth > 1300) {
         var y = $(this).scrollTop();
-        if (y > 300) {
+        if (y > 100) {
             $('.phone_icon').fadeIn();
         } else {
             $('.phone_icon').fadeOut();

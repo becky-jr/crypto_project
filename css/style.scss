@@ -551,6 +551,8 @@ $icons_background: #E9F5EF;
 
     .content {
       display: flex;
+      max-width: 1370px;
+      margin: 0 auto;
 
 
 
@@ -820,7 +822,7 @@ $icons_background: #E9F5EF;
 
     position: absolute;
     top: 400px;
-    right: 600px;
+    right: 700px;
     z-index: 2;
   }
 
@@ -906,7 +908,7 @@ $icons_background: #E9F5EF;
     width: 100%;
     margin: 200px auto 0;
     .right_img {
-      max-width: 500px;
+      max-width: 550px;
       margin: 0 auto;
       img {
         width: 100%;
@@ -918,7 +920,7 @@ $icons_background: #E9F5EF;
   .experience {
     padding: 60px 0 90px 30px;
 
-    max-width: 1350px;
+    max-width: 1400px;
     margin: 0 auto;
 
     display: flex;
@@ -1053,8 +1055,8 @@ $icons_background: #E9F5EF;
 
 
   .first_left_menu {
-    padding: 170px 0 0 0;
-    max-width: 500px;
+    padding: 180px 0 0 0;
+    max-width: 550px;
     margin: 0 auto;
     img {
       width: 100%;
@@ -1113,7 +1115,7 @@ $icons_background: #E9F5EF;
           //margin: 0 0 10px 0;
         }
         .second {
-          line-height: 2;
+          line-height: 1.5;
           display: inline-block;
           margin: 0 0 20px 20px;
         }
@@ -1172,20 +1174,20 @@ $icons_background: #E9F5EF;
       }
     }
 
-    height: 1400px;
+    height: 1250px;
 
     position: relative;
 
     .first_left_menu {
       position: absolute;
-      top: 850px;
+      top: 700px;
       padding: 0;
       z-index: 2;
       display: flex;
       //width: 320px;
-      //justify-content: center;
+      justify-content: center;
       img {
-        width: 97%;
+        width: 85%;
       }
     }
 
@@ -1205,10 +1207,14 @@ $icons_background: #E9F5EF;
         .first_right_bold {
           height: 100px;
           font-size: 22px;
+          margin: 0;
         }
 
         .first_right_thin {
           font-size: 14px;
+          .first {
+            margin: 0;
+          }
 
           .second {
             margin: 0 0 20px 10px;
@@ -1221,10 +1227,10 @@ $icons_background: #E9F5EF;
     .law_block {
       width: 412px;
       position: absolute;
-      top: 1170px;
+      top: 970px;
 
       .law_block_content {
-        padding: 72px 0 30px 25px;
+        padding: 90px 0 30px 30px;
         justify-content: unset;
 
         .bottom_icon {
@@ -1237,7 +1243,7 @@ $icons_background: #E9F5EF;
         .law_text {
           margin-left: 15px;
           font-size: 12px;
-          width: 263px;
+          //width: 263px;
         }
 
       }
@@ -1330,7 +1336,7 @@ $icons_background: #E9F5EF;
   .second_right_menu {
     max-width: 550px;
     margin: 20px auto;
-    padding-top: 40px;
+    padding-top: 30px;
     img {
       width: 100%;
     }
@@ -1353,14 +1359,16 @@ $icons_background: #E9F5EF;
   padding: 50px 0 0 0;
 
   .second_left_menu {
-    width: 310px;
+    width: 90%;
     margin: 0 auto;
 
     .second_left_descr {
       //width: 310px;
 
       .second_left_gradient {
+        display: inline-block;
         font-size: 14px;
+        text-align: left;
         width: 192px;
       }
       .second_left_bold {
@@ -1382,6 +1390,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_right_menu {
+    padding-top: 30px;
     width: 330px;
     margin: 0 auto;
     img {
@@ -1431,7 +1440,7 @@ $icons_background: #E9F5EF;
     max-width: 550px;
     margin: 0 auto;
     //padding: 120px 100px 0 0;
-    padding-top: 120px;
+    padding-top: 130px;
 
 
     .third_right_descr {
@@ -1577,7 +1586,7 @@ $icons_background: #E9F5EF;
         justify-content: center;
         //margin: 0 0 0 25px;
         position: absolute;
-        top: 930px;
+        top: 905px;
         z-index: 2;
         .block_image {
           width: 320px;
@@ -1586,7 +1595,7 @@ $icons_background: #E9F5EF;
         .third_badge {
           z-index: 10;
           //bottom: 250px;
-          top: 200px;
+          top: 170px;
           left: 100px;
           img {
             width: 250px;
@@ -1633,10 +1642,10 @@ $icons_background: #E9F5EF;
       width: 100%;
       margin: 0;
       position: absolute;
-      top: 1200px;
+      top: 1180px;
 
       .info_block_content {
-        padding: 90px 0 30px 25px;
+        padding: 90px 0 30px 0;
         justify-content: center;
 
         .info_block_icon {
@@ -1735,7 +1744,7 @@ $icons_background: #E9F5EF;
 @media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 0 0 50px 20px;
+    margin: 0 0 0 20px;
 
     .coop_title {
       max-width: 550px;
@@ -1884,7 +1893,7 @@ $icons_background: #E9F5EF;
       height: 300px;
       position: unset;
       width: 90%;
-      margin: 100px 0 0;
+      margin: 30px 0 0;
       .title {
         font-size: 20px;
         width: 275px;
@@ -2144,7 +2153,7 @@ $icons_background: #E9F5EF;
   }
 
   .history_btn {
-    margin: 50px auto;
+    margin: 25px auto;
     text-align: center;
     .btn {
       padding: 15px 60px;
@@ -2189,11 +2198,15 @@ $icons_background: #E9F5EF;
       .history_title {
         font-size: 22px;
         margin-bottom: 25px;
+
+        width: 217px;
+        margin-left: 10px;
       }
 
       .history_title_small {
         font-size: 14px;
         margin-bottom: 25px;
+        margin-left: 10px;
       }
 
       .history_chart {
@@ -2218,7 +2231,7 @@ $icons_background: #E9F5EF;
 
       .history_cards {
         max-width: 370px;
-        margin: 0 0 0 10px;
+        margin: 0 0 0 0;
 
         display: block;
 
@@ -2281,7 +2294,7 @@ $icons_background: #E9F5EF;
   .fourth_badge {
     position: absolute;
     top: 400px;
-    right: 710px;
+    right: 683px;
   }
 
   .income_left_block {
@@ -2301,7 +2314,7 @@ $icons_background: #E9F5EF;
     }
 
     .income_bold {
-      //width: 500px;
+      max-width: 500px;
       margin: 5px 0 30px;
       font-family: "Uni Neue Bold";
       font-style: normal;
@@ -2374,11 +2387,11 @@ $icons_background: #E9F5EF;
       }
     }
     padding: 50px 0 25px 0;
-    width: 320px;
+    width: 350px;
     margin: 0 auto;
 
     .income_left_block {
-      width: 310px;
+      width: 350px;
 
       .income_gradient {
         font-size: 14px;
@@ -2402,19 +2415,19 @@ $icons_background: #E9F5EF;
     }
 
     .income_right_block {
-      width: 300px;
+      width: 340px;
       margin: 0 auto;
       padding: 0;
 
       .income_img {
         img {
-          width: 300px;
+          width: 100%;
         }
       }
     }
     .income_data {
       font-size: 13px;
-      margin: unset;
+      margin: 25px 0 0;
     }
   }
 }
@@ -2692,7 +2705,7 @@ $icons_background: #E9F5EF;
   .revenue_content {
     margin: 0 auto;
     max-width: 1350px;
-    height: 500px;
+    height: 540px;
     position: relative;
     overflow-y: hidden;
 
@@ -2721,7 +2734,7 @@ $icons_background: #E9F5EF;
       position: absolute;
       top: 505px;
       left: 400px;
-      display: none;
+      //display: none;
 
       font-family: 'Uni Neue Regular';
       font-style: normal;
@@ -2765,7 +2778,8 @@ $icons_background: #E9F5EF;
       //width: 310px;
 
       .revenue_title {
-        margin: 0;
+        max-width: 310px;
+        margin: 0 auto;
         font-size: 14px;
 
         .revenue_bold {
@@ -2787,6 +2801,20 @@ $icons_background: #E9F5EF;
           width: 100%;
         }
       }
+      .revenue_chart_text {
+        position: unset;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .revenue_block {
+    .revenue_content {
+      .revenue_chart {
+        top: 30px;
+      }
     }
   }
 }
@@ -2795,7 +2823,7 @@ $icons_background: #E9F5EF;
 
 .rights_block {
   max-width: 1350px;
-  margin: 20px auto;
+  margin: 100px auto;
   .rights_title {
     padding: 0 0 100px;
     width: 100%;
@@ -2899,6 +2927,7 @@ $icons_background: #E9F5EF;
       .rights_thin {
         width: unset;
         font-size: 14px;
+        margin-top: 30px;
       }
     }
 
@@ -2939,6 +2968,14 @@ $icons_background: #E9F5EF;
   }
 }
 
+@media screen and (max-width: 500px) {
+
+  .rights_block {
+    max-width: 370px;
+    margin: 50px auto 20px;
+  }
+}
+
 // APPLICATION BLOCK
 
 .time_form {
@@ -2963,7 +3000,7 @@ $icons_background: #E9F5EF;
 
   .application_content {
     width: 562px;
-    margin: 150px 0 140px 200px;
+    margin: 150px 0 140px 300px;
 
     .application_bold {
       font-family: 'Uni Neue Regular';
@@ -3035,9 +3072,12 @@ $icons_background: #E9F5EF;
         font-family: 'Uni Neue Thin';
         font-style: normal;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 12px;
         color: #FFFFFF;
         span {
+          padding-bottom: 5px;
+        }
+        .data-text {
           color: #FFFFFF;
           text-decoration: underline;
         }
@@ -3050,6 +3090,13 @@ $icons_background: #E9F5EF;
 }
 
 // APPLICATION BLOCK MEDIA
+@media screen and (min-width: 800px) and (max-width: 1000px){
+  .application_block {
+    .application_content {
+      margin: 150px 0 140px 200px;
+    }
+  }
+}
 
 @media screen and (max-width: 800px){
 
@@ -3182,7 +3229,7 @@ $icons_background: #E9F5EF;
         padding: unset;
         width: 215px;
 
-        top: 220px;
+        top: 80px;
         left: 30px;
         .left_block_title {
           font-size: 18px;
@@ -3190,6 +3237,7 @@ $icons_background: #E9F5EF;
       }
 
       .right_block {
+        width: 100%;
 
         .youtube_pc {
           display: none;
@@ -3215,6 +3263,7 @@ $icons_background: #E9F5EF;
 
   .answers_title {
     width: 100%;
+    padding-left: 20px;
 
     .answers_gradient {
       font-family: 'Uni Neue Regular';
@@ -3228,7 +3277,7 @@ $icons_background: #E9F5EF;
       -webkit-text-fill-color: transparent;
       text-fill-color: transparent;
     }
-    .answers_title {
+    .answers_title_text {
       font-family: 'Uni Neue Regular';
       font-style: normal;
       font-weight: 700;
@@ -3289,11 +3338,12 @@ $icons_background: #E9F5EF;
 
     .answers_title {
       //width: 320px;
+      padding: 0 16px;
 
       .answers_gradient {
         font-size: 14px;
       }
-      .answers_title {
+      .answers_title_text {
         font-size: 22px;
         margin-top: 8px;
         margin-bottom: 20px;
@@ -3331,7 +3381,9 @@ $icons_background: #E9F5EF;
   width: 100%;
   margin: 0 auto 50px;
   .advice_left {
-    text-align: center;
+    text-align: left;
+    max-width: 530px;
+    margin: 0 auto;
 
     .advice_gradient {
       font-family: 'Uni Neue Regular';
@@ -3360,8 +3412,8 @@ $icons_background: #E9F5EF;
   }
 
   .advice_right {
-    margin: 50px 0 0 0;
-    text-align: center;
+    //margin: 50px 0 0 0;
+    text-align: left;
 
     .advice_inputs {
 
@@ -3377,7 +3429,7 @@ $icons_background: #E9F5EF;
       }
       .radio_messenger {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         .phone_radio, .telegram_radio, .whatsapp_radio {
           margin-right: 25px;
         }
@@ -3494,7 +3546,7 @@ $icons_background: #E9F5EF;
 
         .radio_messenger {
           font-size: 12px;
-          justify-content: space-between;
+          //justify-content: space-between;
           //width: 320px;
 
 
@@ -3548,6 +3600,7 @@ $icons_background: #E9F5EF;
       }
 
       .contacts_bold {
+        max-width: 700px;
         font-family: 'Uni Neue Regular';
         font-style: normal;
         font-weight: 700;
@@ -3587,9 +3640,10 @@ $icons_background: #E9F5EF;
       border-radius: 3px;
 
       .card_content {
-        padding: 50px 0 50px 0;
-        text-align: center;
-        //width: 265px;
+        padding: 50px 0 50px 30px;
+        text-align: left;
+        max-width: 290px;
+        margin: 0 auto;
 
         .office_gradient {
           font-family: 'Uni Neue Regular';
@@ -3635,8 +3689,9 @@ $icons_background: #E9F5EF;
     .message_buttons {
       margin: 30px 0 50px;
       .message_whatsapp, .message_telegram {
-        padding: 10px 50px;
+        padding: 10px 60px;
         margin-right: 30px;
+        color: #33CC80;
 
         background-color: #FAFAFA;
         border: 1px solid #33CC80;
@@ -3731,7 +3786,7 @@ $icons_background: #E9F5EF;
 
         .message_telegram {
           margin: 10px 0 0;
-          padding: 10px 54px;
+          padding: 10px 63px;
         }
       }
 
@@ -3741,7 +3796,7 @@ $icons_background: #E9F5EF;
 
 // map content
 .map_content {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   .map {
     div {
@@ -3749,6 +3804,12 @@ $icons_background: #E9F5EF;
         width: 100%;
       }
     }
+  }
+}
+// map media
+@media screen and (max-width: 500px){
+  .map_content {
+    text-align: center;
   }
 }
 
@@ -3945,6 +4006,7 @@ $icons_background: #E9F5EF;
           font-size: 36px;
 
           color: $black;
+          margin-bottom: 20px;
         }
 
         .title_thin {
@@ -4879,7 +4941,7 @@ $icons_background: #E9F5EF;
     .new_times {
       position: absolute;
       top: unset;
-      bottom: 280px;
+      bottom: 400px;
       left: 290px;
       z-index: 10;
 
