@@ -1607,7 +1607,7 @@ $icons_background: #E9F5EF;
 
 
     .third_right_menu {
-      width: 350px;
+      max-width: 350px;
       margin: 0 auto;
       padding: 50px 0 0 0;
 
@@ -2372,6 +2372,9 @@ $icons_background: #E9F5EF;
 
 
 }
+* {
+  outline: 1px solid blue;
+}
 
 // income page media
 @media screen and (max-width: 500px) {
@@ -2379,7 +2382,7 @@ $icons_background: #E9F5EF;
 
     .fourth_badge {
       right: unset;
-      top: 800px;
+      top: 750px;
       left: -20px;
 
       img {
@@ -2391,7 +2394,7 @@ $icons_background: #E9F5EF;
     margin: 0 auto;
 
     .income_left_block {
-      width: 350px;
+      max-width: 350px;
 
       .income_gradient {
         font-size: 14px;
@@ -3506,6 +3509,10 @@ $icons_background: #E9F5EF;
         font-weight: 400;
         font-size: 13px;
         color: #262626;
+        display: flex;
+        div {
+          margin-left: 5px;
+        }
         span {
           color: $black;
           text-decoration: underline;
@@ -3554,6 +3561,8 @@ $icons_background: #E9F5EF;
 
         .advice_gradient {
           font-size: 14px;
+          max-width: 310px;
+          margin: 0 auto;
         }
 
         .advice_bold {
@@ -3605,6 +3614,7 @@ $icons_background: #E9F5EF;
         }
 
         .check_input {
+          justify-content: center;
           font-size: 12px;
           margin-bottom: 50px;
         }
@@ -4487,9 +4497,7 @@ $icons_background: #E9F5EF;
             font-weight: 400;
             font-size: 13px;
             color: #262626;
-            a {
-              color: #262626;
-            }
+
           }
 
 
