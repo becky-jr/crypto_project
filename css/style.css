@@ -1646,10 +1646,6 @@
   font-size: 13px;
 }
 
-* {
-  outline: 1px solid blue;
-}
-
 @media screen and (max-width: 500px) {
   .income_page {
     padding: 50px 0 25px 0;
