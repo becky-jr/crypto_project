@@ -526,7 +526,7 @@
   z-index: 11;
 }
 .second_page .left_menu {
-  max-width: 600px;
+  max-width: 590px;
   padding: 120px 0 0 0;
   margin: 0 auto;
 }
@@ -683,7 +683,7 @@
 }
 .first_block .first_left_menu {
   padding: 180px 0 0 0;
-  max-width: 550px;
+  max-width: 590px;
   margin: 0 auto;
 }
 .first_block .first_left_menu img {
@@ -741,7 +741,7 @@
   margin: 0 0 50px 0;
 }
 .first_block .law_block {
-  width: 1350px;
+  width: 1390px;
   margin: 40px auto 0;
   background: #CAEAF8;
 }
@@ -780,7 +780,7 @@
   }
   .first_block .first_left_menu {
     position: absolute;
-    top: 700px;
+    top: 800px;
     padding: 0;
     z-index: 2;
     display: flex;
@@ -818,7 +818,7 @@
   .first_block .law_block {
     width: 412px;
     position: absolute;
-    top: 970px;
+    top: 1050px;
   }
   .first_block .law_block .law_block_content {
     padding: 90px 0 30px 30px;
@@ -900,7 +900,7 @@
   display: inline-block;
 }
 .second_block .second_right_menu {
-  max-width: 550px;
+  max-width: 590px;
   margin: 20px auto;
   padding-top: 30px;
 }
@@ -910,7 +910,7 @@
 
 @media screen and (max-width: 500px) {
   .second_block {
-    padding: 50px 0 0 0;
+    padding: 120px 0 0 0;
   }
   .second_block .second_icon {
     position: absolute;
@@ -954,7 +954,7 @@
 }
 .third_block .third_left_menu {
   padding: 170px 0 0 0;
-  max-width: 550px;
+  max-width: 590px;
   margin: 0 auto;
   position: relative;
 }
@@ -1019,7 +1019,7 @@
 }
 .third_block .third_right_menu .third_descr_info .third_descr_line {
   display: inline-block;
-  width: 8px;
+  width: 10px;
   background: #33CC80;
   margin-right: 17px;
 }
@@ -1037,7 +1037,7 @@
   margin-left: 20px;
 }
 .third_block .info_block {
-  width: 1350px;
+  width: 1390px;
   margin: 130px auto 190px;
   background: #CAEAF8;
 }
@@ -1085,7 +1085,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 905px;
+    top: 1005px;
     z-index: 2;
   }
   .third_block .third_left_menu .block_image {
@@ -1100,7 +1100,7 @@
     width: 250px;
   }
   .third_block .third_right_menu {
-    max-width: 350px;
+    max-width: 310px;
     margin: 0 auto;
     padding: 50px 0 0 0;
   }
@@ -1124,7 +1124,7 @@
     width: 100%;
     margin: 0;
     position: absolute;
-    top: 1180px;
+    top: 1280px;
   }
   .third_block .info_block .info_block_content {
     padding: 90px 0 30px 0;
@@ -1208,7 +1208,7 @@
 @media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 0 0 0 20px;
+    margin: 70px 0 0 20px;
   }
   .coop_page .coop_title {
     max-width: 550px;
@@ -1923,8 +1923,9 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   .revenue_block .revenue_content {
+    margin: 0 auto;
     overflow: hidden;
     height: unset;
   }
@@ -1962,6 +1963,23 @@
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .revenue_block .revenue_content .revenue_chart {
     top: 30px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .revenue_block .revenue_content {
+    margin: 100px auto 0;
+    max-width: 1350px;
+    height: 350px;
+    position: relative;
+    overflow-y: hidden;
+  }
+  .revenue_block .revenue_content .revenue_chart {
+    top: 90px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .revenue_block .revenue_content .revenue_chart {
+    top: 150px;
   }
 }
 .rights_block {
@@ -3405,7 +3423,7 @@
   .first_block .new_times {
     position: absolute;
     top: unset;
-    bottom: 400px;
+    bottom: 190px;
     left: 290px;
     z-index: 10;
   }
@@ -3440,7 +3458,11 @@
 @media screen and (max-width: 500px) {
   .second_page .ilma {
     right: unset;
-    top: 900px;
+    top: 850px;
+    padding: 15px 15px 15px 15px;
+  }
+  .second_page .ilma img {
+    width: 100px;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1750px) {

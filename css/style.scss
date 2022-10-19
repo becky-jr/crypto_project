@@ -834,7 +834,7 @@ $icons_background: #E9F5EF;
   }
 
   .left_menu {
-    max-width: 600px;
+    max-width: 590px;
     padding: 120px 0 0 0;
     margin: 0 auto;
 
@@ -1056,7 +1056,7 @@ $icons_background: #E9F5EF;
 
   .first_left_menu {
     padding: 180px 0 0 0;
-    max-width: 550px;
+    max-width: 590px;
     margin: 0 auto;
     img {
       width: 100%;
@@ -1130,7 +1130,7 @@ $icons_background: #E9F5EF;
 
   .law_block {
     //height: 172px;
-    width: 1350px;
+    width: 1390px;
     margin: 40px auto 0;
 
     background: #CAEAF8;
@@ -1180,7 +1180,7 @@ $icons_background: #E9F5EF;
 
     .first_left_menu {
       position: absolute;
-      top: 700px;
+      top: 800px;
       padding: 0;
       z-index: 2;
       display: flex;
@@ -1227,7 +1227,7 @@ $icons_background: #E9F5EF;
     .law_block {
       width: 412px;
       position: absolute;
-      top: 970px;
+      top: 1050px;
 
       .law_block_content {
         padding: 90px 0 30px 30px;
@@ -1334,7 +1334,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_right_menu {
-    max-width: 550px;
+    max-width: 590px;
     margin: 20px auto;
     padding-top: 30px;
     img {
@@ -1356,7 +1356,7 @@ $icons_background: #E9F5EF;
   }
 }
 
-  padding: 50px 0 0 0;
+  padding: 120px 0 0 0;
 
   .second_left_menu {
     width: 90%;
@@ -1410,7 +1410,7 @@ $icons_background: #E9F5EF;
 
   .third_left_menu {
     padding: 170px 0 0 0;
-    max-width: 550px;
+    max-width: 590px;
     margin: 0 auto;
     .block_image {
       width: 100%;
@@ -1497,7 +1497,7 @@ $icons_background: #E9F5EF;
 
       .third_descr_line {
         display: inline-block;
-        width: 8px;
+        width: 10px;
         background: #33CC80;
         margin-right: 17px;
       }
@@ -1521,7 +1521,7 @@ $icons_background: #E9F5EF;
   }
 
   .info_block {
-    width: 1350px;
+    width: 1390px;
     margin: 130px auto 190px;
     background: #CAEAF8;
 
@@ -1583,7 +1583,7 @@ $icons_background: #E9F5EF;
         justify-content: center;
         //margin: 0 0 0 25px;
         position: absolute;
-        top: 905px;
+        top: 1005px;
         z-index: 2;
         .block_image {
           width: 320px;
@@ -1604,7 +1604,7 @@ $icons_background: #E9F5EF;
 
 
     .third_right_menu {
-      max-width: 350px;
+      max-width: 310px;
       margin: 0 auto;
       padding: 50px 0 0 0;
 
@@ -1639,7 +1639,7 @@ $icons_background: #E9F5EF;
       width: 100%;
       margin: 0;
       position: absolute;
-      top: 1180px;
+      top: 1280px;
 
       .info_block_content {
         padding: 90px 0 30px 0;
@@ -1741,7 +1741,7 @@ $icons_background: #E9F5EF;
 @media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 0 0 0 20px;
+    margin: 70px 0 0 20px;
 
     .coop_title {
       max-width: 550px;
@@ -2789,9 +2789,10 @@ $icons_background: #E9F5EF;
 }
 
 // REVENUE BLOCK MEDIA
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   .revenue_block {
     .revenue_content {
+      margin: 0 auto;
       overflow: hidden;
       height: unset;
 
@@ -2843,7 +2844,32 @@ $icons_background: #E9F5EF;
     }
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .revenue_block {
+    .revenue_content {
+      .revenue_chart {
+        top: 90px;
+      }
 
+        margin: 100px auto 0;
+        max-width: 1350px;
+        height: 350px;
+        position: relative;
+        overflow-y: hidden;
+
+    }
+
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .revenue_block {
+    .revenue_content {
+      .revenue_chart {
+        top: 150px;
+      }
+    }
+  }
+}
 // RIGHTS BLOCK
 
 .rights_block {
@@ -4985,7 +5011,7 @@ $icons_background: #E9F5EF;
     .new_times {
       position: absolute;
       top: unset;
-      bottom: 400px;
+      bottom: 190px;
       left: 290px;
       z-index: 10;
 
@@ -5078,7 +5104,11 @@ $icons_background: #E9F5EF;
 
   .second_page .ilma {
     right: unset;
-    top: 900px;
+    top: 850px;
+    padding: 15px 15px 15px 15px;
+    img {
+      width: 100px;
+    }
 
 
   }
