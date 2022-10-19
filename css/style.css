@@ -373,7 +373,7 @@
 }
 @media screen and (min-width: 2000px) {
   .main_page .left_screen {
-    width: 550px;
+    width: 600px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -742,7 +742,7 @@
 }
 .first_block .law_block {
   width: 1350px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   background: #CAEAF8;
 }
 .first_block .law_block .law_block_content {
