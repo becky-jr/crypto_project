@@ -1048,7 +1048,7 @@ $icons_background: #E9F5EF;
 
   .new_times {
     position: absolute;
-    top: 430px;
+    top: 500px;
     left: 680px;
   }
 
@@ -2047,7 +2047,7 @@ $icons_background: #E9F5EF;
       .slick-dots {
 
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         margin: 0;
         padding: 20px 0;
 
@@ -2113,7 +2113,7 @@ $icons_background: #E9F5EF;
 
         padding: 30px 40px 30px 30px;
         margin-right: 22px;
-        max-width: 380px;
+        max-width: 400px;
         background: $black;
 
 
@@ -2830,7 +2830,7 @@ $icons_background: #E9F5EF;
   max-width: 1350px;
   margin: 100px auto;
   .rights_title {
-    padding: 0 0 100px;
+    padding: 0 0 100px 10px;
     width: 100%;
     margin: 0 auto;
     text-align: left;
@@ -3387,7 +3387,7 @@ $icons_background: #E9F5EF;
   margin: 0 auto 50px;
   .advice_left {
     text-align: left;
-    max-width: 530px;
+    max-width: 470px;
     margin: 0 auto;
 
     .advice_gradient {
@@ -3506,6 +3506,19 @@ $icons_background: #E9F5EF;
 
 
 // media advice block
+@media screen and (max-width: 1000px) {
+  .advice_block {
+    .advice_right {
+      text-align: center;
+
+      .advice_inputs {
+        .radio_messenger {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 500px){
   .advice_block {

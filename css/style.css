@@ -678,7 +678,7 @@
 }
 .first_block .new_times {
   position: absolute;
-  top: 430px;
+  top: 500px;
   left: 680px;
 }
 .first_block .first_left_menu {
@@ -1439,7 +1439,7 @@
 }
 .history_block .history_content .history_cards .slick-dots {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
   padding: 20px 0;
   list-style-type: none;
@@ -1463,7 +1463,7 @@
   position: relative;
   padding: 30px 40px 30px 30px;
   margin-right: 22px;
-  max-width: 380px;
+  max-width: 400px;
   background: #262626;
 }
 .history_block .history_content .history_cards .first_card .hand {
@@ -1954,7 +1954,7 @@
   margin: 100px auto;
 }
 .rights_block .rights_title {
-  padding: 0 0 100px;
+  padding: 0 0 100px 10px;
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -2350,7 +2350,7 @@
 }
 .advice_block .advice_left {
   text-align: left;
-  max-width: 530px;
+  max-width: 470px;
   margin: 0 auto;
 }
 .advice_block .advice_left .advice_gradient {
@@ -2438,6 +2438,14 @@
   border: none;
 }
 
+@media screen and (max-width: 1000px) {
+  .advice_block .advice_right {
+    text-align: center;
+  }
+  .advice_block .advice_right .advice_inputs .radio_messenger {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 500px) {
   .advice_block {
     margin: 30px auto 0;
