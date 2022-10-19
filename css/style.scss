@@ -834,7 +834,7 @@ $icons_background: #E9F5EF;
   }
 
   .left_menu {
-    max-width: 550px;
+    max-width: 600px;
     padding: 120px 0 0 0;
     margin: 0 auto;
 
@@ -920,7 +920,7 @@ $icons_background: #E9F5EF;
   .experience {
     padding: 60px 0 90px 30px;
 
-    max-width: 1400px;
+    max-width: 1385px;
     margin: 0 auto;
 
     display: flex;
@@ -1064,7 +1064,7 @@ $icons_background: #E9F5EF;
   }
 
   .first_right_menu {
-    max-width: 550px;
+    max-width: 600px;
     margin: 0 auto;
 
 
@@ -1115,7 +1115,7 @@ $icons_background: #E9F5EF;
           //margin: 0 0 10px 0;
         }
         .second {
-          line-height: 1.5;
+          line-height: 2;
           display: inline-block;
           margin: 0 0 20px 20px;
         }
@@ -1266,7 +1266,7 @@ $icons_background: #E9F5EF;
   }
 
   .second_left_menu {
-    max-width: 550px;
+    max-width: 600px;
     margin: 0 auto;
 
     .second_left_descr {
@@ -1437,7 +1437,7 @@ $icons_background: #E9F5EF;
   }
 
   .third_right_menu {
-    max-width: 550px;
+    max-width: 600px;
     margin: 0 auto;
     //padding: 120px 100px 0 0;
     padding-top: 130px;
@@ -1814,7 +1814,7 @@ $icons_background: #E9F5EF;
         }
         .button {
           width: 380px;
-          margin: 40px auto;
+          margin: 40px auto 100px;
           //margin:39px 300px 50px auto;
 
           .join_button {
@@ -1869,7 +1869,7 @@ $icons_background: #E9F5EF;
                   font-size: 18px;
                   color: $black;
                 }
-                font-family: 'Uni Neue Light';
+                font-family: 'Uni Neue Regular';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
@@ -2047,7 +2047,7 @@ $icons_background: #E9F5EF;
       .slick-dots {
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: 0;
         padding: 20px 0;
 
@@ -2298,7 +2298,7 @@ $icons_background: #E9F5EF;
   }
 
   .income_left_block {
-    max-width: 550px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: left;
 
@@ -2360,7 +2360,7 @@ $icons_background: #E9F5EF;
   }
 
   .income_data {
-    max-width: 1400px;
+    max-width: 1350px;
     margin: 0 auto;
 
     font-family: 'Uni Neue Regular';
@@ -2428,6 +2428,28 @@ $icons_background: #E9F5EF;
     .income_data {
       font-size: 13px;
       margin: 25px 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+  .income_page {
+    .income_data {
+      max-width: 1150px;
+    }
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .income_page {
+    .income_data {
+      max-width: 950px;
+    }
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .income_page {
+    .income_data {
+      max-width: 750px;
     }
   }
 }
@@ -3067,20 +3089,21 @@ $icons_background: #E9F5EF;
         margin-left: 20px;
         background-color: $first_green;
         color: #FFFFFF;
-        padding: 15px 50px;
+        padding: 15px 60px;
         border: none;
         border-radius: 2px;
       }
 
       .approve {
         margin-top: 12px;
-        font-family: 'Uni Neue Thin';
+        font-family: 'Uni Neue Regular';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
         color: #FFFFFF;
-        span {
-          padding-bottom: 5px;
+        display: flex;
+        div {
+          padding-left: 5px;
         }
         .data-text {
           color: #FFFFFF;
@@ -3478,7 +3501,7 @@ $icons_background: #E9F5EF;
 
       .check_input {
         margin-top: 25px;
-        font-family: 'Uni Neue Thin';
+        font-family: 'Uni Neue Regular';
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
@@ -3629,7 +3652,7 @@ $icons_background: #E9F5EF;
       }
 
       .contacts_thin {
-        font-family: 'Uni Neue Thin';
+        font-family: 'Uni Neue Regular';
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -3675,7 +3698,7 @@ $icons_background: #E9F5EF;
         }
         .office_location {
           margin: 10px 0 15px;
-          font-family: 'Uni Neue Thin';
+          font-family: 'Uni Neue Regular';
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
@@ -3707,7 +3730,7 @@ $icons_background: #E9F5EF;
     .message_buttons {
       margin: 30px 0 50px;
       .message_whatsapp, .message_telegram {
-        padding: 10px 60px;
+        padding: 15px 60px;
         margin-right: 30px;
         color: #33CC80;
 
