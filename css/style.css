@@ -191,7 +191,7 @@
   border-radius: 3px;
   background: #33CC80;
   color: #FAFAFA;
-  padding: 15px 75px 15px 75px;
+  padding: 15px 65px 15px 65px;
 }
 .menu_burger .menu_bottom .buttons .burger_menu_btn :hover,
 .menu_burger .menu_bottom .buttons .burger_menu_btn :active {
@@ -201,7 +201,7 @@
   margin: 25px 0 25px;
   display: inline-block;
   background-color: #262626;
-  padding: 15px 75px 15px 75px;
+  padding: 15px 65px 15px 65px;
   border: #33CC80 1px solid;
 }
 .menu_burger .menu_bottom .buttons .burger_menu_phone a {
@@ -209,7 +209,7 @@
   text-decoration: none;
 }
 .menu_burger .menu_bottom .buttons .message_whatsapp {
-  padding: 15px 93px 15px 93px;
+  padding: 15px 84px 15px 80px;
   color: #33CC80;
   background-color: #262626;
   border: 1px solid #33CC80;
@@ -222,7 +222,7 @@
 }
 .menu_burger .menu_bottom .buttons .message_telegram {
   margin-top: 25px;
-  padding: 15px 96px 15px 96px;
+  padding: 15px 85px 15px 85px;
   color: #33CC80;
   background-color: #262626;
   border: 1px solid #33CC80;
