@@ -687,7 +687,7 @@ $icons_background: #E9F5EF;
 
 
     .main_page_bottom {
-      width: 310px;
+      width: 330px;
       padding: 0;
       border: none;
       margin: 0 auto;
@@ -991,7 +991,7 @@ $icons_background: #E9F5EF;
 
     .right_menu {
       margin-top: 30px;
-      width: 315px;
+      max-width: 315px;
       .right_img {
         img {
           width: 320px;
@@ -1184,7 +1184,7 @@ $icons_background: #E9F5EF;
       padding: 0;
       z-index: 2;
       display: flex;
-      //width: 320px;
+      width: 94%;
       justify-content: center;
       img {
         width: 85%;
@@ -1227,23 +1227,23 @@ $icons_background: #E9F5EF;
     .law_block {
       width: 412px;
       position: absolute;
-      top: 1050px;
+      top: 1025px;
 
       .law_block_content {
-        padding: 90px 0 30px 30px;
+        padding: 80px 0 30px 30px;
         justify-content: unset;
 
         .bottom_icon {
           width: 30px;
           img {
-            width: 30px;
+            width: 40px;
           }
         }
 
         .law_text {
           margin-left: 15px;
           font-size: 12px;
-          //width: 263px;
+          max-width: 280px;
         }
 
       }
@@ -1359,7 +1359,7 @@ $icons_background: #E9F5EF;
   padding: 120px 0 0 0;
 
   .second_left_menu {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 
     .second_left_descr {
@@ -1391,10 +1391,10 @@ $icons_background: #E9F5EF;
 
   .second_right_menu {
     padding-top: 30px;
-    width: 330px;
+    width: 85%;
     margin: 0 auto;
     img {
-      width: 330px;
+      width: 100%;
     }
   }
 
@@ -1578,15 +1578,15 @@ $icons_background: #E9F5EF;
       position: relative;
       .third_left_menu {
         padding: 0;
-        width: 97%;
-        display: flex;
-        justify-content: center;
-        //margin: 0 0 0 25px;
+        width: 80%;
+        margin: 0 auto;
         position: absolute;
         top: 1005px;
         z-index: 2;
+        right: 0;
+        left: 0;
         .block_image {
-          width: 320px;
+          width: 100%;
         }
 
         .third_badge {
@@ -1642,18 +1642,18 @@ $icons_background: #E9F5EF;
       top: 1280px;
 
       .info_block_content {
-        padding: 90px 0 30px 0;
+        padding: 80px 0 30px 0;
         justify-content: center;
 
         .info_block_icon {
           width: 30px;
           img {
-            width: 30px;
+            width: 40px;
           }
         }
 
         .info_block_text {
-          margin-left: 15px;
+          margin-left: 20px;
           font-size: 15px;
           width: 263px;
         }
@@ -1741,7 +1741,7 @@ $icons_background: #E9F5EF;
 @media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 70px 0 0 20px;
+    margin: 70px 0 0 30px;
 
     .coop_title {
       max-width: 550px;
@@ -2179,6 +2179,7 @@ $icons_background: #E9F5EF;
 @media screen and (max-width: 500px){
 
   .history_block {
+    max-width: 360px;
     margin: 50px auto 0;
 
     .history_usd {
@@ -2197,13 +2198,13 @@ $icons_background: #E9F5EF;
         margin-bottom: 25px;
 
         width: 217px;
-        margin-left: 10px;
+        //margin-left: 10px;
       }
 
       .history_title_small {
         font-size: 14px;
         margin-bottom: 25px;
-        margin-left: 10px;
+        //margin-left: 10px;
       }
 
       .history_chart {
@@ -2389,7 +2390,7 @@ $icons_background: #E9F5EF;
     margin: 0 auto;
 
     .income_left_block {
-      max-width: 350px;
+      max-width: 310px;
 
       .income_gradient {
         font-size: 14px;

@@ -417,7 +417,7 @@
     height: 300px;
   }
   .main_page .main_page_bottom {
-    width: 310px;
+    width: 330px;
     padding: 0;
     border: none;
     margin: 0 auto;
@@ -639,7 +639,7 @@
   }
   .second_page .right_menu {
     margin-top: 30px;
-    width: 315px;
+    max-width: 315px;
   }
   .second_page .right_menu .right_img img {
     width: 320px;
@@ -784,6 +784,7 @@
     padding: 0;
     z-index: 2;
     display: flex;
+    width: 94%;
     justify-content: center;
   }
   .first_block .first_left_menu img {
@@ -818,21 +819,22 @@
   .first_block .law_block {
     width: 412px;
     position: absolute;
-    top: 1050px;
+    top: 1025px;
   }
   .first_block .law_block .law_block_content {
-    padding: 90px 0 30px 30px;
+    padding: 80px 0 30px 30px;
     justify-content: unset;
   }
   .first_block .law_block .law_block_content .bottom_icon {
     width: 30px;
   }
   .first_block .law_block .law_block_content .bottom_icon img {
-    width: 30px;
+    width: 40px;
   }
   .first_block .law_block .law_block_content .law_text {
     margin-left: 15px;
     font-size: 12px;
+    max-width: 280px;
   }
 }
 .second_block {
@@ -922,7 +924,7 @@
     width: 150px;
   }
   .second_block .second_left_menu {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
   }
   .second_block .second_left_menu .second_left_descr .second_left_gradient {
@@ -945,11 +947,11 @@
   }
   .second_block .second_right_menu {
     padding-top: 30px;
-    width: 330px;
+    width: 85%;
     margin: 0 auto;
   }
   .second_block .second_right_menu img {
-    width: 330px;
+    width: 100%;
   }
 }
 .third_block .third_left_menu {
@@ -1081,15 +1083,16 @@
   }
   .third_block .third_left_menu {
     padding: 0;
-    width: 97%;
-    display: flex;
-    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
     position: absolute;
     top: 1005px;
     z-index: 2;
+    right: 0;
+    left: 0;
   }
   .third_block .third_left_menu .block_image {
-    width: 320px;
+    width: 100%;
   }
   .third_block .third_left_menu .third_badge {
     z-index: 10;
@@ -1127,17 +1130,17 @@
     top: 1280px;
   }
   .third_block .info_block .info_block_content {
-    padding: 90px 0 30px 0;
+    padding: 80px 0 30px 0;
     justify-content: center;
   }
   .third_block .info_block .info_block_content .info_block_icon {
     width: 30px;
   }
   .third_block .info_block .info_block_content .info_block_icon img {
-    width: 30px;
+    width: 40px;
   }
   .third_block .info_block .info_block_content .info_block_text {
-    margin-left: 15px;
+    margin-left: 20px;
     font-size: 15px;
     width: 263px;
   }
@@ -1208,7 +1211,7 @@
 @media screen and (max-width: 600px) {
   .coop_page {
     text-align: left;
-    margin: 70px 0 0 20px;
+    margin: 70px 0 0 30px;
   }
   .coop_page .coop_title {
     max-width: 550px;
@@ -1513,6 +1516,7 @@
 }
 @media screen and (max-width: 500px) {
   .history_block {
+    max-width: 360px;
     margin: 50px auto 0;
   }
   .history_block .history_usd {
@@ -1525,12 +1529,10 @@
     font-size: 22px;
     margin-bottom: 25px;
     width: 217px;
-    margin-left: 10px;
   }
   .history_block .history_content .history_title_small {
     font-size: 14px;
     margin-bottom: 25px;
-    margin-left: 10px;
   }
   .history_block .history_content .history_chart {
     margin: 0 0 0 10px;
@@ -1661,7 +1663,7 @@
     width: 140px;
   }
   .income_page .income_left_block {
-    max-width: 350px;
+    max-width: 310px;
   }
   .income_page .income_left_block .income_gradient {
     font-size: 14px;
