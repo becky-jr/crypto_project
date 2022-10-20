@@ -55,6 +55,13 @@
   font-weight: 400;
   font-size: 14px;
 }
+.header .header_body .nav_menu a {
+  text-decoration: none;
+  color: #565758;
+  font-family: "Uni Neue Regular";
+  font-weight: 400;
+  font-size: 14px;
+}
 .header .header_body .contact {
   text-align: right;
   margin-right: 30px;
@@ -1565,7 +1572,7 @@
 }
 @media screen and (max-width: 800px) {
   .history_block .history_content .history_cards .first_card .hand {
-    right: 50px;
+    right: 80px;
     top: 0;
   }
   .history_block .history_content .history_cards .first_card .hand img {
@@ -1818,12 +1825,12 @@
   }
   .method_block .method_card .cards .method_btn {
     display: flex;
-    top: 250px;
+    top: 190px;
     left: -155px;
     right: unset;
   }
   .method_block .method_card .cards .info_card {
-    padding: 70px 0 70px 30px;
+    padding: 20px 0 10px 30px;
   }
   .method_block .method_card .cards .info_card .card_content {
     padding: 70px 0 70px 20px;
@@ -2085,6 +2092,7 @@
     width: 50px;
   }
   .rights_block .rights_content_cards .rights_card .bold_text {
+    padding-top: 10px;
     font-size: 16px;
     margin: 0;
   }
@@ -2094,7 +2102,7 @@
 }
 @media screen and (max-width: 500px) {
   .rights_block {
-    max-width: 370px;
+    max-width: 330px;
     margin: 50px auto 20px;
   }
 }
@@ -2154,6 +2162,12 @@
 .application_block .application_content .application_radios .later .radio_buttons {
   margin-right: 10px;
 }
+.application_block .application_content .application_send br {
+  display: none;
+}
+.application_block .application_content .application_send p {
+  margin: 0;
+}
 .application_block .application_content .application_send .num_input {
   padding: 15px 40px 15px 20px;
   background-color: #E7E7E7;
@@ -2170,6 +2184,7 @@
   border-radius: 2px;
 }
 .application_block .application_content .application_send .approve {
+  width: 100%;
   margin-top: 12px;
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -2188,6 +2203,10 @@
 
 .mobile_family {
   display: none;
+}
+
+.wpcf7-spinner {
+  display: block;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -2358,6 +2377,7 @@
 
 @media screen and (max-width: 600px) {
   .answers_block {
+    max-width: 360px;
     padding: 50px 0 50px;
   }
   .answers_block .answers_title {
@@ -2488,7 +2508,14 @@
 }
 @media screen and (max-width: 500px) {
   .advice_block {
+    position: relative;
     margin: 30px auto 0;
+  }
+  .advice_block .advice_left .advice_title {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    right: 0;
   }
   .advice_block .advice_left .advice_title .advice_gradient {
     font-size: 14px;
@@ -2506,8 +2533,11 @@
   .advice_block .advice_left .advice_img img {
     width: 290px;
   }
+  .advice_block .advice_right {
+    margin-top: 180px;
+  }
   .advice_block .advice_right .advice_inputs .name_input input {
-    width: 100%;
+    width: 85%;
   }
   .advice_block .advice_right .advice_inputs .radio_messenger {
     font-size: 12px;
@@ -2636,7 +2666,7 @@
 
 @media screen and (max-width: 800px) {
   .contact_block {
-    padding: 50px 25px;
+    padding: 80px 25px;
   }
   .contact_block .contacts_content .contacts_title {
     margin: 0 auto;
@@ -2667,6 +2697,9 @@
   .contact_block .office_content .office_card .card_content .office_phone, .contact_block .office_content .office_card .card_content .office_mail {
     font-size: 14px;
   }
+  .contact_block .office_content .office_card .card_content .office_mail .under {
+    text-decoration: underline;
+  }
   .contact_block .message_content {
     font-size: 16px;
     margin: 0;
@@ -2681,7 +2714,7 @@
   }
   .contact_block .message_content .message_buttons .message_telegram {
     margin: 10px 0 0;
-    padding: 10px 63px;
+    padding: 15px 63px;
   }
 }
 .map_content {

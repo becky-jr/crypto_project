@@ -178,6 +178,13 @@ $icons_background: #E9F5EF;
         font-weight: 400;
         font-size: 14px;
       }
+      a {
+        text-decoration: none;
+        color: #565758;
+        font-family: "Uni Neue Regular";
+        font-weight: 400;
+        font-size: 14px;
+      }
     }
 
     // contact menu
@@ -2258,7 +2265,7 @@ $icons_background: #E9F5EF;
       .history_cards {
         .first_card {
           .hand {
-            right: 50px;
+            right: 80px;
             top: 0;
             img {
               width: 90px;
@@ -2622,13 +2629,13 @@ $icons_background: #E9F5EF;
         position: relative;
         .method_btn {
           display: flex;
-          top: 250px;
+          top: 190px;
           left: -155px;
           right: unset;
         }
 
         .info_card {
-          padding: 70px 0 70px 30px;
+          padding: 20px 0 10px 30px;
           //width: 305px;
           .card_content {
             padding: 70px 0 70px 20px;
@@ -3006,6 +3013,7 @@ $icons_background: #E9F5EF;
         }
 
         .bold_text {
+          padding-top: 10px;
           font-size: 16px;
           //width: 220px;
           margin: 0;
@@ -3023,7 +3031,7 @@ $icons_background: #E9F5EF;
 @media screen and (max-width: 500px) {
 
   .rights_block {
-    max-width: 370px;
+    max-width: 330px;
     margin: 50px auto 20px;
   }
 }
@@ -3102,6 +3110,12 @@ $icons_background: #E9F5EF;
     }
 
     .application_send {
+      br {
+        display: none;
+      }
+      p {
+        margin: 0;
+      }
       .num_input {
         padding: 15px 40px 15px 20px;
         background-color: #E7E7E7;
@@ -3120,6 +3134,7 @@ $icons_background: #E9F5EF;
       }
 
       .approve {
+        width: 100%;
         margin-top: 12px;
         font-family: 'Uni Neue Regular';
         font-style: normal;
@@ -3141,6 +3156,10 @@ $icons_background: #E9F5EF;
 .mobile_family {
   display: none;
 }
+.wpcf7-spinner {
+  display: block;
+}
+
 
 // APPLICATION BLOCK MEDIA
 @media screen and (min-width: 800px) and (max-width: 1000px){
@@ -3382,7 +3401,7 @@ $icons_background: #E9F5EF;
 
 @media screen and (max-width: 600px){
   .answers_block {
-    //max-width: 600px;
+    max-width: 360px;
     //width: 320px;
     //margin: 0 auto;
     padding: 50px 0 50px;
@@ -3574,12 +3593,17 @@ $icons_background: #E9F5EF;
 
 @media screen and (max-width: 500px){
   .advice_block {
+    position: relative;
     //width: 320px;
     margin: 30px auto 0;
 
     .advice_left {
 
       .advice_title {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        right: 0;
 
         .advice_gradient {
           font-size: 14px;
@@ -3605,13 +3629,14 @@ $icons_background: #E9F5EF;
     }
 
     .advice_right {
+      margin-top: 180px;
 
       .advice_inputs {
 
         .name_input {
 
           input {
-            width: 100%;
+            width: 85%;
           }
 
         }
@@ -3790,7 +3815,7 @@ $icons_background: #E9F5EF;
 
 @media screen and (max-width: 800px){
   .contact_block {
-    padding: 50px 25px;
+    padding: 80px 25px;
 
     .contacts_content {
 
@@ -3836,6 +3861,11 @@ $icons_background: #E9F5EF;
           .office_phone, .office_mail {
             font-size: 14px;
           }
+          .office_mail {
+            .under {
+              text-decoration: underline;
+            }
+          }
 
         }
 
@@ -3859,7 +3889,7 @@ $icons_background: #E9F5EF;
 
         .message_telegram {
           margin: 10px 0 0;
-          padding: 10px 63px;
+          padding: 15px 63px;
         }
       }
 
