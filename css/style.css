@@ -1,13 +1,15 @@
 @font-face {
   font-family: "Uni Neue Bold";
-  src: url("../fonts/UniNeueBold.ttf");
+  src: url("../fonts/UniNeueBold.eot");
+  src: local("Uni Neue Bold"), local("UniNeueBold"), url("../fonts/UniNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/UniNeueBold.woff2") format("woff2"), url("../fonts/UniNeueBold.woff") format("woff"), url("../fonts/UniNeueBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Uni Neue Light";
-  src: url("../fonts/UniNeueLight.ttf");
-  font-weight: normal;
+  src: url("../fonts/UniNeueLight.eot");
+  src: local("Uni Neue Light"), local("UniNeueLight"), url("../fonts/UniNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/UniNeueLight.woff2") format("woff2"), url("../fonts/UniNeueLight.woff") format("woff"), url("../fonts/UniNeueLight.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -18,8 +20,9 @@
 }
 @font-face {
   font-family: "Uni Neue Regular";
-  src: url("../fonts/UniNeueRegular.ttf");
-  font-weight: normal;
+  src: url("../fonts/UniNeueRegular.eot");
+  src: local("Uni Neue Regular"), local("UniNeueRegular"), url("../fonts/UniNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/UniNeueRegular.woff2") format("woff2"), url("../fonts/UniNeueRegular.woff") format("woff"), url("../fonts/UniNeueRegular.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 .header {
@@ -686,7 +689,7 @@
 .first_block .new_times {
   position: absolute;
   top: 500px;
-  left: 680px;
+  left: 720px;
 }
 .first_block .first_left_menu {
   padding: 180px 0 0 0;
@@ -973,7 +976,7 @@
 .third_block .third_left_menu .third_badge {
   position: absolute;
   top: 500px;
-  left: 250px;
+  left: 300px;
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 3px;
 }
@@ -2244,48 +2247,41 @@
   }
 }
 .youtube_block {
-  max-width: 1920px;
+  padding: 80px 0 150px 80px;
+  background: url("../img/youtube_bg.jpg") no-repeat;
   margin: 100px auto 0;
+  background-size: cover;
+  overflow-y: hidden;
 }
 .youtube_block .youtube_content {
   position: relative;
-  display: flex;
 }
-.youtube_block .youtube_content .link {
-  position: absolute;
-  left: 46%;
-  top: 230px;
+.youtube_block .youtube_content .content {
+  max-width: 480px;
+  margin: 0 auto 0 100px;
 }
-.youtube_block .youtube_content .left_block {
-  background: #494949;
-  width: 50%;
-}
-.youtube_block .youtube_content .left_block .left_block_title {
+.youtube_block .youtube_content .content .youtube_text {
   font-family: "Uni Neue Thin";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   color: #FFFFFF;
   max-width: 480px;
-  margin: 150px auto 0;
+  margin: 50px auto 0;
 }
-.youtube_block .youtube_content .left_block .left_block_title .bold {
+.youtube_block .youtube_content .content .youtube_text .bold {
   font-family: "Uni Neue Bold";
 }
-.youtube_block .youtube_content .left_block .title_author {
+.youtube_block .youtube_content .content .title_author {
   font-family: "Uni Neue Thin";
   color: #FFFFFF;
   max-width: 480px;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
-.youtube_block .youtube_content .right_block {
-  width: 50%;
-}
-.youtube_block .youtube_content .right_block .youtube_pc {
-  width: 100%;
-}
-.youtube_block .youtube_content .right_block .youtube_mobile {
-  display: none;
+.youtube_block .youtube_content .link {
+  position: absolute;
+  left: 45%;
+  top: 80px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -2887,7 +2883,7 @@
   font-weight: 300;
   /* colors/green */
   position: absolute;
-  left: 515px;
+  left: 500px;
   top: -25px;
   color: #33CC80;
 }
@@ -3070,8 +3066,18 @@
   }
 }
 @media screen and (max-width: 1440px) {
-  .middle_slider .slider_inner .first_slider .slider .slider_img span {
-    display: none;
+  .youtube_block {
+    background-size: contain;
+    padding: 80px 0 65px 0;
+  }
+  .youtube_block .youtube_content .link {
+    top: 15px;
+  }
+  .application_block .application_content {
+    margin: 150px 0 140px 100px;
+  }
+  .middle_slider .slider_inner .first_slider .slider .slider_img .number {
+    left: 450px;
   }
 }
 .phone_popup {
