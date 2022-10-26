@@ -6,6 +6,20 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Uni Neue Book";
+  src: url("../fonts/UniNeueBook.eot");
+  src: local("Uni Neue Book"), local("UniNeueBook"), url("../fonts/UniNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/UniNeueBook.woff2") format("woff2"), url("../fonts/UniNeueBook.woff") format("woff"), url("../fonts/UniNeueBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Uni Neue Black";
+  src: url("../fonts/UniNeueBlack.eot");
+  src: local("Uni Neue Black"), local("UniNeueBlack"), url("../fonts/UniNeueBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/UniNeueBlack.woff2") format("woff2"), url("../fonts/UniNeueBlack.woff") format("woff"), url("../fonts/UniNeueBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
   font-family: "Uni Neue Light";
   src: url("../fonts/UniNeueLight.eot");
   src: local("Uni Neue Light"), local("UniNeueLight"), url("../fonts/UniNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/UniNeueLight.woff2") format("woff2"), url("../fonts/UniNeueLight.woff") format("woff"), url("../fonts/UniNeueLight.ttf") format("truetype");
@@ -13,7 +27,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Uni Neue";
+  font-family: "Uni Neue Thin";
   src: url("../fonts/UniNeueThin.eot");
   src: local("Uni Neue Thin"), local("UniNeueThin"), url("../fonts/UniNeueThin.eot?#iefix") format("embedded-opentype"), url("../fonts/UniNeueThin.woff2") format("woff2"), url("../fonts/UniNeueThin.woff") format("woff"), url("../fonts/UniNeueThin.ttf") format("truetype");
   font-weight: 100;
@@ -259,13 +273,13 @@
   position: relative;
 }
 .main_page .coin {
-  top: 300px;
+  top: 250px;
   position: absolute;
-  right: 865px;
+  right: 875px;
   z-index: 2;
 }
 .main_page .main_footer_text {
-  font-family: "Uni Neue Regular";
+  font-family: "Uni Neue Light";
   font-size: 13px;
   color: #999999;
   display: inline-block;
@@ -278,17 +292,20 @@
 }
 .main_page .left_screen .main_text {
   font-family: "Uni Neue Bold";
+  font-style: normal;
+  font-weight: 800;
   font-size: 44px;
-  font-weight: 700;
-  text-align: left;
+  max-width: 520px;
+  line-height: 120%;
 }
 .main_page .left_screen .main_text .main_gradient_text {
   background-color: #38E08C;
-  background-image: linear-gradient(99.02deg, #33CC80 20.12%, #1BA7DC 40%, #33CC80 70.12%);
+  background-image: linear-gradient(99.02deg, #33CC80 30.88%, #1BA7DC 34%, #33CC80 110.12%);
   background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  font-family: "Uni Neue Bold";
 }
 .main_page .left_screen .mini_text {
   margin-top: 25px;
@@ -303,6 +320,12 @@
   box-shadow: 5px 5px 5px #38E08C;
 }
 .main_page .left_screen .main_btn .main_menu_btn {
+  font-family: "Uni Neue Regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #FFFFFF;
   border: none;
   border-radius: 3px;
   background: #33CC80;
@@ -342,6 +365,7 @@
 }
 .main_page .main_page_bottom .content .statistics {
   text-align: left;
+  max-width: 280px;
   display: flex;
 }
 .main_page .main_page_bottom .content .statistics .chart {
@@ -367,7 +391,8 @@
   width: 100%;
 }
 .main_page .main_page_bottom .content .statistics .statistics_mini_text {
-  font-size: 16px;
+  font-size: 15px;
+  font-family: "Uni Neue Regular";
 }
 
 @media screen and (min-width: 500px) and (max-width: 1300px) {
@@ -450,7 +475,8 @@
     height: 60px;
   }
   .main_page .main_page_bottom .content .statistics .chart .statistics_icon {
-    padding: 17px;
+    padding: 20px;
+    width: 60px;
   }
   .main_page .main_page_bottom .content .statistics .statistics_text {
     margin: 0;
@@ -526,8 +552,8 @@
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 7px;
   position: absolute;
-  top: 400px;
-  right: 700px;
+  top: 440px;
+  right: 670px;
   z-index: 2;
 }
 .second_page .phone_icon {
@@ -589,8 +615,19 @@
   color: #262626;
 }
 .second_page .right_menu {
+  position: relative;
   width: 100%;
   margin: 200px auto 0;
+}
+.second_page .right_menu .ilma_bg {
+  position: absolute;
+  width: 100px;
+  height: 377px;
+  background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+  opacity: 0.3;
+  filter: blur(102px);
+  transform: rotate(-159.77deg);
+  top: 100px;
 }
 .second_page .right_menu .right_img {
   max-width: 550px;
@@ -617,7 +654,7 @@
   margin-top: 10px;
 }
 .second_page .experience .experience_num {
-  font-family: "Uni Neue Bold";
+  font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
   font-size: 46px;
@@ -643,6 +680,9 @@
   }
   .second_page .left_menu .second_page_descr .first_descr, .second_page .left_menu .second_page_descr .second_descr, .second_page .left_menu .second_page_descr .third_descr {
     font-size: 14px;
+  }
+  .second_page .left_menu .second_page_descr .first_descr .descr_list, .second_page .left_menu .second_page_descr .second_descr .descr_list, .second_page .left_menu .second_page_descr .third_descr .descr_list {
+    margin-left: 10px;
   }
   .second_page .left_menu .descr_info .descr_info_text {
     font-size: 14px;
@@ -690,12 +730,24 @@
 .first_block .new_times {
   position: absolute;
   top: 500px;
-  left: 720px;
+  left: 740px;
+  z-index: 99;
 }
 .first_block .first_left_menu {
+  position: relative;
   padding: 180px 0 0 0;
   max-width: 590px;
   margin: 0 auto;
+}
+.first_block .first_left_menu .gradient {
+  position: absolute;
+  left: 550px;
+  top: 300px;
+  width: 109px;
+  height: 321px;
+  background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+  opacity: 0.3;
+  filter: blur(102px);
 }
 .first_block .first_left_menu img {
   width: 100%;
@@ -754,7 +806,30 @@
 .first_block .law_block {
   width: 1390px;
   margin: 40px auto 0;
-  background: #CAEAF8;
+  background: linear-gradient(48.63deg, #EEF8FE -23.77%, #E6F5FF 142.56%);
+  position: relative;
+}
+.first_block .law_block :before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 22px 0 0;
+  border-color: #caeaf8 transparent transparent transparent;
+}
+.first_block .law_block :after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 22px 22px;
+  border-color: transparent transparent #fff transparent;
 }
 .first_block .law_block .law_block_content {
   display: flex;
@@ -854,8 +929,9 @@
 }
 .second_block .second_icon {
   position: absolute;
-  top: 270px;
+  top: 300px;
   right: 700px;
+  z-index: 10;
 }
 .second_block .second_left_menu {
   max-width: 600px;
@@ -913,9 +989,21 @@
   display: inline-block;
 }
 .second_block .second_right_menu {
+  position: relative;
   max-width: 590px;
   margin: 20px auto;
   padding-top: 30px;
+}
+.second_block .second_right_menu .gradient {
+  position: absolute;
+  width: 144.24px;
+  height: 295.73px;
+  top: 100px;
+  left: -100px;
+  background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+  opacity: 0.3;
+  filter: blur(102px);
+  transform: rotate(-165deg);
 }
 .second_block .second_right_menu img {
   width: 100%;
@@ -950,9 +1038,6 @@
   .second_block .second_left_menu .second_left_descr .second_left_thin {
     font-size: 14px;
   }
-  .second_block .second_left_menu .second_descr_info .second_descr_line {
-    height: 82px;
-  }
   .second_block .second_left_menu .second_descr_info .second_descr_text {
     font-size: 14px;
   }
@@ -974,10 +1059,21 @@
 .third_block .third_left_menu .block_image {
   width: 100%;
 }
+.third_block .third_left_menu .gradient {
+  position: absolute;
+  width: 144.24px;
+  height: 295.73px;
+  top: 300px;
+  right: -110px;
+  background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+  opacity: 0.3;
+  filter: blur(102px);
+  transform: rotate(-165deg);
+}
 .third_block .third_left_menu .third_badge {
   position: absolute;
   top: 500px;
-  left: 300px;
+  left: 320px;
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 3px;
 }
@@ -1052,7 +1148,30 @@
 .third_block .info_block {
   width: 1390px;
   margin: 130px auto 190px;
-  background: #CAEAF8;
+  background: linear-gradient(48.63deg, #EEF8FE -23.77%, #E6F5FF 142.56%);
+  position: relative;
+}
+.third_block .info_block :before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 22px 0 0;
+  border-color: #caeaf8 transparent transparent transparent;
+}
+.third_block .info_block :after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 22px 22px;
+  border-color: transparent transparent #fff transparent;
 }
 .third_block .info_block .info_block_content {
   display: flex;
@@ -1061,6 +1180,9 @@
 }
 .third_block .info_block .info_block_content .info_block_icon {
   width: 200px;
+}
+.third_block .info_block .info_block_content .info_block_icon img {
+  width: 60px;
 }
 .third_block .info_block .info_block_content .info_block_text {
   margin-left: 16px;
@@ -1133,6 +1255,7 @@
   }
   .third_block .third_right_menu .third_descr_info .third_descr_text .third_descr_list {
     margin-top: 20px;
+    margin-left: 10px;
   }
   .third_block .info_block {
     width: 100%;
@@ -1196,8 +1319,25 @@
   text-align: center;
 }
 .coop_page .coop_icon_content .coop_icon {
+  position: relative;
   width: 120px;
   display: inline-block;
+}
+.coop_page .coop_icon_content .coop_icon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+  opacity: 0.3;
+  filter: blur(63px);
+  border-radius: 50%;
+}
+.coop_page .coop_icon_content .coop_icon img {
+  position: relative;
+  z-index: 1;
 }
 .coop_page .coop_icon_content .icon_bold {
   width: 199px;
@@ -1264,6 +1404,9 @@
 .join_content {
   background-color: #FAFAFA;
   position: relative;
+}
+.join_content .col-lg-6 {
+  padding: 0;
 }
 .join_content .left_block {
   margin: 100px 0;
@@ -1363,7 +1506,7 @@
     margin: 50px 0 50px;
   }
   .join_content .right_block .right_block_info .ruble_block {
-    margin: 30px 20px 0 10px;
+    margin: 30px 20px 0 20px;
   }
   .join_content .right_block .right_block_info .ruble_block .ruble_block_icon {
     width: 50px;
@@ -1392,7 +1535,7 @@
 }
 .history_block {
   position: relative;
-  max-width: 1300px;
+  max-width: 1420px;
   margin: 120px auto 0;
 }
 .history_block .history_usd {
@@ -1477,7 +1620,7 @@
   position: relative;
   padding: 30px 40px 30px 30px;
   margin-right: 22px;
-  max-width: 400px;
+  max-width: 475px;
   background: #262626;
 }
 .history_block .history_content .history_cards .first_card .hand {
@@ -1576,7 +1719,7 @@
 }
 @media screen and (max-width: 800px) {
   .history_block .history_content .history_cards .first_card .hand {
-    right: 80px;
+    right: 150px;
     top: 0;
   }
   .history_block .history_content .history_cards .first_card .hand img {
@@ -1597,6 +1740,7 @@
   position: absolute;
   top: 400px;
   right: 683px;
+  z-index: 10;
 }
 .income_page .income_left_block {
   max-width: 600px;
@@ -1644,8 +1788,19 @@
   margin-bottom: 20px;
 }
 .income_page .income_right_block {
+  position: relative;
   max-width: 550px;
   margin: 50px auto;
+}
+.income_page .income_right_block .gradient {
+  position: absolute;
+  width: 144.24px;
+  height: 295.73px;
+  top: 50px;
+  background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+  opacity: 0.3;
+  filter: blur(102px);
+  transform: rotate(-165deg);
 }
 .income_page .income_right_block img {
   width: 100%;
@@ -1653,7 +1808,7 @@
 .income_page .income_data {
   max-width: 1350px;
   margin: 0 auto;
-  font-family: "Uni Neue Regular";
+  font-family: "Uni Neue Light";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -1729,7 +1884,7 @@
   font-size: 30px;
 }
 .method_block .method_title .title_thin {
-  width: 100%;
+  max-width: 800px;
   margin: 20px 0 25px 0;
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -1896,7 +2051,7 @@
 }
 .revenue_block .revenue_content .revenue_chart {
   position: absolute;
-  top: -55px;
+  top: -45px;
 }
 .revenue_block .revenue_content .revenue_chart .desktop_chart {
   width: 100%;
@@ -1912,7 +2067,7 @@
 }
 .revenue_block .revenue_content .revenue_chart_text {
   position: absolute;
-  top: 505px;
+  top: 515px;
   left: 400px;
   font-family: "Uni Neue Regular";
   font-style: normal;
@@ -1921,6 +2076,8 @@
   color: #494949;
 }
 .revenue_block .revenue_content .revenue_title {
+  margin-left: 30px;
+  max-width: 800px;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 500;
@@ -2022,7 +2179,7 @@
   color: #262626;
 }
 .rights_block .rights_title .rights_thin {
-  width: 100%;
+  max-width: 880px;
   font-family: "Uni Neue Regular";
   font-style: normal;
   font-weight: 400;
@@ -2218,35 +2375,6 @@
     margin: 150px 0 140px 200px;
   }
 }
-@media screen and (max-width: 800px) {
-  .application_block {
-    height: unset;
-    width: 100%;
-    background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
-  }
-  .application_block .application_content {
-    width: 100%;
-    margin: 0;
-    padding: 50px 25px 40px;
-  }
-  .application_block .application_content .application_bold {
-    font-size: 22px;
-  }
-  .application_block .application_content .application_radios {
-    font-size: 14px;
-  }
-  .application_block .application_content .application_send .num_input {
-    padding: 12px 30px 12px 20px;
-  }
-  .application_block .application_content .application_send .application_btn {
-    margin: 20px 0 0;
-  }
-  .mobile_family {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-}
 .youtube_block {
   padding: 80px 0 150px 80px;
   background: url("../img/youtube_bg.jpg") no-repeat;
@@ -2282,41 +2410,35 @@
 .youtube_block .youtube_content .link {
   position: absolute;
   left: 45%;
-  top: 80px;
+  top: 60px;
 }
 
 @media screen and (max-width: 1100px) {
+  .youtube_block {
+    background: url("../img/youtube_mobile.svg") no-repeat;
+    background-size: contain;
+    padding: 100px 0 80px 0;
+  }
   .youtube_block .youtube_content {
     display: block;
   }
+  .youtube_block .youtube_content .content {
+    margin: 0 0 0 20px;
+    max-width: 255px;
+  }
+  .youtube_block .youtube_content .content .youtube_text {
+    font-size: 22px;
+  }
+  .youtube_block .youtube_content .content .title_author {
+    font-size: 12px;
+    max-width: 127px;
+    margin: 30px 0;
+  }
   .youtube_block .youtube_content .link {
-    position: absolute;
-    left: 15px;
-    top: 100px;
+    position: unset;
   }
   .youtube_block .youtube_content .link a img {
-    width: 100px;
-  }
-  .youtube_block .youtube_content .left_block {
-    position: absolute;
-    background: unset;
-    padding: unset;
-    width: 215px;
-    top: 80px;
-    left: 30px;
-  }
-  .youtube_block .youtube_content .left_block .left_block_title {
-    font-size: 18px;
-  }
-  .youtube_block .youtube_content .right_block {
-    width: 100%;
-  }
-  .youtube_block .youtube_content .right_block .youtube_pc {
-    display: none;
-  }
-  .youtube_block .youtube_content .right_block .youtube_mobile {
-    display: block;
-    width: 100%;
+    width: 110px;
   }
 }
 .answers_block {
@@ -2375,7 +2497,7 @@
 @media screen and (max-width: 600px) {
   .answers_block {
     max-width: 360px;
-    padding: 50px 0 50px;
+    padding: 0 0 50px;
   }
   .answers_block .answers_title {
     padding: 0 16px;
@@ -2499,9 +2621,6 @@
   .advice_block .advice_right {
     text-align: center;
   }
-  .advice_block .advice_right .advice_inputs .radio_messenger {
-    justify-content: center;
-  }
 }
 @media screen and (max-width: 500px) {
   .advice_block {
@@ -2532,12 +2651,15 @@
   }
   .advice_block .advice_right {
     margin-top: 180px;
+    text-align: left;
+    margin-left: 30px;
   }
   .advice_block .advice_right .advice_inputs .name_input input {
     width: 85%;
   }
   .advice_block .advice_right .advice_inputs .radio_messenger {
     font-size: 12px;
+    margin-top: 20px;
   }
   .advice_block .advice_right .advice_inputs .contact_inputs {
     display: block;
@@ -2604,10 +2726,12 @@
   border-radius: 3px;
 }
 .contact_block .office_content .office_card .card_content {
-  padding: 50px 0 50px 30px;
+  padding: 50px 0 0px 0px;
   text-align: left;
   max-width: 290px;
   margin: 0 auto;
+  height: 250px;
+  max-height: 250px;
 }
 .contact_block .office_content .office_card .card_content .office_gradient {
   font-family: "Uni Neue Regular";
@@ -2685,6 +2809,11 @@
   .contact_block .office_content .office_card {
     margin: 0 0 20px;
   }
+  .contact_block .office_content .office_card .card_content {
+    padding: 50px 0 50px 0;
+    max-width: 200px;
+    margin: 0 auto;
+  }
   .contact_block .office_content .office_card .card_content .office_gradient {
     font-size: 16px;
   }
@@ -2717,6 +2846,7 @@
 .map_content {
   max-width: 1300px;
   margin: 0 auto;
+  background-color: #FAFAFA;
 }
 .map_content .map div frame {
   width: 100%;
@@ -3067,13 +3197,6 @@
   }
 }
 @media screen and (max-width: 1440px) {
-  .youtube_block {
-    background-size: contain;
-    padding: 80px 0 65px 0;
-  }
-  .youtube_block .youtube_content .link {
-    top: 15px;
-  }
   .application_block .application_content {
     margin: 150px 0 140px 100px;
   }
@@ -3177,6 +3300,40 @@
   color: #262626;
 }
 
+@media screen and (max-width: 1000px) {
+  .middle_slider .slider_inner .first_slider .slider .slider_img .number {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .application_block {
+    height: unset;
+    width: 100%;
+    background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
+  }
+  .application_block .application_content {
+    width: 100%;
+    margin: 0;
+    padding: 50px 25px 40px;
+  }
+  .application_block .application_content .application_bold {
+    font-size: 22px;
+  }
+  .application_block .application_content .application_radios {
+    font-size: 14px;
+  }
+  .application_block .application_content .application_send .num_input {
+    padding: 12px 30px 12px 20px;
+  }
+  .application_block .application_content .application_send .application_btn {
+    margin: 20px 0 0;
+  }
+  .mobile_family {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 500px) {
   .phone_popup .popup_content {
     max-width: 400px;
@@ -3532,5 +3689,43 @@
     display: none;
   }
 }
+@media screen and (max-width: 500px) {
+  .second_block .second_right_menu .gradient {
+    top: 50px;
+    left: -31px;
+    transform: none;
+  }
+  .first_block .first_left_menu .gradient {
+    left: 297px;
+    top: -26px;
+    width: 59px;
+    height: 321px;
+    background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+    opacity: 0.3;
+    filter: blur(102px);
+  }
+  .third_block .third_left_menu .gradient {
+    position: absolute;
+    width: 70.24px;
+    height: 295.73px;
+    top: 0px;
+    right: -32px;
+    background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+    opacity: 0.3;
+    filter: blur(102px);
+    transform: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .first_block .first_left_menu .gradient {
+    display: none;
+  }
+  .third_block .third_left_menu .gradient {
+    display: none;
+  }
+}
 
+.wpcf7-spinner {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,30 @@
 }
 
 @font-face {
+  font-family: 'Uni Neue Book';
+  src: url('../fonts/UniNeueBook.eot');
+  src: local('Uni Neue Book'), local('UniNeueBook'),
+  url('../fonts/UniNeueBook.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/UniNeueBook.woff2') format('woff2'),
+  url('../fonts/UniNeueBook.woff') format('woff'),
+  url('../fonts/UniNeueBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uni Neue Black';
+  src: url('../fonts/UniNeueBlack.eot');
+  src: local('Uni Neue Black'), local('UniNeueBlack'),
+  url('../fonts/UniNeueBlack.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/UniNeueBlack.woff2') format('woff2'),
+  url('../fonts/UniNeueBlack.woff') format('woff'),
+  url('../fonts/UniNeueBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Uni Neue Light';
   src: url('../fonts/UniNeueLight.eot');
   src: local('Uni Neue Light'), local('UniNeueLight'),
@@ -24,7 +48,7 @@
 }
 
 @font-face {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Thin';
   src: url('../fonts/UniNeueThin.eot');
   src: local('Uni Neue Thin'), local('UniNeueThin'),
   url('../fonts/UniNeueThin.eot?#iefix') format('embedded-opentype'),
@@ -477,10 +501,10 @@ $icons_background: #E9F5EF;
 
   position: relative;
     .coin {
-      top: 300px;
+      top: 250px;
       position: absolute;
       //left: 895px;
-      right: 865px;
+      right: 875px;
       z-index: 2;
 
     }
@@ -490,7 +514,7 @@ $icons_background: #E9F5EF;
 
 
   .main_footer_text {
-    font-family: 'Uni Neue Regular';
+    font-family: 'Uni Neue Light';
     font-size: 13px;
     color: $grey;
     display: inline-block;
@@ -505,17 +529,22 @@ $icons_background: #E9F5EF;
 
     .main_text {
       font-family: 'Uni Neue Bold';
+      font-style: normal;
+      font-weight: 800;
       font-size: 44px;
-      font-weight: 700;
-      text-align: left;
+      max-width: 520px;
+      line-height: 120%;
+
+
       .main_gradient_text {
         background-color: $blue;
-        background-image: linear-gradient(99.02deg, #33CC80 20.12%,  #1BA7DC 40%, #33CC80 70.12%);
+        background-image: linear-gradient(99.02deg, #33CC80 30.88%, #1BA7DC 34%, #33CC80 110.12%);
         background-size: 100%;
         -webkit-background-clip: text;
         //-moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+        font-family: "Uni Neue Bold";
       }
     }
 
@@ -532,6 +561,15 @@ $icons_background: #E9F5EF;
         box-shadow: 5px 5px 5px $third_green;
       }
       .main_menu_btn {
+        font-family: 'Uni Neue Regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+
+        text-align: center;
+
+        color: #FFFFFF;
+
         border: none;
         border-radius: 3px;
         background: $first_green;
@@ -588,7 +626,7 @@ $icons_background: #E9F5EF;
 
       .statistics {
         text-align: left;
-        //width: 340px;
+        max-width: 280px;
         display: flex;
         .chart {
           margin-right: 10px;
@@ -614,7 +652,8 @@ $icons_background: #E9F5EF;
           width: 100%;
         }
         .statistics_mini_text {
-          font-size: 16px;
+          font-size: 15px;
+          font-family: 'Uni Neue Regular';
         }
       }
     }
@@ -741,7 +780,8 @@ $icons_background: #E9F5EF;
             height: 60px;
 
             .statistics_icon {
-              padding: 17px;
+              padding: 20px;
+              width: 60px;
             }
           }
 
@@ -839,6 +879,12 @@ $icons_background: #E9F5EF;
 
   position: relative;
 
+  //background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+  //opacity: 0.3;
+  //filter: blur(102px);
+  //transform: rotate(-159.77deg);
+
+
   .ilma {
     padding: 25px 25px 25px 30px;
     background: rgba(255, 255, 255, 0.9);
@@ -851,8 +897,8 @@ $icons_background: #E9F5EF;
     border-radius: 7px;
 
     position: absolute;
-    top: 400px;
-    right: 700px;
+    top: 440px;
+    right: 670px;
     z-index: 2;
   }
 
@@ -931,6 +977,18 @@ $icons_background: #E9F5EF;
   // Right menu
 
   .right_menu {
+
+    position: relative;
+    .ilma_bg {
+      position: absolute;
+      width: 100px;
+      height: 377px;
+      background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+      opacity: 0.3;
+      filter: blur(102px);
+      transform: rotate(-159.77deg);
+      top: 100px;
+    }
     //padding: 175px 0 0 100px;
     //display: flex;
     //justify-content: center;
@@ -938,12 +996,14 @@ $icons_background: #E9F5EF;
     width: 100%;
     margin: 200px auto 0;
     .right_img {
+
       max-width: 550px;
       margin: 0 auto;
       img {
         width: 100%;
 
       }
+
     }
   }
 
@@ -970,7 +1030,7 @@ $icons_background: #E9F5EF;
     }
 
     .experience_num {
-      font-family: 'Uni Neue Bold';
+      font-family: 'Uni Neue Regular';
       font-style: normal;
       font-weight: 500;
       font-size: 46px;
@@ -1007,6 +1067,9 @@ $icons_background: #E9F5EF;
       .second_page_descr {
         .first_descr, .second_descr, .third_descr {
           font-size: 14px;
+          .descr_list {
+            margin-left: 10px;
+          }
         }
       }
 
@@ -1079,15 +1142,28 @@ $icons_background: #E9F5EF;
   .new_times {
     position: absolute;
     top: 500px;
-    left: 720px;
+    left: 740px;
+    z-index: 99;
   }
 
 
 
   .first_left_menu {
+    position: relative;
     padding: 180px 0 0 0;
     max-width: 590px;
     margin: 0 auto;
+    .gradient {
+      position: absolute;
+      left: 550px;
+      top: 300px;
+      width: 109px;
+      height: 321px;
+      background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+      opacity: 0.3;
+      filter: blur(102px);
+    }
+
     img {
       width: 100%;
     }
@@ -1159,12 +1235,34 @@ $icons_background: #E9F5EF;
   }
 
   .law_block {
-    //height: 172px;
-    width: 1390px;
-    margin: 40px auto 0;
+      width: 1390px;
+      margin: 40px auto 0;
+      background: linear-gradient(48.63deg, #EEF8FE -23.77%, #E6F5FF 142.56%);
+      position: relative;
 
-    background: #CAEAF8;
-    //opacity: 0.15;
+    :before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 22px 22px 0 0;
+      border-color: #caeaf8 transparent transparent transparent;
+    }
+
+    :after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 22px 22px;
+      border-color: transparent transparent #fff transparent;
+    }
 
     .law_block_content {
       display: flex;
@@ -1291,8 +1389,9 @@ $icons_background: #E9F5EF;
 
   .second_icon {
     position: absolute;
-    top: 270px;
+    top: 300px;
     right: 700px;
+    z-index: 10;
   }
 
   .second_left_menu {
@@ -1364,6 +1463,19 @@ $icons_background: #E9F5EF;
   }
 
   .second_right_menu {
+    position: relative;
+    .gradient {
+      position: absolute;
+      width: 144.24px;
+      height: 295.73px;
+      top: 100px;
+      left: -100px;
+      background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+      opacity: 0.3;
+      filter: blur(102px);
+      transform: rotate(-165deg);
+    }
+
     max-width: 590px;
     margin: 20px auto;
     padding-top: 30px;
@@ -1410,9 +1522,9 @@ $icons_background: #E9F5EF;
     }
 
     .second_descr_info {
-      .second_descr_line {
-        height: 82px;
-      }
+      //.second_descr_line {
+      //  height: 82px;
+      //}
       .second_descr_text {
         font-size: 14px;
       }
@@ -1448,10 +1560,22 @@ $icons_background: #E9F5EF;
 
     position: relative;
 
+    .gradient {
+      position: absolute;
+      width: 144.24px;
+      height: 295.73px;
+      top: 300px;
+      right: -110px;
+      background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+      opacity: 0.3;
+      filter: blur(102px);
+      transform: rotate(-165deg);
+    }
+
     .third_badge {
       position: absolute;
       top: 500px;
-      left: 300px;
+      left: 320px;
 
       /* Note: backdrop-filter has minimal browser support */
 
@@ -1551,17 +1675,45 @@ $icons_background: #E9F5EF;
   }
 
   .info_block {
-    width: 1390px;
-    margin: 130px auto 190px;
-    background: #CAEAF8;
+      width: 1390px;
+      margin: 130px auto 190px;
+      background: linear-gradient(48.63deg, #EEF8FE -23.77%, #E6F5FF 142.56%);
+      position: relative;
 
-      .info_block_content {
+      :before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 22px 22px 0 0;
+        border-color: #caeaf8 transparent transparent transparent;
+      }
+
+      :after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 22px 22px;
+        border-color: transparent transparent #fff transparent;
+      }
+
+    .info_block_content {
         display: flex;
         justify-content: space-between;
         padding: 50px 60px;
 
           .info_block_icon {
             width: 200px;
+            img {
+              width: 60px;
+            }
           }
 
           .info_block_text {
@@ -1660,6 +1812,7 @@ $icons_background: #E9F5EF;
           font-size: 14px;
           .third_descr_list {
             margin-top: 20px;
+            margin-left: 10px;
           }
         }
       }
@@ -1739,8 +1892,26 @@ $icons_background: #E9F5EF;
       text-align: center;
 
       .coop_icon {
+        position: relative;
         width: 120px;
         display: inline-block;
+      }
+      .coop_icon:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(57.34deg, #50CC91 -14.75%, #0094FF 103.57%);
+        opacity: 0.3;
+        filter: blur(63px);
+        border-radius: 50%;
+      }
+
+      .coop_icon img{
+        position: relative;
+        z-index: 1;
       }
 
       .icon_bold {
@@ -1823,6 +1994,9 @@ $icons_background: #E9F5EF;
   //height: 720px;
   background-color: $white;
   position: relative;
+  .col-lg-6 {
+    padding: 0;
+  }
 
     .left_block {
       margin: 100px 0;
@@ -1942,7 +2116,7 @@ $icons_background: #E9F5EF;
 
         .ruble_block {
           //width: 144px;
-          margin: 30px 20px 0 10px;
+          margin: 30px 20px 0 20px;
           .ruble_block_icon {
             width: 50px;
             height: 50px;
@@ -1989,7 +2163,7 @@ $icons_background: #E9F5EF;
 
 .history_block {
   position: relative;
-  max-width: 1300px;
+  max-width: 1420px;
   margin: 120px auto 0;
 
   .history_usd {
@@ -2140,7 +2314,7 @@ $icons_background: #E9F5EF;
 
         padding: 30px 40px 30px 30px;
         margin-right: 22px;
-        max-width: 400px;
+        max-width: 475px;
         background: $black;
 
 
@@ -2288,7 +2462,7 @@ $icons_background: #E9F5EF;
       .history_cards {
         .first_card {
           .hand {
-            right: 80px;
+            right: 150px;
             top: 0;
             img {
               width: 90px;
@@ -2323,6 +2497,7 @@ $icons_background: #E9F5EF;
     position: absolute;
     top: 400px;
     right: 683px;
+    z-index: 10;
   }
 
   .income_left_block {
@@ -2379,6 +2554,19 @@ $icons_background: #E9F5EF;
   }
 
   .income_right_block {
+    position: relative;
+    .gradient {
+      position: absolute;
+      width: 144.24px;
+      height: 295.73px;
+      top: 50px;
+      background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+      opacity: 0.3;
+      filter: blur(102px);
+      transform: rotate(-165deg);
+    }
+
+
     max-width: 550px;
     //padding-left: 100px;
     margin: 50px auto;
@@ -2391,7 +2579,7 @@ $icons_background: #E9F5EF;
     max-width: 1350px;
     margin: 0 auto;
 
-    font-family: 'Uni Neue Regular';
+    font-family: 'Uni Neue Light';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -2499,7 +2687,7 @@ $icons_background: #E9F5EF;
       font-size: 30px;
     }
     .title_thin {
-      width: 100%;
+      max-width: 800px;
       margin: 20px 0 25px 0;
       font-family: 'Uni Neue Regular';
       font-style: normal;
@@ -2762,7 +2950,7 @@ $icons_background: #E9F5EF;
 
     .revenue_chart {
       position: absolute;
-      top: -55px;
+      top: -45px;
       //left: -120px;
 
       .desktop_chart {
@@ -2783,7 +2971,7 @@ $icons_background: #E9F5EF;
 
     .revenue_chart_text {
       position: absolute;
-      top: 505px;
+      top: 515px;
       left: 400px;
       //display: none;
 
@@ -2798,6 +2986,8 @@ $icons_background: #E9F5EF;
 
     .revenue_title {
       //padding-left: 100px;
+      margin-left: 30px;
+      max-width: 800px;
 
       font-family: 'Uni Neue Regular';
       font-style: normal;
@@ -2931,7 +3121,7 @@ $icons_background: #E9F5EF;
     }
 
     .rights_thin {
-      width: 100%;
+      max-width: 880px;
       font-family: 'Uni Neue Regular';
       font-style: normal;
       font-weight: 400;
@@ -3193,50 +3383,6 @@ $icons_background: #E9F5EF;
   }
 }
 
-@media screen and (max-width: 800px){
-
-  .application_block {
-    height: unset;
-    width: 100%;
-
-    background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
-
-    .application_content {
-      width: 100%;
-      margin: 0;
-      padding: 50px 25px 40px;
-
-      .application_bold {
-        font-size: 22px;
-      }
-
-      .application_radios {
-        font-size: 14px;
-      }
-
-      .application_send {
-
-        .num_input {
-          padding: 12px 30px 12px 20px;
-        }
-
-        .application_btn {
-          margin: 20px 0 0;
-        }
-
-      }
-    }
-
-  }
-
-  .mobile_family {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-
-  }
-
-}
 
 // todo Youtube Block
 .youtube_block {
@@ -3286,7 +3432,7 @@ $icons_background: #E9F5EF;
     .link {
       position: absolute;
       left: 45%;
-      top: 80px;
+      top: 60px;
     }
 
     //.left_block {
@@ -3325,46 +3471,42 @@ $icons_background: #E9F5EF;
 //
 @media screen and (max-width: 1100px) {
   .youtube_block {
+    background: url("../img/youtube_mobile.svg") no-repeat;
+    background-size: contain;
+    padding: 100px 0 80px 0;
+
 
     .youtube_content {
+
+      .content {
+        margin: 0 0 0 20px;
+
+        max-width: 255px;
+
+        .youtube_text {
+          font-size: 22px;
+        }
+        .title_author {
+          font-size: 12px;
+          max-width: 127px;
+          margin: 30px 0;
+        }
+      }
       display: block;
 
       .link {
-        position: absolute;
-        left: 15px;
-        top: 100px;
+        position: unset;
+        //left: 15px;
+        //top: 100px;
         a {
           img {
-            width: 100px;
+            width: 110px;
           }
         }
       }
 
-      .left_block {
-        position: absolute;
-        background: unset;
-        padding: unset;
-        width: 215px;
 
-        top: 80px;
-        left: 30px;
-        .left_block_title {
-          font-size: 18px;
-        }
-      }
 
-      .right_block {
-        width: 100%;
-
-        .youtube_pc {
-          display: none;
-        }
-
-        .youtube_mobile {
-          display: block;
-          width: 100%;
-        }
-      }
     }
 
   }
@@ -3449,7 +3591,7 @@ $icons_background: #E9F5EF;
     max-width: 360px;
     //width: 320px;
     //margin: 0 auto;
-    padding: 50px 0 50px;
+    padding: 0 0 50px;
 
 
 
@@ -3627,11 +3769,6 @@ $icons_background: #E9F5EF;
     .advice_right {
       text-align: center;
 
-      .advice_inputs {
-        .radio_messenger {
-          justify-content: center;
-        }
-      }
     }
   }
 }
@@ -3675,6 +3812,8 @@ $icons_background: #E9F5EF;
 
     .advice_right {
       margin-top: 180px;
+      text-align: left;
+      margin-left: 30px;
 
       .advice_inputs {
 
@@ -3688,6 +3827,7 @@ $icons_background: #E9F5EF;
 
         .radio_messenger {
           font-size: 12px;
+          margin-top: 20px;
           //justify-content: space-between;
           //width: 320px;
 
@@ -3783,10 +3923,12 @@ $icons_background: #E9F5EF;
       border-radius: 3px;
 
       .card_content {
-        padding: 50px 0 50px 30px;
+        padding: 50px 0 0px 0px;
         text-align: left;
         max-width: 290px;
         margin: 0 auto;
+        height: 250px;
+        max-height: 250px;
 
         .office_gradient {
           font-family: 'Uni Neue Regular';
@@ -3894,6 +4036,9 @@ $icons_background: #E9F5EF;
         margin: 0 0 20px;
 
         .card_content {
+          padding: 50px 0 50px 0;
+          max-width: 200px;
+          margin: 0 auto;
 
           .office_gradient {
             font-size: 16px;
@@ -3946,6 +4091,7 @@ $icons_background: #E9F5EF;
 .map_content {
   max-width: 1300px;
   margin: 0 auto;
+  background-color: #FAFAFA;
   .map {
     div {
       frame {
@@ -4454,17 +4600,17 @@ $icons_background: #E9F5EF;
 }
 
 @media screen and (max-width: 1440px) {
-  .youtube_block {
-    //background-size: auto;
-    background-size: contain;
-    padding: 80px 0 65px 0;
-    .youtube_content {
-      .link {
-        top: 15px;
-      }
-    }
-
-  }
+  //.youtube_block {
+  //  //background-size: auto;
+  //  background-size: contain;
+  //  padding: 80px 0 65px 0;
+  //  .youtube_content {
+  //    .link {
+  //      top: 15px;
+  //    }
+  //  }
+  //
+  //}
   .application_block  {
     .application_content {
       margin: 150px 0 140px 100px;
@@ -4622,6 +4768,57 @@ $icons_background: #E9F5EF;
       }
     }
 
+
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .middle_slider .slider_inner .first_slider .slider .slider_img .number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  .application_block {
+    height: unset;
+    width: 100%;
+
+    background: linear-gradient(56.51deg, #50CC91 -134.48%, #262626 156.71%);
+
+    .application_content {
+      width: 100%;
+      margin: 0;
+      padding: 50px 25px 40px;
+
+      .application_bold {
+        font-size: 22px;
+      }
+
+      .application_radios {
+        font-size: 14px;
+      }
+
+      .application_send {
+
+        .num_input {
+          padding: 12px 30px 12px 20px;
+        }
+
+        .application_btn {
+          margin: 20px 0 0;
+        }
+
+      }
+    }
+
+  }
+
+  .mobile_family {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 
   }
 
@@ -5236,6 +5433,44 @@ $icons_background: #E9F5EF;
 
 @media screen and (max-width: 1200px) {
   .second_page .phone_icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .second_block .second_right_menu .gradient {
+    top: 50px;
+    left: -31px;
+    transform: none;
+  }
+  .first_block .first_left_menu .gradient {
+    left: 297px;
+    top: -26px;
+    width: 59px;
+    height: 321px;
+    background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+    opacity: 0.3;
+    filter: blur(102px);
+  }
+  .third_block .third_left_menu .gradient {
+    position: absolute;
+    width: 70.24px;
+    height: 295.73px;
+    top: 0px;
+    right: -32px;
+    background: linear-gradient(45.85deg, #50CC91 26.79%, #0094FF 121.5%);
+    opacity: 0.3;
+    filter: blur(102px);
+    transform: none;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .first_block .first_left_menu .gradient {
+    display: none;
+  }
+  .third_block .third_left_menu .gradient {
     display: none;
   }
 }

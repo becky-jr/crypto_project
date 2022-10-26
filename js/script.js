@@ -210,9 +210,9 @@ $('ul li a[href="#contacts"]').on("click", function (e) {
 
 
 
-const card1Trigger = document.querySelectorAll('.bank'),
-      card2Trigger = document.querySelectorAll('.estate'),
-      card3Trigger = document.querySelectorAll('.fund'),
+const card1Trigger = document.querySelectorAll('[data-card1]'),
+      card2Trigger = document.querySelectorAll('[data-card2]'),
+      card3Trigger = document.querySelectorAll('[data-card3]'),
       card1 = document.querySelector('.card-1'),
       card2 = document.querySelector('.card-2'),
       card3 = document.querySelector('.card-3');
