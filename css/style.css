@@ -704,16 +704,16 @@
   .second_page .experience .crypto {
     display: none;
   }
-  .second_page .experience .year, .second_page .experience .investors {
-    margin: 0 40px 0 20px;
-  }
-  .second_page .experience .year, .second_page .experience .employee, .second_page .experience .investors, .second_page .experience .crisis {
+  .second_page .experience .year {
     margin-top: 20px;
     width: 140px;
   }
-  .second_page .experience .year .experience_num, .second_page .experience .employee .experience_num, .second_page .experience .investors .experience_num, .second_page .experience .crisis .experience_num {
+  .second_page .experience .year .experience_num {
     font-weight: 500;
     font-size: 30px;
+  }
+  .second_page .experience .year:last-child {
+    display: none;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1000px) {
@@ -3725,7 +3725,4 @@
   }
 }
 
-.wpcf7-spinner {
-  display: block;
-}
 /*# sourceMappingURL=style.css.map */

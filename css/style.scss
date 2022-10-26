@@ -1102,18 +1102,22 @@ $icons_background: #E9F5EF;
         display: none;
       }
 
-      .year, .investors {
-        margin: 0 40px 0 20px;
-      }
+      //.year, .investors {
+      //  margin: 0 40px 0 20px;
+      //}
 
-      .year, .employee, .investors, .crisis {
+      .year {
         margin-top: 20px;
         width: 140px;
+
 
         .experience_num {
           font-weight: 500;
           font-size: 30px;
         }
+      }
+      .year:last-child {
+        display: none;
       }
 
     }
